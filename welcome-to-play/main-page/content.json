@@ -99,10 +99,11 @@
       "blocks": [
         {
           "type": "interactive",
-          "action": "highlight",
-          "reftarget": "a[href*=\"a/grafana-k8s-app\"]",
-          "tooltip": "The **Grafana Kubernetes App** provides comprehensive monitoring for Kubernetes clusters. It includes pre-built dashboards for cluster overview, node monitoring, pod performance, namespace usage, and workload analysis. The app automatically discovers your cluster topology and provides intelligent alerting rules based on Kubernetes best practices.",
-          "content": "Explore the **Kubernetes Monitoring App** for comprehensive cluster observability."
+          "action": "navigate",
+          "reftarget": "/a/grafana-k8s-app/navigation/namespace?from=now-1h&to=now&refresh=1m&timezone=utc&var-cluster=faro-shop&var-cluster=play-db-cluster",
+          "verify": "on-page:/a/grafana-k8s-app/navigation/namespace",
+          "tooltip": "The **Grafana Kubernetes App** provides comprehensive monitoring for Kubernetes clusters. This step opens the **Namespace** navigation view on Grafana Play with a prepared time range and cluster selection.",
+          "content": "Open the **Kubernetes App** namespace navigation page (Grafana Play)."
         }
       ]
     },
