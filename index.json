@@ -1,6 +1,22 @@
 {
   "rules": [
     {
+      "title": "Tour of Grafana Visualizations",
+      "url": "https://interactive-learning.grafana.net/guides/tour-of-visualizations",
+      "description": "A quick tour of Grafana's visualization types—when to use each one, with live examples.",
+      "type": "docs-page",
+      "match": {
+        "and": [
+          {
+            "urlPrefix": "/d/ma79mqp/visualization-examples"
+          },
+          {
+            "source": "play.grafana.org"
+          }
+        ]
+      }
+    },
+    {
       "title": "Interactive Guide: Explore Drilldowns 101",
       "url": "https://interactive-learning.grafana.net/guides/explore-drilldowns-101",
       "description": "Hands-on guide: Explore drilldowns in Grafana.",
@@ -131,6 +147,54 @@
           },
           {
             "urlPrefix": "/a/grafana-synthetic-monitoring-app"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Interactive Guide: CPU Usage in Kubernetes",
+      "url": "https://interactive-learning.grafana.net/guides/k8s-cpu",
+      "description": "Hands-on guide: Explore CPU usage in Kubernetes Monitoring, from namespaces to containers.",
+      "type": "docs-page",
+      "match": {
+        "and": [
+          {
+            "urlPrefix": "/a/grafana-k8s-app"
+          },
+          {
+            "source": "play.grafana.org"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Interactive Guide: Memory Usage in Kubernetes",
+      "url": "https://interactive-learning.grafana.net/guides/k8s-mem",
+      "description": "Hands-on guide: Explore memory usage in Kubernetes Monitoring, from namespaces to containers.",
+      "type": "docs-page",
+      "match": {
+        "and": [
+          {
+            "urlPrefix": "/a/grafana-k8s-app"
+          },
+          {
+            "source": "play.grafana.org"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Interactive Guide: Network Diagnostics in Kubernetes",
+      "url": "https://interactive-learning.grafana.net/guides/k8s-network",
+      "description": "Hands-on guide: Diagnose network issues in Kubernetes Monitoring using bandwidth and saturation metrics.",
+      "type": "docs-page",
+      "match": {
+        "and": [
+          {
+            "urlPrefix": "/a/grafana-k8s-app"
+          },
+          {
+            "source": "play.grafana.org"
           }
         ]
       }
