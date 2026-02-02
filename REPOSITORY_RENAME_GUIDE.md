@@ -112,7 +112,8 @@ Forks do not automatically rename. If you have forks, you'll need to update thei
 - `~/interactive-tutorials` (your home directory)
 - `~/Documents/interactive-tutorials`
 - `~/Documents/GitHub/interactive-tutorials`
-- Or search for it: `find ~ -name "interactive-tutorials" -type d 2>/dev/null`
+- On Mac/Linux, search for it: `find ~ -name "interactive-tutorials" -type d 2>/dev/null`
+- On Windows, search for it: `dir /s /b interactive-tutorials` (from your user directory)
 
 ### Q: Can I run the git remote command before the repository is renamed on GitHub?
 **A:** No, wait until the repository is renamed on GitHub first. Otherwise, pushing/pulling will fail because the new URL doesn't exist yet.
