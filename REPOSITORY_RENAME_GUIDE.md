@@ -22,17 +22,38 @@ The new repository URL will be: `https://github.com/BeverlyJaneJ/docs-ai-bev`
 
 ## Step 2: Update Local Repository
 
+**⚠️ IMPORTANT**: You must run these commands from inside your local repository directory.
+
 After renaming on GitHub, anyone with a local clone needs to update their git remote URL:
 
+### If you're not already in the repository directory:
+
 ```bash
-# Check current remote URL
+# Navigate to your local repository directory
+# Replace the path below with wherever you cloned the repository
+cd /path/to/interactive-tutorials
+
+# OR if you cloned it to your home directory:
+cd ~/interactive-tutorials
+```
+
+### Then run these commands:
+
+```bash
+# 1. Check current remote URL (should show the old repository name)
 git remote -v
 
-# Update the remote URL to the new repository name
+# 2. Update the remote URL to the new repository name
 git remote set-url origin https://github.com/BeverlyJaneJ/docs-ai-bev.git
 
-# Verify the change
+# 3. Verify the change (should now show the new repository name)
 git remote -v
+```
+
+**Expected output after step 3:**
+```
+origin  https://github.com/BeverlyJaneJ/docs-ai-bev.git (fetch)
+origin  https://github.com/BeverlyJaneJ/docs-ai-bev.git (push)
 ```
 
 ## Step 3: Things That Will Automatically Work
@@ -66,6 +87,9 @@ The GitHub Actions workflows in `.github/workflows/` don't reference the reposit
 
 ## Troubleshooting
 
+### If you get "fatal: not a git repository"
+This means you're not in a git repository directory. You need to navigate to your local clone of the repository first using `cd /path/to/interactive-tutorials` before running git commands.
+
 ### If you get "remote: Repository not found"
 This means your local git remote still points to the old URL. Follow Step 2 above to update it.
 
@@ -74,6 +98,24 @@ Open pull requests will automatically be associated with the new repository name
 
 ### If you have the repository forked
 Forks do not automatically rename. If you have forks, you'll need to update their remotes to point to the renamed upstream repository.
+
+## Frequently Asked Questions
+
+### Q: Do I have to be in the local repo directory to run the git remote command?
+**A: Yes!** All git commands must be run from within your local repository directory. Use `cd /path/to/interactive-tutorials` to navigate there first.
+
+### Q: How do I know if I'm in the right directory?
+**A:** Run `pwd` (on Mac/Linux) or `cd` (on Windows) to see your current directory. You should see the repository name in the path. You can also run `git status` - if you're in a git repository, it will show the branch and status; if not, you'll get an error.
+
+### Q: What if I don't know where I cloned the repository?
+**A:** Try these common locations:
+- `~/interactive-tutorials` (your home directory)
+- `~/Documents/interactive-tutorials`
+- `~/Documents/GitHub/interactive-tutorials`
+- Or search for it: `find ~ -name "interactive-tutorials" -type d 2>/dev/null`
+
+### Q: Can I run the git remote command before the repository is renamed on GitHub?
+**A:** No, wait until the repository is renamed on GitHub first. Otherwise, pushing/pulling will fail because the new URL doesn't exist yet.
 
 ## Summary
 
