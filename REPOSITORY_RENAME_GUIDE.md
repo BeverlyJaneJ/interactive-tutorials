@@ -1,6 +1,8 @@
 # Repository Rename Guide: interactive-tutorials → docs-ai-bev
 
-This guide outlines the steps needed to rename the GitHub repository from `BeverlyJaneJ/interactive-tutorials` to `docs-ai-bev`.
+This guide outlines the steps needed to rename the GitHub repository from `BeverlyJaneJ/interactive-tutorials` to `BeverlyJaneJ/docs-ai-bev`.
+
+**Note**: Only the repository name changes; the owner namespace (`BeverlyJaneJ`) remains the same.
 
 ## Important Note
 
@@ -11,8 +13,10 @@ This guide outlines the steps needed to rename the GitHub repository from `Bever
 1. Go to the repository on GitHub: https://github.com/BeverlyJaneJ/interactive-tutorials
 2. Click on **Settings** (you must be the repository owner or have admin access)
 3. Scroll down to the **Repository name** section
-4. Enter the new name: `docs-ai-bev`
+4. Enter the new repository name: `docs-ai-bev` (just the repository name, not the full path)
 5. Click **Rename**
+
+The new repository URL will be: `https://github.com/BeverlyJaneJ/docs-ai-bev`
 
 ⚠️ **Note**: GitHub will automatically set up redirects from the old repository name to the new one, so existing links will continue to work.
 
