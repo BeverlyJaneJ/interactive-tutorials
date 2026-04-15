@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "explore-alert-rules-end-journey",
+  "title": "Exploration complete",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "You've explored how alert rules appear in the Grafana UI."
+    },
+    {
+      "type": "markdown",
+      "content": "**What you explored:**\n\n- The alert rules list organized by folders and evaluation groups\n- How to expand a rule to see its instances\n- The difference between rule state (Normal, Pending, Firing) and health (Ok, Error, No Data)\n- How to filter and search the rules list"
+    },
+    {
+      "type": "markdown",
+      "content": "You now have a mental map of where alerting concepts live in the UI. In the next course module, you'll explore how the notification system delivers alerts to the right people."
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### More to explore (optional)\n\n- [View alert rules](/docs/grafana/latest/alerting/monitor/view-alert-rules/)\n- [Alert rule state and health](/docs/grafana/latest/alerting/fundamentals/alert-rule-evaluation/state-and-health/)"
+    }
+  ]
+}

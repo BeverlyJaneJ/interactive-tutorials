@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "notification-routing-end-journey",
+  "title": "Notification routing complete",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "You've configured a complete notification routing setup in Grafana Alerting."
+    },
+    {
+      "type": "markdown",
+      "content": "**What you accomplished:**\n\n- Created a contact point with one or more integrations\n- Created a notification policy with label matchers to route specific alerts\n- Configured grouping and timing to control notification frequency\n- Tested notification delivery to verify the setup"
+    },
+    {
+      "type": "markdown",
+      "content": "**What's next:**\n\nWith routing configured, you can control when notifications should be suppressed. Two mechanisms are available:\n\n- **Silences** — One-time suppression for specific alerts during planned maintenance\n- **Mute timings** — Recurring suppression windows (weekends, quiet hours) attached to policies"
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### More to explore (optional)\n\n- [Configure silences](/docs/grafana/latest/alerting/configure-notifications/create-silence/)\n- [Configure mute timings](/docs/grafana/latest/alerting/configure-notifications/mute-timings/)\n- [Introduction to Grafana Alerting](/docs/grafana/latest/alerting/fundamentals/)"
+    }
+  ]
+}

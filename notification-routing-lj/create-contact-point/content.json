@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "notification-routing-create-contact-point",
+  "title": "Create a contact point",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "A contact point defines where notifications are sent. Each contact point contains one or more integrations such as email, Slack, or PagerDuty. When an alert fires, the contact point delivers the notification through all its integrations simultaneously."
+    },
+    {
+      "type": "markdown",
+      "content": "To create a contact point, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "id": "navigate-contact-points",
+      "title": "Navigate to contact points",
+      "blocks": [
+        {
+          "type": "multistep",
+          "content": "In Grafana Cloud, navigate to **Alerts & IRM > Alerting > Contact points**.",
+          "requirements": ["navmenu-open"],
+          "steps": [
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerts-and-incidents']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting/notifications']"
+            }
+          ]
+        },
+        {
+          "type": "interactive",
+          "action": "button",
+          "reftarget": "Add contact point",
+          "content": "Click **Add contact point** to create a new destination for notifications.",
+          "requirements": ["on-page:/alerting/notifications"]
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "id": "configure-contact-point",
+      "title": "Configure the contact point",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Enter a **Name** for the contact point.\n\nChoose a descriptive name that identifies the team or purpose, such as `Platform team - Slack` or `On-call email`."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Select an **Integration** type:\n\n| Integration | Best for |\n|-------------|----------|\n| **Email** | Quick setup, individual notifications |\n| **Slack** | Team channels, threaded discussions |\n| **PagerDuty** | On-call escalation |\n| **Webhook** | Custom integrations |"
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Configure the integration settings. For email, enter recipient addresses. For Slack, provide a webhook URL or select a channel."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Optionally, click **Add contact point integration** to send notifications through multiple channels from the same contact point.\n\nAll integrations in a contact point receive notifications simultaneously."
+        },
+        {
+          "type": "interactive",
+          "action": "button",
+          "reftarget": "Save contact point",
+          "content": "Click **Save contact point** to finish."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you'll create a notification policy that routes alerts to this contact point."
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### More to explore (optional)\n\n- [Manage contact points](/docs/grafana/latest/alerting/configure-notifications/manage-contact-points/)\n- [Contact point integrations](/docs/grafana/latest/alerting/fundamentals/notifications/contact-points/)"
+    }
+  ]
+}

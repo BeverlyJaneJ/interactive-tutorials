@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "explore-notification-policies-navigate",
+  "title": "Navigate to notification policies",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "The notification policy tree controls where alert notifications are delivered. This exploration helps you see how the concepts you just learned — contact points, policies, and routing — appear in the Grafana UI."
+    },
+    {
+      "type": "markdown",
+      "content": "To view notification policies, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "id": "open-policies",
+      "title": "Open the notification policies page",
+      "blocks": [
+        {
+          "type": "multistep",
+          "content": "In Grafana Cloud, navigate to **Alerts & IRM > Alerting > Notification policies**.",
+          "requirements": ["navmenu-open"],
+          "steps": [
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerts-and-incidents']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting/routes']"
+            }
+          ]
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "You should see the notification policy tree. At the top is the **Default policy** — the root of the tree that catches all alerts not matched by child policies.",
+          "requirements": ["on-page:/alerting/routes"]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you'll explore the default policy and how child policies work."
+    }
+  ]
+}

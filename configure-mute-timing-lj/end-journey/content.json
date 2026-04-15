@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "configure-mute-timing-end-journey",
+  "title": "Mute timing configuration complete",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "You've configured a recurring mute timing in Grafana Alerting."
+    },
+    {
+      "type": "markdown",
+      "content": "**What you accomplished:**\n\n- Created a time interval with a recurring schedule\n- Attached the mute timing to a notification policy\n- Verified the configuration and understood runtime behavior\n- Learned how to edit and remove mute timings"
+    },
+    {
+      "type": "markdown",
+      "content": "**Complete suppression toolkit:**\n\nYou now have two suppression mechanisms available:\n\n- **Silences** — One-time suppression with label matchers for maintenance and outages\n- **Mute timings** — Recurring suppression attached to policies for weekends and quiet hours\n\nTogether with alert rules, contact points, and notification policies, you have a complete alerting workflow."
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### More to explore (optional)\n\n- [Configure silences](/docs/grafana/latest/alerting/configure-notifications/create-silence/)\n- [Introduction to Grafana Alerting](/docs/grafana/latest/alerting/fundamentals/)"
+    }
+  ]
+}

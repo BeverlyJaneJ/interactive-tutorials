@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "create-silence-end-journey",
+  "title": "Silence creation complete",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "You've created and verified a silence in Grafana Alerting."
+    },
+    {
+      "type": "markdown",
+      "content": "**What you accomplished:**\n\n- Navigated to the Silences page\n- Created a silence with label matchers and a time window\n- Verified the silence is active and suppressing matching alerts\n- Learned how to end a silence early and manage expired silences"
+    },
+    {
+      "type": "markdown",
+      "content": "**Silences vs. mute timings:**\n\n| | Silences | Mute timings |\n|---|----------|---------------|\n| Scope | Label-matched alerts | Policy-level |\n| Duration | One-time (fixed window) | Recurring |\n| Use case | Maintenance, known outages | Weekends, quiet hours |\n\nTo set up recurring suppression, try the **Configure a mute timing** learning path."
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### More to explore (optional)\n\n- [Configure mute timings](/docs/grafana/latest/alerting/configure-notifications/mute-timings/)\n- [Introduction to Grafana Alerting](/docs/grafana/latest/alerting/fundamentals/)"
+    }
+  ]
+}

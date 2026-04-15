@@ -1,0 +1,18 @@
+{
+  "id": "configure-mute-timing-lj",
+  "type": "path",
+  "description": "Hands-on guide: Configure a mute timing in Grafana Alerting for recurring notification suppression.",
+  "category": "alerting",
+  "author": { "team": "Grafana Documentation" },
+  "testEnvironment": { "tier": "cloud" },
+  "milestones": [
+    "configure-mute-timing-create-time-interval",
+    "configure-mute-timing-attach-to-policy",
+    "configure-mute-timing-verify-muting",
+    "configure-mute-timing-end-journey"
+  ],
+  "depends": [],
+  "recommends": ["infrastructure-alerting-lj", "notification-routing-lj"],
+  "suggests": ["create-silence-lj"],
+  "provides": []
+}

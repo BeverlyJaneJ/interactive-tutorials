@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "notification-routing-create-notification-policy",
+  "title": "Create a notification policy",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Notification policies route alerts to contact points based on label matching. Policies form a tree: the default policy at the root catches all alerts, and child policies use label matchers to route specific alerts to specific contact points."
+    },
+    {
+      "type": "markdown",
+      "content": "To create a notification policy, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "id": "navigate-policies",
+      "title": "Navigate to notification policies",
+      "blocks": [
+        {
+          "type": "multistep",
+          "content": "Navigate to **Alerts & IRM > Alerting > Notification policies**.",
+          "requirements": ["navmenu-open"],
+          "steps": [
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerts-and-incidents']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting/routes']"
+            }
+          ]
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "You should see the **Default policy** at the top. This policy catches all alerts that don't match any child policy and sends them to the default contact point."
+        },
+        {
+          "type": "interactive",
+          "action": "button",
+          "reftarget": "New child policy",
+          "content": "Click **New child policy** to create a routing rule.",
+          "requirements": ["on-page:/alerting/routes"]
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "id": "configure-policy",
+      "title": "Configure the policy",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Add a **Label matcher** to define which alerts this policy handles.\n\nFor example, to route all alerts with `severity=critical`:\n- Label: `severity`\n- Operator: `=`\n- Value: `critical`"
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Four matching operators are available:\n\n| Operator | Meaning |\n|----------|----------|\n| `=` | Exact match |\n| `!=` | Not equal |\n| `=~` | Regex match |\n| `!~` | Not regex match |"
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Select the **Contact point** you created in the previous milestone.\n\nAlerts matching this policy's labels will be delivered to this contact point instead of the default."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Leave **Continue matching subsequent sibling nodes** unchecked for now. When checked, the alert continues evaluating the next sibling policy even after matching this one."
+        },
+        {
+          "type": "interactive",
+          "action": "button",
+          "reftarget": "Save policy",
+          "content": "Click **Save policy** to create the routing rule."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you'll configure grouping and timing to control notification frequency."
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### More to explore (optional)\n\n- [Configure notification policies](/docs/grafana/latest/alerting/configure-notifications/create-notification-policy/)\n- [Notification policies overview](/docs/grafana/latest/alerting/fundamentals/notifications/notification-policies/)"
+    }
+  ]
+}

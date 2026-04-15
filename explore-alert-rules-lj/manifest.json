@@ -1,0 +1,18 @@
+{
+  "id": "explore-alert-rules-lj",
+  "type": "path",
+  "description": "Hands-on guide: Explore alert rules in Grafana Cloud to see how rules, instances, and states work in the UI.",
+  "category": "alerting",
+  "author": { "team": "Grafana Documentation" },
+  "testEnvironment": { "tier": "cloud" },
+  "milestones": [
+    "explore-alert-rules-navigate",
+    "explore-alert-rules-view-details",
+    "explore-alert-rules-understand-states",
+    "explore-alert-rules-end-journey"
+  ],
+  "depends": [],
+  "recommends": [],
+  "suggests": ["infrastructure-alerting-lj"],
+  "provides": []
+}

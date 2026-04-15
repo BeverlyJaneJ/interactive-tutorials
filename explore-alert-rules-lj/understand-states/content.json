@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "explore-alert-rules-understand-states",
+  "title": "Understand states and health",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Alert rules have two independent status dimensions: **state** (is the condition met?) and **health** (is the evaluation working?). Understanding both helps you quickly triage your alerting setup."
+    },
+    {
+      "type": "section",
+      "id": "states-and-health",
+      "title": "States and health indicators",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "**Instance states** reflect the alert lifecycle:\n\n| State | Color | Meaning |\n|-------|-------|---------|\n| **Normal** | Green | Condition is not met |\n| **Pending** | Yellow | Condition met but pending period not elapsed |\n| **Alerting** | Red | Condition met for the full pending period; notification sent |\n| **Recovering** | Blue | Was Alerting, condition just resolved |"
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "**Health statuses** reflect evaluation quality:\n\n| Health | Meaning |\n|--------|---------|\n| **Ok** | Rule evaluated successfully |\n| **Error** | Query failed (connection issue, bad query) |\n| **No Data** | Query returned no results |\n\nA rule can be in **Normal** state with **Error** health, meaning the condition isn't met but the evaluation itself has problems."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Use the **filter controls** at the top of the alert rules list to focus on specific states:\n\n- Filter by state to find all Firing rules\n- Filter by folder to see rules from a specific team\n- Search by name or label to find specific rules"
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you'll review what you explored."
+    }
+  ]
+}

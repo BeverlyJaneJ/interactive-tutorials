@@ -1,0 +1,18 @@
+{
+  "id": "create-silence-lj",
+  "type": "path",
+  "description": "Hands-on guide: Create a silence in Grafana Alerting to temporarily suppress notifications for specific alerts.",
+  "category": "alerting",
+  "author": { "team": "Grafana Documentation" },
+  "testEnvironment": { "tier": "cloud" },
+  "milestones": [
+    "create-silence-navigate-silences",
+    "create-silence-create-silence",
+    "create-silence-verify-silence",
+    "create-silence-end-journey"
+  ],
+  "depends": [],
+  "recommends": ["infrastructure-alerting-lj", "notification-routing-lj"],
+  "suggests": ["configure-mute-timing-lj"],
+  "provides": []
+}

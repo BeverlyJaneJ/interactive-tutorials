@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "configure-mute-timing-attach-to-policy",
+  "title": "Attach to a notification policy",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "A mute timing only takes effect when attached to a notification policy. You can attach it to the default policy (affects all alerts) or to a specific child policy (affects only matched alerts). Mute timings are not inherited from parent policies."
+    },
+    {
+      "type": "markdown",
+      "content": "To attach the mute timing, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "id": "attach-mute-timing",
+      "title": "Attach the mute timing to a policy",
+      "blocks": [
+        {
+          "type": "multistep",
+          "content": "Navigate to **Alerts & IRM > Alerting > Notification policies**.",
+          "requirements": ["navmenu-open"],
+          "steps": [
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerts-and-incidents']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting/routes']"
+            }
+          ]
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Find the notification policy where you want to apply the mute timing and click the edit icon.\n\nChoose the default policy to suppress all alerts, or a child policy to suppress only matched alerts.",
+          "requirements": ["on-page:/alerting/routes"]
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "In the policy editor, find the **Mute timings** section and select the mute timing you created.\n\nDuring the mute timing's active window, this policy will suppress notifications for all alerts it handles."
+        },
+        {
+          "type": "interactive",
+          "action": "button",
+          "reftarget": "Save policy",
+          "content": "Click **Save policy** to apply the mute timing."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you'll verify the mute timing configuration."
+    }
+  ]
+}

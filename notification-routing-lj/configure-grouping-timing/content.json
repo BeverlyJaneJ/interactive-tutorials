@@ -1,0 +1,52 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "notification-routing-configure-grouping-timing",
+  "title": "Configure grouping and timing",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Grouping consolidates related alerts into a single notification. During a large outage that fires dozens of alerts, grouping can reduce hundreds of messages to one. Timing options control how often notifications are sent."
+    },
+    {
+      "type": "markdown",
+      "content": "To configure grouping and timing, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "id": "edit-policy-grouping",
+      "title": "Edit your notification policy",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Find the notification policy you created in the previous milestone and click the edit icon to modify it.",
+          "requirements": ["on-page:/alerting/routes"]
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Enable **Override grouping** to customize how alerts are batched.\n\nChoose a grouping strategy:\n\n| Strategy | Group by | Result |\n|----------|----------|--------|\n| Default | `alertname`, `grafana_folder` | One notification per rule |\n| Custom labels | `team`, `severity`, etc. | Group by your categories |\n| Everything | Leave empty | One notification for all alerts |\n| Nothing | `...` (special label) | One notification per alert |"
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Enable **Override timings** to control notification frequency.\n\nThree timers control delivery:\n\n| Timer | Default | Purpose |\n|-------|---------|----------|\n| **Group wait** | 30s | Wait for related alerts before first notification |\n| **Group interval** | 5m | Wait before notifying about changes in a group |\n| **Repeat interval** | 4h | Wait before resending if the group hasn't changed |\n\nThe repeat interval must be a multiple of the group interval."
+        },
+        {
+          "type": "interactive",
+          "action": "button",
+          "reftarget": "Save policy",
+          "content": "Click **Save policy** to apply your grouping and timing changes."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you'll test that notifications are delivered correctly."
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### More to explore (optional)\n\n- [Group alert notifications](/docs/grafana/latest/alerting/fundamentals/notifications/group-alert-notifications/)"
+    }
+  ]
+}

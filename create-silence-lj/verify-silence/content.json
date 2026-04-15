@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "create-silence-verify-silence",
+  "title": "Verify the silence",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "After creating a silence, verify it's working by checking the Silences list and confirming that matching alerts show a \"Silenced\" badge."
+    },
+    {
+      "type": "markdown",
+      "content": "To verify the silence, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "id": "verify-active",
+      "title": "Verify the silence is active",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "On the Silences page, confirm your silence appears in the **Active** list with the correct duration and matchers.",
+          "requirements": ["on-page:/alerting/silences"]
+        },
+        {
+          "type": "multistep",
+          "content": "Navigate to **Alert rules** to check affected alerts.",
+          "requirements": ["navmenu-open"],
+          "steps": [
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting/list']"
+            }
+          ]
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Find an alert rule that matches your silence labels. Expand it to see its instances. Silenced instances display a **Silenced** badge.\n\nAlerts continue evaluating normally. Only notifications are suppressed.",
+          "requirements": ["on-page:/alerting/list"]
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "**Managing silences:**\n\n| Action | How |\n|--------|-----|\n| End early | Click **Unsilence** on the silence |\n| Edit | Recreate with new parameters (silences cannot be edited) |\n| Expired silences | Auto-deleted after 5 days |"
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you'll review what you accomplished."
+    }
+  ]
+}

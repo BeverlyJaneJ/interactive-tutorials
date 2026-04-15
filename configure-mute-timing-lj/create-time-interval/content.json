@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "configure-mute-timing-create-time-interval",
+  "title": "Create a time interval",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "A mute timing defines recurring time intervals during which notifications are suppressed. Unlike silences (one-time, label-matched), mute timings repeat on a schedule and are attached to notification policies."
+    },
+    {
+      "type": "markdown",
+      "content": "To create a time interval, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "id": "navigate-mute-timings",
+      "title": "Navigate to mute timings",
+      "blocks": [
+        {
+          "type": "multistep",
+          "content": "In Grafana Cloud, navigate to **Alerts & IRM > Alerting > Contact points**, then select the **Mute timings** tab.",
+          "requirements": ["navmenu-open"],
+          "steps": [
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerts-and-incidents']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting/notifications']"
+            }
+          ]
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Select the **Mute timings** tab at the top of the page.",
+          "requirements": ["on-page:/alerting/notifications"]
+        },
+        {
+          "type": "interactive",
+          "action": "button",
+          "reftarget": "Add mute timing",
+          "content": "Click **Add mute timing** to create a new recurring suppression window."
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "id": "configure-interval",
+      "title": "Configure the time interval",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Enter a **Name** for the mute timing. Choose a descriptive name such as `Weekend quiet hours` or `Maintenance window`."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Configure the **Time interval** fields:\n\n| Field | Example | Description |\n|-------|---------|-------------|\n| **Days of the week** | `saturday`, `sunday` | Which days to mute |\n| **Times** | `00:00 - 08:00` | Time range (UTC) to mute |\n| **Months** | (leave empty) | Restrict to specific months |\n| **Days of the month** | (leave empty) | Restrict to specific dates |\n| **Years** | (leave empty) | Restrict to specific years |"
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "For a weekend suppression example:\n- Days of the week: `saturday` to `sunday`\n- Times: leave empty to mute all day\n\nFor overnight quiet hours:\n- Times: `22:00` to `06:00`\n- Days of the week: leave empty for every night"
+        },
+        {
+          "type": "interactive",
+          "action": "button",
+          "reftarget": "Submit",
+          "content": "Click **Submit** to save the mute timing."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you'll attach this mute timing to a notification policy."
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### More to explore (optional)\n\n- [Configure mute timings](/docs/grafana/latest/alerting/configure-notifications/mute-timings/)"
+    }
+  ]
+}

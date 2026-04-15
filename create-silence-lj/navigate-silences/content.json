@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "create-silence-navigate-silences",
+  "title": "Navigate to Silences",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "A silence temporarily suppresses notifications for alerts that match specific labels. Alert evaluation continues normally during a silence, but no notifications are sent. This is useful during planned maintenance, known outages, or while troubleshooting."
+    },
+    {
+      "type": "markdown",
+      "content": "To navigate to the Silences page, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "id": "navigate-to-silences",
+      "title": "Open the Silences page",
+      "blocks": [
+        {
+          "type": "multistep",
+          "content": "In Grafana Cloud, navigate to **Alerts & IRM > Alerting > Silences**.",
+          "requirements": ["navmenu-open"],
+          "steps": [
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerts-and-incidents']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting/silences']"
+            }
+          ]
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "The Silences page shows all active and expired silences. If this is your first silence, the list will be empty.",
+          "requirements": ["on-page:/alerting/silences"]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you'll create a silence with label matchers."
+    }
+  ]
+}

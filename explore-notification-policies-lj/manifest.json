@@ -1,0 +1,18 @@
+{
+  "id": "explore-notification-policies-lj",
+  "type": "path",
+  "description": "Hands-on guide: Explore the notification policy tree and contact points in Grafana Cloud.",
+  "category": "alerting",
+  "author": { "team": "Grafana Documentation" },
+  "testEnvironment": { "tier": "cloud" },
+  "milestones": [
+    "explore-notification-policies-navigate",
+    "explore-notification-policies-default-policy",
+    "explore-notification-policies-contact-points",
+    "explore-notification-policies-end-journey"
+  ],
+  "depends": [],
+  "recommends": ["explore-alert-rules-lj"],
+  "suggests": ["notification-routing-lj"],
+  "provides": []
+}

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "configure-mute-timing-verify-muting",
+  "title": "Verify the mute timing",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "After attaching a mute timing to a policy, verify that the configuration is correct by checking the policy details."
+    },
+    {
+      "type": "markdown",
+      "content": "To verify the mute timing, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "id": "verify-configuration",
+      "title": "Verify the configuration",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "On the Notification policies page, find the policy you edited. The mute timing name should appear in the policy details.",
+          "requirements": ["on-page:/alerting/routes"]
+        },
+        {
+          "type": "multistep",
+          "content": "Navigate back to **Contact points > Mute timings** to review the interval configuration.",
+          "requirements": ["navmenu-open"],
+          "steps": [
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting/notifications']"
+            }
+          ]
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "On the **Mute timings** tab, verify your timing shows the correct interval.\n\n**How it works at runtime:**\n\n| Time | Behavior |\n|------|----------|\n| Inside the mute window | Notifications are suppressed for all alerts handled by the policy |\n| Outside the mute window | Notifications are delivered normally |\n\nAlerts continue evaluating normally at all times. Only notification delivery is affected."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "To edit or delete a mute timing, use the actions menu on the Mute timings tab. Removing a mute timing from a policy restores normal notification delivery immediately."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you'll review what you accomplished."
+    }
+  ]
+}

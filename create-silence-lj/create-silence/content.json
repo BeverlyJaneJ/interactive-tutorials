@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "create-silence-create-silence",
+  "title": "Create a silence",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "A silence uses label matchers to select which alerts to suppress. You set a time window (start and end) during which matching notifications are silenced."
+    },
+    {
+      "type": "markdown",
+      "content": "To create a silence, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "id": "configure-silence",
+      "title": "Configure the silence",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "button",
+          "reftarget": "Add Silence",
+          "content": "Click **Add Silence** to open the silence creation form.",
+          "requirements": ["on-page:/alerting/silences"]
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Set the **Duration** for the silence. Choose a predefined duration or set custom start and end times.\n\nFor example, set a 2-hour silence for a maintenance window."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Add one or more **Matching labels** to select which alerts to suppress.\n\nFor example:\n- `alertname = HighCPU` — Suppress a specific alert rule\n- `severity = warning` — Suppress all warning-level alerts\n- `team =~ platform|infra` — Suppress alerts for multiple teams using regex\n\nFour operators are available: `=`, `!=`, `=~`, `!~`."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "To silence a specific alert rule, use the reserved label:\n- Label: `__alert_rule_uid__`\n- Value: the rule's UID (found in the alert rule URL)\n\nThis targets one rule regardless of its other labels."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Optionally add a **Comment** explaining why you created this silence. This helps teammates understand the context."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Review the **Affected alert instances** preview at the bottom. This shows which currently firing alerts would be suppressed by your matchers."
+        },
+        {
+          "type": "interactive",
+          "action": "button",
+          "reftarget": "Submit",
+          "content": "Click **Submit** to activate the silence."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you'll verify the silence is working."
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### More to explore (optional)\n\n- [Configure silences](/docs/grafana/latest/alerting/configure-notifications/create-silence/)"
+    }
+  ]
+}

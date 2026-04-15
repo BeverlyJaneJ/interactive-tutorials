@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "notification-routing-test-notification",
+  "title": "Test notification delivery",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Before relying on your routing setup, verify that notifications are delivered correctly. Grafana lets you send a test notification from any contact point."
+    },
+    {
+      "type": "markdown",
+      "content": "To test notification delivery, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "id": "test-contact-point",
+      "title": "Send a test notification",
+      "blocks": [
+        {
+          "type": "multistep",
+          "content": "Navigate to **Alerts & IRM > Alerting > Contact points**.",
+          "requirements": ["navmenu-open"],
+          "steps": [
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerts-and-incidents']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting/notifications']"
+            }
+          ]
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Find the contact point you created and click its **kebab menu** (three dots), then select **Test**.\n\nGrafana sends a test notification through all integrations in the contact point.",
+          "requirements": ["on-page:/alerting/notifications"]
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Verify the notification arrived at its destination:\n\n| Integration | Where to check |\n|-------------|----------------|\n| **Email** | Your inbox (check spam/junk) |\n| **Slack** | The configured channel |\n| **PagerDuty** | PagerDuty incidents |\n| **Webhook** | Your endpoint logs |"
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "If the test fails, common fixes include:\n\n- Verify the integration credentials (webhook URL, email address, API key)\n- Check that the integration service is reachable from Grafana Cloud\n- Review the contact point error banner for details"
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you'll review what you've accomplished."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "explore-notification-policies-default-policy",
+  "title": "Explore the default policy",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "The default policy is the root of the notification policy tree. Every alert enters the tree from the top. Child policies use label matchers to claim specific alerts; everything else falls through to the default."
+    },
+    {
+      "type": "section",
+      "id": "examine-default-policy",
+      "title": "Examine the default policy",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Look at the **Default policy** at the top of the tree. It shows:\n\n| Property | What it means |\n|----------|---------------|\n| **Contact point** | Where unmatched alerts are sent |\n| **Group by** | How alerts are batched into notifications |\n| **Timing** | Group wait, group interval, repeat interval |",
+          "requirements": ["on-page:/alerting/routes"]
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "The default **Group by** is `alertname` and `grafana_folder`. This means alerts from the same rule in the same folder are grouped into one notification.\n\nYou can change this to group by custom labels like `team` or `severity`."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "If child policies exist below the default, examine their **label matchers**. Each child policy shows:\n\n- **Matching labels** — Which alerts it routes (e.g., `severity = critical`)\n- **Contact point** — Where matched alerts are delivered\n- **Continue matching** — Whether to also check sibling policies\n\nThe routing algorithm evaluates from top to bottom. The deepest matching policy wins."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Child policies **inherit** their parent's contact point, grouping, and timing unless explicitly overridden. This means you only need to configure what's different.\n\nOne exception: **mute timings are not inherited** from parent policies."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you'll explore contact points."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "notification-routing-lj",
+  "type": "path",
+  "description": "Hands-on guide: Configure notification routing in Grafana Alerting with contact points, notification policies, and grouping.",
+  "category": "alerting",
+  "author": { "team": "Grafana Documentation" },
+  "testEnvironment": { "tier": "cloud" },
+  "milestones": [
+    "notification-routing-create-contact-point",
+    "notification-routing-create-notification-policy",
+    "notification-routing-configure-grouping-timing",
+    "notification-routing-test-notification",
+    "notification-routing-end-journey"
+  ],
+  "depends": [],
+  "recommends": ["infrastructure-alerting-lj"],
+  "suggests": ["create-silence-lj", "configure-mute-timing-lj"],
+  "provides": []
+}

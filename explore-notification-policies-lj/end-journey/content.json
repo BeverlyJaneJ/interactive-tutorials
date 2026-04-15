@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "explore-notification-policies-end-journey",
+  "title": "Exploration complete",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "You've explored how the notification system appears in the Grafana UI."
+    },
+    {
+      "type": "markdown",
+      "content": "**What you explored:**\n\n- The notification policy tree and how the default policy works\n- How child policies use label matchers to route alerts\n- The inheritance model (contact point, grouping, timing — but not mute timings)\n- Contact points and their integrations"
+    },
+    {
+      "type": "markdown",
+      "content": "You now understand both the concepts and the UI for the complete notification system. In the next course module, you'll create an alert rule from scratch and see the full pipeline in action."
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### More to explore (optional)\n\n- [Notification policies](/docs/grafana/latest/alerting/fundamentals/notifications/notification-policies/)\n- [Contact points](/docs/grafana/latest/alerting/fundamentals/notifications/contact-points/)"
+    }
+  ]
+}

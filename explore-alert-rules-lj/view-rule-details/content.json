@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "explore-alert-rules-view-details",
+  "title": "View rule details and instances",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Each alert rule in the list shows a summary. Expanding a rule reveals its instances, each representing an independent evaluation of a unique label combination."
+    },
+    {
+      "type": "markdown",
+      "content": "Explore alert rule details:"
+    },
+    {
+      "type": "section",
+      "id": "explore-rule-details",
+      "title": "Explore a rule and its instances",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Look at the alert rules list. Each rule displays:\n\n| Element | What it shows |\n|---------|---------------|\n| **Rule name** | The name you gave the rule |\n| **State badge** | Current state: Normal, Pending, or Firing |\n| **Health indicator** | Evaluation health: Ok, Error, No Data |\n| **Labels** | Custom labels assigned to the rule |",
+          "requirements": ["on-page:/alerting/list"]
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Click an alert rule to expand it. Inside, you'll see its **alert instances**.\n\nEach instance represents one unique label combination. For multi-dimensional rules, you may see multiple instances, each evaluating independently.\n\nFor example, a CPU alert across 5 hosts produces 5 instances, one per host."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Each instance shows:\n\n- **Labels** — The label set that uniquely identifies this instance\n- **State** — Normal, Pending, Alerting, or Recovering\n- **Value** — The current value from the most recent evaluation\n- **Last evaluation** — When it was last checked"
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Notice how the **rule state** aggregates instance states:\n\n| Rule state | Meaning |\n|------------|----------|\n| **Normal** | No instances are Pending or Alerting |\n| **Pending** | At least one instance is Pending |\n| **Firing** | At least one instance is Alerting |"
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you'll explore what different states and health indicators mean."
+    }
+  ]
+}

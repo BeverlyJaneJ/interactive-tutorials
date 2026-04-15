@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "explore-notification-policies-contact-points",
+  "title": "View contact points",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Contact points are the destinations where notifications are delivered. Each contact point contains one or more integrations (email, Slack, PagerDuty, webhooks, and more)."
+    },
+    {
+      "type": "markdown",
+      "content": "To view contact points, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "id": "explore-contact-points",
+      "title": "Explore your contact points",
+      "blocks": [
+        {
+          "type": "multistep",
+          "content": "Navigate to **Alerts & IRM > Alerting > Contact points**.",
+          "requirements": ["navmenu-open"],
+          "steps": [
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting/notifications']"
+            }
+          ]
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "The Contact points page shows all configured destinations. Each entry displays:\n\n| Element | What it shows |\n|---------|---------------|\n| **Name** | The contact point name |\n| **Type** | Integration type (email, Slack, etc.) |\n| **Policies** | How many notification policies use this contact point |",
+          "requirements": ["on-page:/alerting/notifications"]
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Notice the **default contact point** — the one assigned to the default notification policy. Every Grafana instance starts with a default contact point.\n\nYou can create additional contact points for different teams or escalation levels. Grafana supports 20+ integration types."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "A contact point can have **multiple integrations**. When a notification is sent to a contact point, all its integrations fire simultaneously.\n\nFor example, a contact point named `Critical alerts` could contain both a PagerDuty integration and a Slack integration, notifying both channels at once."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you'll review what you explored."
+    }
+  ]
+}

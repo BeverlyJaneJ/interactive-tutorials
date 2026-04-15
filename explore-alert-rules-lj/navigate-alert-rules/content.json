@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "explore-alert-rules-navigate",
+  "title": "Navigate to alert rules",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "The alert rules list is where you view and manage all your alert rules. Each rule shows its current state, folder, and evaluation group. This exploration helps you connect the concepts you just learned to the actual Grafana UI."
+    },
+    {
+      "type": "markdown",
+      "content": "To view alert rules, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "id": "open-alert-rules",
+      "title": "Open the alert rules list",
+      "blocks": [
+        {
+          "type": "multistep",
+          "content": "In Grafana Cloud, navigate to **Alerts & IRM > Alerting > Alert rules**.",
+          "requirements": ["navmenu-open"],
+          "steps": [
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerts-and-incidents']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting/list']"
+            }
+          ]
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "The alert rules list is organized by **folder** and **evaluation group**. Each folder can contain multiple evaluation groups, and each group can contain multiple rules.\n\nIf you have existing alert rules, you'll see them grouped here. If not, the list will be empty.",
+          "requirements": ["on-page:/alerting/list"]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you'll explore what an alert rule looks like when you expand it."
+    }
+  ]
+}
