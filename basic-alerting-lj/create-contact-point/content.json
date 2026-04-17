@@ -17,7 +17,7 @@
         {
           "type": "interactive",
           "action": "noop",
-          "content": "In the alert rule form, scroll to **Section 5** and look at the **contact point** dropdown.\n\nIf a default contact point already exists, select it and skip to the last step."
+          "content": "In the alert GUI, scroll to **Section 5** and look at the **contact point** dropdown.\n\nIf a default contact point already exists, select it and skip to the last step."
         },
         {
           "type": "interactive",

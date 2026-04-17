@@ -1,0 +1,50 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "infrastructure-alerting-navigate-and-name",
+  "title": "Navigate and name your rule",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "You've found the data you want to alert on. Now, open the alert rule creation GUI and give the rule a descriptive name."
+    },
+    {
+      "type": "markdown",
+      "content": "To create a new alert rule, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "highlight",
+          "requirements": ["navmenu-open"],
+          "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting']",
+          "content": "In the left-hand navigation menu, click **Alerting** under **Alerts & IRM**."
+        },
+        {
+          "type": "interactive",
+          "action": "highlight",
+          "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting/list']",
+          "content": "Click **Alert rules** to open the Alert rules page."
+        },
+        {
+          "type": "interactive",
+          "action": "highlight",
+          "reftarget": "a[href='alerting/new/alerting']",
+          "content": "Click **+ New alert rule** in the top right. The alert rule creation GUI opens with six numbered sections."
+        },
+        {
+          "type": "interactive",
+          "action": "formfill",
+          "reftarget": "input[id='name']",
+          "targetvalue": "High CPU on production servers",
+          "content": "In section 1, **Enter alert rule name**, type a descriptive name that tells you what condition is being monitored.\n\n| Good name | Why it works |\n|-----------|--------------|\n| High CPU on production servers | Specific about what and where |\n| Error rate spike, API gateway | Clear about the signal and the service |\n\n| Avoid | Why |\n|-------|-----|\n| Alert 1 | Impossible to route or troubleshoot later |\n| CPU alert | Too vague when you have dozens of rules |"
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "Your alert rule is named. Next, you'll learn why the name you choose matters more than you might expect."
+    }
+  ]
+}

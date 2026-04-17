@@ -5,7 +5,7 @@
   "blocks": [
     {
       "type": "markdown",
-      "content": "In section 2 of the alert rule form, **Define query and alert condition**, you'll select the data source your query runs against and turn on a helper that explains each part of your query."
+      "content": "In section 2 of the alert rule creation GUI, **Define query and alert condition**, select the data source your query runs against and turn on a helper that explains each part of your query."
     },
     {
       "type": "markdown",
