@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "infrastructure-alerting-select-notification-policy",
+  "title": "Select notification policy",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Notification policies control how alerts are routed to contact points. For your first alert, the default policy is the quickest way to get alerts working."
+    },
+    {
+      "type": "markdown",
+      "content": "To select a notification policy, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "In the alert rule form, scroll to **Section 5: Configure notifications**."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Leave **Use default policy** selected.\n\nThe default policy sends all alerts to the default contact point. This is the quickest way to get alerts working for your first rule."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Skip the override options for now:\n\n- **Override grouping**: Keep defaults\n- **Override timings**: Keep defaults\n\nYou'll learn to customize routing in a later module."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "Your alert rule uses the default notification policy. Next, you'll make sure you have a contact point set up."
+    }
+  ]
+}

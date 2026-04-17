@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "infrastructure-alerting-notification-message",
+  "title": "Configure notification message",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "These fields add context to the notification so the person reading it knows what happened and what to do. The GUI marks them as optional, but if you leave them empty, the responder only sees the alert name and has no idea what happened."
+    },
+    {
+      "type": "markdown",
+      "content": "To configure notification context, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "In the alert rule form, scroll to **Section 6**."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Fill in the annotation fields:\n\n| Field | What the GUI asks for | Example |\n|-------|----------------------|--------|\n| **Summary** | Short summary of what happened and why | `CPU usage is high on server-01` |\n| **Description** | Description of what the alert rule does | `Fires when CPU exceeds 80% for more than 5 minutes` |\n| **Runbook URL** | Webpage where you keep your runbook for the alert | `https://wiki.example.com/runbooks/high-cpu` |"
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Skip **+ Add custom annotation** and **Link dashboard and panel** for now."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "Your notification now includes the context responders need. Next, you'll save the alert rule."
+    }
+  ]
+}

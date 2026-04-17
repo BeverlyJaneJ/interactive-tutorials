@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "infrastructure-alerting-choose-folder",
+  "title": "Choose a folder",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Folders group related alert rules together. As your alerting setup grows, folders make it easier to find and manage rules by team, service, or environment."
+    },
+    {
+      "type": "markdown",
+      "content": "To choose a folder, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "In the alert rule form, scroll to **Section 3**."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Click **Select folder** and choose an existing folder or type a new name.\n\n| If alerting on | Example folder name |\n|----------------|--------------------|\n| Infrastructure metrics | `Infrastructure alerts` |\n| Application logs | `Application logs` |\n| Database health | `Database alerts` |"
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "Your rule is now organized in a folder. Next, you'll set how often Grafana evaluates the rule."
+    }
+  ]
+}

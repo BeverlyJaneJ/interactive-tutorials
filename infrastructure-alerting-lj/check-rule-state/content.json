@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "infrastructure-alerting-check-rule-state",
+  "title": "Check your rule's state",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Your alert rule is active. Check its current state and see how it has behaved over time to confirm the threshold is set correctly."
+    },
+    {
+      "type": "markdown",
+      "content": "To check your rule's state, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "blocks": [
+        {
+          "type": "multistep",
+          "content": "Navigate to **Alerts & IRM > Alerting > Alert rules** if you're not already there.",
+          "requirements": ["navmenu-open"],
+          "steps": [
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerts-and-incidents']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting/list']"
+            }
+          ]
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Click on your alert rule to open the detail view."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Check the current **state** of the rule.\n\nThe **State history** tab shows how the alert has behaved over time. This helps you tell if the threshold is set correctly or if the alert is firing too frequently."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "You can see your rule's current state and history. Next, you'll verify that notifications are delivered."
+    }
+  ]
+}

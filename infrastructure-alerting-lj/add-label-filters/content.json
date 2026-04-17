@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "infrastructure-alerting-add-label-filters",
+  "title": "Add label filters",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Your metric is selected, but it probably returns data for every server, CPU core, and environment in your system. Label filters narrow the results to the specific time series you care about."
+    },
+    {
+      "type": "markdown",
+      "content": "To add label filters, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "In the query builder, click **+** next to **Label filters**."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Select a **label name** from the dropdown, choose an **operator**, and enter a **value**.\n\n| Label filter | What it does | Why you'd use it |\n|--------------|--------------|------------------|\n| `mode != \"idle\"` | Excludes idle CPU time | Alert on active CPU usage, not idle time |\n| `instance = \"server-01\"` | Returns data for one host | Monitor a specific server |\n| `job = \"node-exporter\"` | Returns data from one scrape job | Multiple exporters, care about one |\n| `env = \"production\"` | Limits results to production | Exclude staging and dev |"
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Add more filters to narrow further. When you add more than one filter, **all** must match for a time series to be included.\n\nFor example, `mode != \"idle\"` **+** `instance = \"server-01\"` alerts on active CPU usage for just that one server."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "Each filter you add makes your alert more targeted, so it fires only for the specific situation you care about."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "infrastructure-alerting-save-alert-rule",
+  "title": "Save your alert rule",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "You've configured every section of the alert rule form. Review your settings, give the rule a descriptive name, and save it."
+    },
+    {
+      "type": "markdown",
+      "content": "To save your alert rule, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Review your alert rule configuration:\n\n- **Query**: Returns the data you want to monitor\n- **Condition**: Fires when your threshold is crossed\n- **Evaluation**: Checks at your specified interval\n- **Labels**: Organize and route your alert\n- **Notifications**: Deliver to your contact point\n- **Annotations**: Context for responders"
+        },
+        {
+          "type": "interactive",
+          "action": "highlight",
+          "reftarget": "input[placeholder='Give your alert rule a name']",
+          "content": "Enter a descriptive **alert rule name** at the top of the form.\n\nExamples: `High CPU usage - Linux servers`, `Error rate spike - API gateway`, `Disk space critical - Database servers`",
+          "doIt": false,
+          "requirements": ["exists-reftarget"]
+        },
+        {
+          "type": "interactive",
+          "action": "button",
+          "reftarget": "Save rule and exit",
+          "content": "Click **Save rule and exit** in the upper right.\n\nGrafana immediately begins evaluating the rule at your specified interval.",
+          "doIt": false,
+          "requirements": ["exists-reftarget"]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "Your alert rule is saved and active. Next, you'll verify it appears in the alert rules list."
+    }
+  ]
+}

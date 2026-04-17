@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "infrastructure-alerting-select-data-source",
+  "title": "Select a data source",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "In section 2 of the alert rule form, **Define query and alert condition**, you'll select the data source your query runs against and turn on a helper that explains each part of your query."
+    },
+    {
+      "type": "markdown",
+      "content": "To select a data source, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Scroll to **Section 2: Define query and alert condition**.\n\nSelect the **data source** from the dropdown on the left:\n\n| If you're alerting on | Select |\n|-----------------------|--------|\n| Infrastructure metrics | Your Prometheus or Mimir data source |\n| Logs | Your Loki data source |"
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Check the **Default / Advanced** mode toggle at the top of section 2.\n\n| Mode | What it supports | When to use |\n|------|------------------|-------------|\n| **Default** | One query, one data source, one condition | Most alert rules. Stay here for now. |\n| **Advanced** | Multiple queries, expressions, cross-data-source | Complex rules that combine data from multiple sources |\n\nStay in **Default** mode for now."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Toggle **Explain** on. Grafana displays a plain-English description below each query row that confirms what each part of your query does.\n\nExplain has no effect on the query itself. It's a helper for when you're building queries for the first time."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "With your data source selected and Explain mode on, you're ready to choose a metric."
+    }
+  ]
+}

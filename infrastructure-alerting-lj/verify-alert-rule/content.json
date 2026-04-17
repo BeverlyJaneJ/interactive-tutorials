@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "infrastructure-alerting-verify-alert-rule",
+  "title": "Verify your alert rule",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "After saving, confirm your alert rule was saved correctly and appears in the alert rules list."
+    },
+    {
+      "type": "markdown",
+      "content": "To verify your alert rule, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "blocks": [
+        {
+          "type": "multistep",
+          "content": "Navigate to **Alerts & IRM > Alerting > Alert rules**.",
+          "requirements": ["navmenu-open"],
+          "steps": [
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerts-and-incidents']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting/list']"
+            }
+          ]
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Find your rule in the folder you chose earlier.\n\nVerify it shows a **state**. If it says **Normal**, that means the condition isn't met yet, which is expected for a new rule."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "Your alert rule is saved and visible in the rules list. Next, you'll check its state and evaluation history."
+    }
+  ]
+}

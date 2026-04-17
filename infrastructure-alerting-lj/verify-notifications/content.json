@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "infrastructure-alerting-verify-notifications",
+  "title": "Verify notifications",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "The last step is to confirm that notifications actually reach your contact point when the alert fires."
+    },
+    {
+      "type": "markdown",
+      "content": "To verify notifications, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "To trigger a test notification, temporarily lower the alert threshold to a value your data currently exceeds.\n\nFor example, if your CPU usage is normally around 40%, set the threshold to \"is above 10\" so the alert fires."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Wait for the evaluation interval plus the pending period to pass. Then check your notification destination (email inbox, Slack channel, etc.) for the alert notification."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "After confirming the notification arrived, **restore your original threshold** so the alert monitors the condition you actually care about."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "Notifications are working. Your alert rule is fully configured, saved, verified, and delivering notifications."
+    }
+  ]
+}

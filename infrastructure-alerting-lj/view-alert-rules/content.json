@@ -1,0 +1,58 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "infrastructure-alerting-view-alert-rules",
+  "title": "View your alert rules",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "After creating an alert rule, you can monitor it in the alert rules list. The list shows two key pieces of information: rule state and rule health."
+    },
+    {
+      "type": "markdown",
+      "content": "To view your alert rules, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "blocks": [
+        {
+          "type": "multistep",
+          "content": "Navigate to **Alerts & IRM > Alerting > Alert rules**.",
+          "requirements": ["navmenu-open"],
+          "steps": [
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerts-and-incidents']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting/list']"
+            }
+          ]
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Grafana-managed rules are organized hierarchically: **Folder > Rule group > Individual rules**.\n\nFind your rule in the folder you chose earlier."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Check two indicators for your rule:\n\n| Indicator | Values | What it tells you |\n|-----------|--------|-------------------|\n| **Rule state** | Normal, Pending, Firing | Whether any instances are active |\n| **Rule health** | Ok, Error, No Data, KeepLast | Whether evaluation is running correctly |"
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Use filters to narrow the list by name, label, folder, evaluation group, data source, contact point, rule state, or rule health."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "You can see your alert rule's current state and health. For deeper monitoring workflows like viewing state history and inspecting active notifications, refer to the Alert Response course."
+    }
+  ]
+}

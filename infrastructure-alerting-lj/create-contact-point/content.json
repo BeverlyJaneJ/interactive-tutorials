@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "infrastructure-alerting-create-contact-point",
+  "title": "Select or create a contact point",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "A contact point is where Grafana sends notifications when the alert fires. For this course, you'll use email. If a default contact point already exists, select it. If not, create one."
+    },
+    {
+      "type": "markdown",
+      "content": "To select or create a contact point, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "In the alert rule form, scroll to **Section 5** and look at the **contact point** dropdown.\n\nIf a default contact point already exists, select it and skip to the last step."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "If no contact point exists, create one:\n\n1. Click **View or create contact points**\n2. Click **+ Add contact point**\n3. Enter a **Name** (for example, `My alerts`)\n4. Select **Email** as the integration type\n5. Enter your email address\n6. Click **Save contact point**"
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Return to your alert rule and select the contact point you just created from the dropdown."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Skip the **Muting, grouping and timings** section for now."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "Your alert rule now has a contact point configured. When the alert fires, Grafana sends a notification to this destination."
+    }
+  ]
+}

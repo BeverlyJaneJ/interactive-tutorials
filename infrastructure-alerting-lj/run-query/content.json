@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "infrastructure-alerting-run-query",
+  "title": "Run and verify the query",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "You've selected a data source, chosen a metric, added label filters, and applied operations. Before moving to the condition step, set the query type and run the query to verify the results."
+    },
+    {
+      "type": "markdown",
+      "content": "To run and verify the query, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Expand **Options** below your query and set **Type** to **Instant**.\n\n| Type | What it returns | When to use |\n|------|-----------------|-------------|\n| **Instant** | One value per series at a single point in time | Alerting (the condition needs one number to compare) |\n| **Range** | Multiple data points over a time window | Dashboards and graphs |"
+        },
+        {
+          "type": "interactive",
+          "action": "button",
+          "reftarget": "Run queries",
+          "content": "Click **Run queries**. The table below the query shows actual results from your data source.",
+          "requirements": ["exists-reftarget"]
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Check the results:\n\n| Check | What to look for |\n|-------|------------------|\n| **Values** | Do the numbers make sense for what you're monitoring? |\n| **Series count** | Are you getting the right number of time series? Too many may mean you need more filters. |\n| **Labels** | Do the labels on each series match what you expect? |\n\nIf something looks off, go back and adjust your metric, filters, or operations before moving on."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "Your query is returning the data you expect. Next, you'll set the alert condition."
+    }
+  ]
+}
