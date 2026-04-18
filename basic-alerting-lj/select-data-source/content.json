@@ -16,17 +16,14 @@
       "blocks": [
         {
           "type": "interactive",
-          "action": "noop",
+          "action": "highlight",
+          "reftarget": "input[data-testid='data-testid Select a data source']",
           "content": "Scroll to **Section 2: Define query and alert condition**.\n\nSelect the **data source** from the dropdown on the left:\n\n| If you're alerting on | Select |\n|-----------------------|--------|\n| Infrastructure metrics | Your Prometheus or Mimir data source |\n| Logs | Your Loki data source |"
         },
         {
           "type": "interactive",
-          "action": "noop",
-          "content": "Check the **Default / Advanced** mode toggle at the top of section 2.\n\n| Mode | What it supports | When to use |\n|------|------------------|-------------|\n| **Default** | One query, one data source, one condition | Most alert rules. Stay here for now. |\n| **Advanced** | Multiple queries, expressions, cross-data-source | Complex rules that combine data from multiple sources |\n\nStay in **Default** mode for now."
-        },
-        {
-          "type": "interactive",
-          "action": "noop",
+          "action": "highlight",
+          "reftarget": "input[id^='switch-Explain']",
           "content": "Toggle **Explain** on. Grafana displays a plain-English description below each query row that confirms what each part of your query does.\n\nExplain has no effect on the query itself. It's a helper for when you're building queries for the first time."
         }
       ]

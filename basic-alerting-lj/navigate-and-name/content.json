@@ -30,7 +30,7 @@
         {
           "type": "interactive",
           "action": "highlight",
-          "reftarget": "a[href='alerting/new/alerting']",
+          "reftarget": "a[href='/alerting/new/alerting']",
           "content": "Click **+ New alert rule** in the top right. The alert rule creation GUI opens with six numbered sections."
         },
         {

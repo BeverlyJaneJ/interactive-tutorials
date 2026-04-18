@@ -17,12 +17,28 @@
         {
           "type": "interactive",
           "action": "noop",
-          "content": "In the alert GUI, scroll to **Section 6**."
+          "content": "In the alert GUI, scroll to **Section 6: Configure notification message**."
         },
         {
           "type": "interactive",
-          "action": "noop",
-          "content": "Fill in the annotation fields:\n\n| Field | What the GUI asks for | Example |\n|-------|----------------------|--------|\n| **Summary** | Short summary of what happened and why | `CPU usage is high on server-01` |\n| **Description** | Description of what the alert rule does | `Fires when CPU exceeds 80% for more than 5 minutes` |\n| **Runbook URL** | Webpage where you keep your runbook for the alert | `https://wiki.example.com/runbooks/high-cpu` |"
+          "action": "formfill",
+          "reftarget": "textarea[placeholder='Enter a summary...']",
+          "targetvalue": "CPU usage is high on server-01",
+          "content": "In the **Summary** field, enter a short summary of what happened and why.\n\nExample: `CPU usage is high on server-01`"
+        },
+        {
+          "type": "interactive",
+          "action": "formfill",
+          "reftarget": "textarea[placeholder='Enter a description...']",
+          "targetvalue": "Fires when CPU exceeds 80% for more than 5 minutes",
+          "content": "In the **Description** field, describe what the alert rule does.\n\nExample: `Fires when CPU exceeds 80% for more than 5 minutes`"
+        },
+        {
+          "type": "interactive",
+          "action": "formfill",
+          "reftarget": "input[placeholder='https://']",
+          "targetvalue": "https://wiki.example.com/runbooks/high-cpu",
+          "content": "In the **Runbook URL** field, enter a link to your team's runbook for this alert.\n\nExample: `https://wiki.example.com/runbooks/high-cpu`"
         },
         {
           "type": "interactive",

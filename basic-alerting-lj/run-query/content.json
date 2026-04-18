@@ -16,8 +16,9 @@
       "blocks": [
         {
           "type": "interactive",
-          "action": "noop",
-          "content": "Expand **Options** below your query and set **Type** to **Instant**.\n\n| Type | What it returns | When to use |\n|------|-----------------|-------------|\n| **Instant** | One value per series at a single point in time | Alerting (the condition needs one number to compare) |\n| **Range** | Multiple data points over a time window | Dashboards and graphs |"
+          "action": "highlight",
+          "reftarget": "input[id^='option-instant-']",
+          "content": "Click **> Options** below your query to expand it, and verify **Type** is set to **Instant**.\n\n| Type | What it returns | When to use |\n|------|-----------------|-------------|\n| **Instant** | One value per series at a single point in time | Alerting (the condition needs one number to compare) |\n| **Range** | Multiple data points over a time window | Dashboards and graphs |"
         },
         {
           "type": "interactive",

@@ -16,7 +16,8 @@
       "blocks": [
         {
           "type": "interactive",
-          "action": "noop",
+          "action": "highlight",
+          "reftarget": "input[data-testid='data-testid metric select']",
           "content": "Click the **Metric** dropdown and search for or select the measurement you want to alert on.\n\n| What you want to monitor | Example metric |\n|--------------------------|----------------|\n| CPU usage | `node_cpu_seconds_total` |\n| Memory usage | `node_memory_MemAvailable_bytes` |\n| HTTP requests | `http_requests_total` |\n| Disk I/O | `node_disk_io_time_seconds_total` |"
         },
         {
