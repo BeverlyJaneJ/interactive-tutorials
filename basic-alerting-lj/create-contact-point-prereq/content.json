@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "infrastructure-alerting-create-contact-point-prereq",
+  "title": "Create a contact point",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "A contact point is where Grafana sends notifications when an alert fires. Create one now so it's ready when you configure your alert rule."
+    },
+    {
+      "type": "markdown",
+      "content": "To create a contact point, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "highlight",
+          "requirements": ["navmenu-open"],
+          "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting']",
+          "content": "In the left-hand navigation menu, click **Alerting** under **Alerts & IRM**."
+        },
+        {
+          "type": "interactive",
+          "action": "highlight",
+          "reftarget": "a[href='/alerting/notifications']",
+          "content": "Click **Notification configuration** to open the contact points page."
+        },
+        {
+          "type": "interactive",
+          "action": "highlight",
+          "reftarget": "a[aria-label='add contact point']",
+          "content": "Click **+ Add contact point**."
+        },
+        {
+          "type": "interactive",
+          "action": "formfill",
+          "reftarget": "input[id='name']",
+          "targetvalue": "email-alerts",
+          "content": "Enter a name for your contact point, for example **email-alerts**."
+        },
+        {
+          "type": "interactive",
+          "action": "formfill",
+          "reftarget": "input[id='contact-point-type-items.0.']",
+          "targetvalue": "Email",
+          "content": "Select **Email** as the integration type."
+        },
+        {
+          "type": "interactive",
+          "action": "formfill",
+          "reftarget": "textarea[id='items.0.settings.addresses']",
+          "targetvalue": "your@email.com",
+          "content": "Enter your email address."
+        },
+        {
+          "type": "interactive",
+          "action": "highlight",
+          "reftarget": "button[type='submit']",
+          "content": "Click **Save contact point**."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "Your contact point is ready. You'll select it when configuring notifications in your alert rule."
+    }
+  ]
+}
