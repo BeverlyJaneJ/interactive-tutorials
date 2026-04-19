@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "create-advanced-alert-rule-set-alert-condition",
+  "title": "Set the alert condition",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "In Advanced mode, you choose which query or expression determines when the alert fires. Unlike Default mode (which uses the **When** input), Advanced mode lets you set the alert condition on any row in the pipeline."
+    },
+    {
+      "type": "markdown",
+      "content": "To set the alert condition, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Find the query or expression row you want to use as the alert condition. Typically, this is the last expression in the pipeline—the one that produces the final computed result.\n\nClick **Set as alert condition** on that row. A badge appears confirming the selection.\n\n| Row type | When to use as condition |\n|----------|-------------------------|\n| Threshold expression | When you want a simple above/below comparison |\n| Math expression | When you need cross-query logic (e.g., `$A > $B`) |\n| Reduce expression | When a single aggregated value is sufficient |"
+        },
+        {
+          "type": "interactive",
+          "action": "button",
+          "reftarget": "Preview alert rule condition",
+          "content": "Click **Preview** to test the alert condition against current data. The preview shows which series would currently fire based on your threshold and recovery settings.",
+          "requirements": ["exists-reftarget"]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "The alert condition is set. In the next milestone, you'll configure evaluation behavior, notifications, and save the rule."
+    }
+  ]
+}

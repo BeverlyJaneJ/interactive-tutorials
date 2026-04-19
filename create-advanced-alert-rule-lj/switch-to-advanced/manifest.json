@@ -1,0 +1,17 @@
+{
+  "id": "create-advanced-alert-rule-switch-to-advanced",
+  "type": "guide",
+  "description": "Navigate to the alert rule form, name the rule, and switch to Advanced mode.",
+  "category": "take-action",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": [],
+  "recommends": ["create-advanced-alert-rule-configure-queries"],
+  "suggests": [],
+  "provides": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "create-alerting-templates-write-label-template",
+  "type": "guide",
+  "description": "Write a severity label template using if/else conditional logic to map query values to severity levels.",
+  "category": "take-action",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["create-alerting-templates-preview-annotation"],
+  "recommends": ["create-alerting-templates-preview-and-verify"],
+  "suggests": [],
+  "provides": []
+}

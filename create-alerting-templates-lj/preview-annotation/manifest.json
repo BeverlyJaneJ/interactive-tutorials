@@ -1,0 +1,17 @@
+{
+  "id": "create-alerting-templates-preview-annotation",
+  "type": "guide",
+  "description": "Preview annotation templates to verify rendered output and catch syntax errors.",
+  "category": "take-action",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["create-alerting-templates-write-annotation-template"],
+  "recommends": ["create-alerting-templates-write-label-template"],
+  "suggests": [],
+  "provides": []
+}

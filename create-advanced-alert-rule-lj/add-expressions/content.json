@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "create-advanced-alert-rule-add-expressions",
+  "title": "Add Reduce and Math expressions",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Expressions transform raw query data into values the alert condition can evaluate. Reduce aggregates a time series to a single number. Math performs calculations across queries, enabling cross-query comparisons like `$A > $B`."
+    },
+    {
+      "type": "markdown",
+      "content": "To add expressions to your alert rule, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "button",
+          "reftarget": "Add expression",
+          "content": "Click **Add expression** to add a new expression row.",
+          "requirements": ["exists-reftarget"]
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "In the new expression, select **Reduce** from the expression type dropdown.\n\nConfigure the Reduce expression:\n\n| Setting | Value | Why |\n|---------|-------|-----|\n| **Input** | `A` | References your first query |\n| **Function** | `Last` | Uses the most recent value from the series |\n| **Mode** | `Strict` | Returns `NaN` if the input has no data |\n\nThe Reduce expression produces a single value per series from query A."
+        },
+        {
+          "type": "interactive",
+          "action": "button",
+          "reftarget": "Add expression",
+          "content": "Click **Add expression** again to add a second expression.",
+          "requirements": ["exists-reftarget"]
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Select **Math** from the expression type dropdown.\n\nIn the **Expression** field, enter a formula that references your queries or other expressions. For example:\n\n| Expression | What it does |\n|------------|--------------|\n| `$A - $B` | Difference between query A and query B |\n| `$C / 1000` | Converts the Reduce output from milliseconds to seconds |\n| `$A > $B` | Returns 1 when A exceeds B, 0 otherwise |\n\nMath expressions join series by their labels—if query A has labels `{service=\"web\"}` and query B has the same labels, the Math expression compares the matching series."
+        },
+        {
+          "type": "interactive",
+          "action": "button",
+          "reftarget": "Run queries",
+          "content": "Click **Run queries** to preview the expression pipeline. Verify that each expression row shows computed values.",
+          "requirements": ["exists-reftarget"]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "Your expression pipeline is in place. In the next milestone, you'll add a recovery threshold to prevent alert flapping."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "create-advanced-alert-rule-configure-and-save",
+  "title": "Configure evaluation, notifications, and save",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Before saving, configure how often Grafana evaluates the rule, where it's stored, and how notifications are routed. These settings control the rule's behavior in production."
+    },
+    {
+      "type": "markdown",
+      "content": "To finish configuring and save your alert rule, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "In section 3, **Set evaluation behavior**, select or create an evaluation group and set the evaluation interval.\n\nAll rules in the same group are evaluated concurrently at the group's interval.\n\nSet the **Pending period**—how long the condition must be met before the alert fires. For example, `5m` means the condition must hold for five consecutive minutes."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "In section 4, **Configure labels and notifications**, optionally add labels to organize the rule and influence notification routing.\n\nChoose how notifications are routed:\n\n| Option | How it works |\n|--------|-------------|\n| **Default** | Send directly to a contact point you select |\n| **Advanced** | Route through the notification policy tree based on labels |\n\nFor advanced notification routing, select **Use notification policy** and verify the routing preview matches your expectations."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "In section 5, **Configure notification message**, optionally add annotations:\n\n- **Summary**: A short description of why the alert fired\n- **Description**: Detailed context for responders\n- **Runbook URL**: Link to your incident response procedure\n\nYou can use plain text or template expressions with `$labels` and `$values` (covered in the annotation and label templates learning path)."
+        },
+        {
+          "type": "interactive",
+          "action": "button",
+          "reftarget": "Save rule",
+          "content": "Click **Save rule** to save and activate the alert rule.\n\nGrafana begins evaluating the rule at the configured interval. The rule starts in the **Normal** state and transitions to **Pending** if the condition is met.",
+          "requirements": ["exists-reftarget"]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "Your advanced alert rule is saved and active. In the next milestone, you'll verify it's evaluating correctly."
+    }
+  ]
+}

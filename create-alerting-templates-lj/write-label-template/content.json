@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "create-alerting-templates-write-label-template",
+  "title": "Write a severity label template",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Label templates create dynamic labels based on query values. Unlike annotations (which add context to alert messages), labels affect alert identity and notification routing. A label template that maps query values to severity levels can drive notification policies—sending critical alerts to PagerDuty and low-severity alerts to email."
+    },
+    {
+      "type": "markdown",
+      "content": "To write a severity label template, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Scroll to section 4, **Configure labels and notifications**."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Click **+ Add labels** to add a new label row.\n\nIn the **Key** field, type `severity`."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "In the **Value** field, write a conditional template that maps query values to severity levels:\n\n```\n{{ if (gt $values.A.Value 90.0) -}}\ncritical\n{{ else if (gt $values.A.Value 80.0) -}}\nhigh\n{{ else if (gt $values.A.Value 60.0) -}}\nmedium\n{{ else -}}\nlow\n{{- end }}\n```\n\nThis template evaluates query A's value and assigns a severity:\n\n| Query value | Severity label |\n|-------------|---------------|\n| > 90 | `critical` |\n| > 80 | `high` |\n| > 60 | `medium` |\n| ≤ 60 | `low` |"
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "**Important:** A templated label value that changes between evaluations creates a new alert instance. The previous instance becomes stale and is evicted.\n\nFor example, if CPU drops from 91% to 79%, the `severity` label changes from `critical` to `medium`. Grafana treats these as two different alert instances—the `critical` instance resolves and a new `medium` instance starts the pending period.\n\nAvoid using highly volatile values (like exact query numbers) as label values. Use category buckets like the severity example instead."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "Your severity label template is written. In the next milestone, you'll preview how it affects notification routing."
+    }
+  ]
+}

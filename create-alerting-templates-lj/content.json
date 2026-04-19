@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "create-alerting-templates-lj",
+  "title": "Create annotation and label templates in Grafana Alerting",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Welcome to the annotation and label templates learning path. This path walks you through writing Go text/template expressions to add dynamic query data to your alert annotations and create conditional labels that influence notification routing."
+    },
+    {
+      "type": "markdown",
+      "content": "## Here's what to expect\n\nWhen you complete this path, you'll be able to:\n\n- Write annotation templates using `$values` and `$labels` to include dynamic query data in alert messages\n- Preview annotation templates directly in the alert rule form\n- Create conditional label templates using `if`/`else` logic to map query values to severity levels\n- Verify how templated labels affect notification policy routing"
+    },
+    {
+      "type": "markdown",
+      "content": "## Before you begin\n\nBefore you create annotation and label templates, ensure you have:\n\n- A Grafana Cloud account with Editor or Admin role. To create one, refer to [Grafana Cloud](https://grafana.com/get/).\n- An existing alert rule with at least one query that returns data (create one using the [Create an advanced alert rule](https://grafana.com/docs/learning-paths/create-advanced-alert-rule/) path or the Introduction to Grafana Alerting course)\n- Basic familiarity with the alert rule form sections"
+    },
+    {
+      "type": "markdown",
+      "content": "## Troubleshooting\n\nIf you get stuck, we've got your back! Where appropriate, troubleshooting information is just a click away."
+    },
+    {
+      "type": "markdown",
+      "content": "## More to explore\n\nWe understand you might want to explore other capabilities not strictly on this path. We'll provide you opportunities where it makes sense."
+    }
+  ]
+}

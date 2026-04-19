@@ -1,0 +1,35 @@
+{
+  "id": "create-advanced-alert-rule-lj",
+  "type": "path",
+  "description": "Step-by-step guide: Create an advanced Grafana-managed alert rule with multiple queries, expressions, and a recovery threshold.",
+  "category": "take-action",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "startingLocation": "/alerting/new/alerting",
+  "targeting": {
+    "match": {
+      "and": [
+        { "urlPrefixIn": ["/alerting"] },
+        { "targetPlatform": "cloud" }
+      ]
+    }
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "milestones": [
+    "create-advanced-alert-rule-switch-to-advanced",
+    "create-advanced-alert-rule-configure-queries",
+    "create-advanced-alert-rule-add-expressions",
+    "create-advanced-alert-rule-configure-recovery",
+    "create-advanced-alert-rule-set-alert-condition",
+    "create-advanced-alert-rule-configure-and-save",
+    "create-advanced-alert-rule-end-journey"
+  ],
+  "depends": [],
+  "recommends": ["create-alerting-templates-lj"],
+  "suggests": ["infrastructure-alerting-lj"],
+  "provides": []
+}

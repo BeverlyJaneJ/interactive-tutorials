@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "create-alerting-templates-open-alert-rule",
+  "title": "Open an existing alert rule",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Annotation and label templates are added to an existing alert rule. In this milestone, you navigate to an alert rule that has at least one query returning data and open it for editing."
+    },
+    {
+      "type": "markdown",
+      "content": "To open an existing alert rule, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "highlight",
+          "requirements": ["navmenu-open"],
+          "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting']",
+          "content": "In the left-hand navigation menu, click **Alerting** under **Alerts & IRM**."
+        },
+        {
+          "type": "interactive",
+          "action": "highlight",
+          "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting/list']",
+          "content": "Click **Alert rules** to open the Alert rules page."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Find the alert rule you want to add templates to. You need a rule with at least one query that returns data—either a rule you created in the advanced alert rule learning path or any existing rule.\n\nClick the rule name to expand it, then click **Edit** to open the rule editor."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Verify the rule has a working query by scrolling to section 2, **Define query and alert condition**, and clicking **Run queries**. You should see data in the preview.\n\nNote the query labels returned (visible in the preview table)—you'll reference these in your templates using `$labels`."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "Your alert rule is open and the query is returning data. In the next milestone, you'll write an annotation template."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "create-advanced-alert-rule-end-journey",
+  "type": "guide",
+  "description": "Celebrate completing the advanced alert rule learning path and explore next steps.",
+  "category": "take-action",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["create-advanced-alert-rule-configure-and-save"],
+  "recommends": [],
+  "suggests": ["create-alerting-templates-lj"],
+  "provides": []
+}

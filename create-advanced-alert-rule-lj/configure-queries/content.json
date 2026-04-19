@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "create-advanced-alert-rule-configure-queries",
+  "title": "Add multiple queries",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Advanced mode lets you add multiple queries, each with its own data source and time range. The raw data from these queries feeds into the expression pipeline you'll build next."
+    },
+    {
+      "type": "markdown",
+      "content": "To add multiple queries, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "highlight",
+          "reftarget": "input[data-testid='data-testid Select a data source']",
+          "content": "In query **A**, select a data source from the dropdown.\n\nFor this path, select your Prometheus or Mimir data source. If you're using TestData, select **TestData**."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Build your first query. For example, if you're using Prometheus, enter a metric like `node_cpu_seconds_total` with appropriate label filters.\n\nExpand **Options** and verify **Type** is set to **Instant**. Alert rules need a single value per series to evaluate against a condition."
+        },
+        {
+          "type": "interactive",
+          "action": "button",
+          "reftarget": "Add query",
+          "content": "Click **Add query** to add a second query. A new query row labeled **B** appears.",
+          "requirements": ["exists-reftarget"]
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Configure query **B** with its own data source and metric.\n\nQuery B can use the same data source as query A (with different filters or metrics) or a completely different data source. For example:\n\n| Query | Metric | Purpose |\n|-------|--------|---------|\n| A | `http_request_duration_seconds` | Average latency for service A |\n| B | `http_request_duration_seconds` | Average latency for service B |\n\nBoth queries produce data that the expression pipeline can combine."
+        },
+        {
+          "type": "interactive",
+          "action": "button",
+          "reftarget": "Run queries",
+          "content": "Click **Run queries** to verify both queries return data. Check that each query shows values in the preview table.",
+          "requirements": ["exists-reftarget"]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "Both queries are returning data. In the next milestone, you'll add Reduce and Math expressions to transform and compare these results."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "create-alerting-templates-preview-and-verify",
+  "type": "guide",
+  "description": "Preview notification routing to verify templated labels route through the correct policies, then save.",
+  "category": "take-action",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["create-alerting-templates-write-label-template"],
+  "recommends": ["create-alerting-templates-end-journey"],
+  "suggests": [],
+  "provides": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "create-advanced-alert-rule-configure-recovery",
+  "type": "guide",
+  "description": "Enable and configure a recovery threshold to prevent alert flapping.",
+  "category": "take-action",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["create-advanced-alert-rule-add-expressions"],
+  "recommends": ["create-advanced-alert-rule-set-alert-condition"],
+  "suggests": [],
+  "provides": []
+}

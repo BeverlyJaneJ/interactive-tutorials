@@ -1,0 +1,17 @@
+{
+  "id": "create-alerting-templates-end-journey",
+  "type": "guide",
+  "description": "Celebrate completing the annotation and label templates learning path and explore next steps.",
+  "category": "take-action",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["create-alerting-templates-preview-and-verify"],
+  "recommends": [],
+  "suggests": ["create-advanced-alert-rule-lj"],
+  "provides": []
+}

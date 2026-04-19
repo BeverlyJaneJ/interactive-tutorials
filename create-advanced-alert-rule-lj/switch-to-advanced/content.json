@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "create-advanced-alert-rule-switch-to-advanced",
+  "title": "Navigate and switch to Advanced mode",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Advanced mode unlocks multiple queries, an expression pipeline, recovery thresholds, and expression-level alert conditions. In this milestone, you navigate to the alert rule form, name your rule, and switch to Advanced mode."
+    },
+    {
+      "type": "markdown",
+      "content": "To create a new alert rule in Advanced mode, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "highlight",
+          "requirements": ["navmenu-open"],
+          "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting']",
+          "content": "In the left-hand navigation menu, click **Alerting** under **Alerts & IRM**."
+        },
+        {
+          "type": "interactive",
+          "action": "highlight",
+          "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting/list']",
+          "content": "Click **Alert rules** to open the Alert rules page."
+        },
+        {
+          "type": "interactive",
+          "action": "highlight",
+          "reftarget": "a[href='/alerting/new/alerting']",
+          "content": "Click **+ New alert rule** in the top right. The alert rule creation form opens with numbered sections."
+        },
+        {
+          "type": "interactive",
+          "action": "formfill",
+          "reftarget": "input[id='name']",
+          "targetvalue": "High latency across services",
+          "content": "In section 1, **Enter alert rule name**, type a descriptive name.\n\nFor this path, use a name that reflects a multi-query scenario—for example, `High latency across services`."
+        },
+        {
+          "type": "interactive",
+          "action": "highlight",
+          "reftarget": "label[for^='switch-advanced']",
+          "doIt": false,
+          "content": "In section 2, **Define query and alert condition**, find the **Advanced options** toggle. Switch it on.\n\nAdvanced mode replaces the single-query **When** input with a multi-query editor and an expression pipeline. You'll now see **Add query** and **Add expression** buttons."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "You're now in Advanced mode. In the next milestone, you'll add multiple queries to feed the expression pipeline."
+    }
+  ]
+}

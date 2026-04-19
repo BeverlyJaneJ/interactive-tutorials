@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "create-alerting-templates-write-annotation-template",
+  "title": "Write an annotation template",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Annotation templates add dynamic query data to individual alert instances. The `$labels` variable contains all labels from the query, and `$values` contains the floating-point values of all instant queries and expressions, indexed by their Ref ID."
+    },
+    {
+      "type": "markdown",
+      "content": "To write an annotation template, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Scroll to section 5, **Configure notification message**. This section contains the annotation fields: **Summary**, **Description**, **Runbook URL**, and an option to add custom annotations."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "In the **Summary** field, write a template that includes query labels and values. Templates use Go `text/template` syntax wrapped in `{{ }}`.\n\nFor example, if your query returns an `instance` label:\n\n```\nCPU usage for {{ $labels.instance }} has exceeded threshold (current value: {{ $values.A.Value }})\n```\n\n| Variable | What it contains |\n|----------|------------------|\n| `$labels.instance` | The `instance` label from the query |\n| `$values.A.Value` | The floating-point value of query A |\n| `$values.A.Labels` | The labels associated with query A |\n| `$value` | A string representation of all query results |"
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "In the **Description** field, write a more detailed template. You can use `if`/`else` logic to provide context-specific instructions:\n\n```\n{{ if (gt $values.A.Value 90.0) -}}\nCRITICAL: Immediate action required for {{ $labels.instance }}.\n{{ else -}}\nWARNING: {{ $labels.instance }} is approaching threshold.\n{{- end }}\nCurrent value: {{ $values.A.Value }}\n```\n\nThe `{{-` and `-}}` syntax trims whitespace around the output."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "Your annotation templates are written. In the next milestone, you'll preview them to verify the output."
+    }
+  ]
+}

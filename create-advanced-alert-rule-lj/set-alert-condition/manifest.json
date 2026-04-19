@@ -1,0 +1,17 @@
+{
+  "id": "create-advanced-alert-rule-set-alert-condition",
+  "type": "guide",
+  "description": "Set the alert condition on a specific expression in the pipeline and preview the result.",
+  "category": "take-action",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["create-advanced-alert-rule-configure-recovery"],
+  "recommends": ["create-advanced-alert-rule-configure-and-save"],
+  "suggests": [],
+  "provides": []
+}

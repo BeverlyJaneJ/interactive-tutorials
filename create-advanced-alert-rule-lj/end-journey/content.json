@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "create-advanced-alert-rule-end-journey",
+  "title": "Destination reached!",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Congratulations on completing this journey! Job well done!\n\nWe hope you've enjoyed traveling with us as you:\n\n- Switched from Default to Advanced mode and built a multi-query alert rule\n- Used Reduce and Math expressions to transform and compare query results\n- Configured a recovery threshold to prevent alert flapping\n- Set the alert condition on a specific expression in the pipeline\n- Saved the rule and verified it evaluates correctly"
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### More to explore (optional)\n\nThe world is your oyster! Read more about how you can:\n\n- [Configure Grafana-managed alert rules](https://grafana.com/docs/grafana/latest/alerting/alerting-rules/create-grafana-managed-rule/)\n- [Queries and conditions reference](https://grafana.com/docs/grafana/latest/alerting/fundamentals/alert-rules/queries-conditions/)\n- [Template annotations and labels](https://grafana.com/docs/grafana/latest/alerting/alerting-rules/templates/)"
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### Related paths\n\nConsider taking the following paths after you complete this journey:\n\n- [Create annotation and label templates](https://grafana.com/docs/learning-paths/create-alerting-templates/)\n- [Create infrastructure alerts](https://grafana.com/docs/learning-paths/infrastructure-alerting/)"
+    }
+  ]
+}

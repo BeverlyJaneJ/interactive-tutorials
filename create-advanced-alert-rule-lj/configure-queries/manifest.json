@@ -1,0 +1,17 @@
+{
+  "id": "create-advanced-alert-rule-configure-queries",
+  "type": "guide",
+  "description": "Add multiple queries to the alert rule, each with its own data source and metric.",
+  "category": "take-action",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["create-advanced-alert-rule-switch-to-advanced"],
+  "recommends": ["create-advanced-alert-rule-add-expressions"],
+  "suggests": [],
+  "provides": []
+}

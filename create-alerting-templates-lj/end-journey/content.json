@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "create-alerting-templates-end-journey",
+  "title": "Destination reached!",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Congratulations on completing this journey! Job well done!\n\nWe hope you've enjoyed traveling with us as you:\n\n- Wrote annotation templates using `$values` and `$labels` to include dynamic query data in alert messages\n- Previewed annotation templates to verify output and catch syntax errors\n- Created a conditional severity label template using `if`/`else` logic\n- Verified how templated labels affect notification policy routing\n- Saved the rule with active templates"
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### More to explore (optional)\n\nThe world is your oyster! Read more about how you can:\n\n- [Template annotations and labels](https://grafana.com/docs/grafana/latest/alerting/alerting-rules/templates/)\n- [Annotation and label template reference](https://grafana.com/docs/grafana/latest/alerting/alerting-rules/templates/reference/)\n- [Annotation and label template examples](https://grafana.com/docs/grafana/latest/alerting/alerting-rules/templates/examples/)\n- [Template language reference](https://grafana.com/docs/grafana/latest/alerting/configure-notifications/template-notifications/language/)"
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### Related paths\n\nConsider taking the following paths after you complete this journey:\n\n- [Create an advanced alert rule](https://grafana.com/docs/learning-paths/create-advanced-alert-rule/)\n- [Create infrastructure alerts](https://grafana.com/docs/learning-paths/infrastructure-alerting/)"
+    }
+  ]
+}

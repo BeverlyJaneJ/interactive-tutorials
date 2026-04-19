@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "create-alerting-templates-preview-annotation",
+  "title": "Preview annotation templates",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Previewing annotation templates lets you catch syntax errors and verify formatting before saving the rule. You can preview using alert data from existing instances or custom test data."
+    },
+    {
+      "type": "markdown",
+      "content": "To preview your annotation templates, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "button",
+          "reftarget": "Run queries",
+          "content": "First, ensure your queries have fresh data. Click **Run queries** in section 2 to refresh the query results.",
+          "requirements": ["exists-reftarget"]
+        },
+        {
+          "type": "interactive",
+          "action": "button",
+          "reftarget": "Preview alert rule condition",
+          "content": "Click **Preview** below the alert condition to generate alert instances from current data.\n\nThe preview table shows which series would fire. Each row represents an alert instance with its labels and values—these are the same labels and values your templates will render.",
+          "requirements": ["exists-reftarget"]
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Check the preview results against your template expectations:\n\n| Check | What to look for |\n|-------|------------------|\n| **Labels present** | Does `$labels.instance` (or your label) appear in the preview? If not, the label isn't in the query result |\n| **Values present** | Does `$values.A.Value` show a number? If it shows `NaN`, the query may be a range query (use a Reduce expression) |\n| **Template syntax** | If the rendered annotation shows raw `{{ }}` text instead of values, check for typos in variable names |\n\n> **Tip:** If `$labels` is empty, your query may be using a classic condition, which discards query labels. Switch to the multi-dimensional (Reduce + Threshold) approach to preserve labels."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "Your annotation templates render correctly. In the next milestone, you'll write a conditional label template."
+    }
+  ]
+}

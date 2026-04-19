@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "create-advanced-alert-rule-configure-recovery",
+  "title": "Configure a recovery threshold",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "A recovery threshold prevents flapping—the pattern where an alert fires and resolves repeatedly because a metric oscillates around a single threshold. With a recovery threshold, the alert fires at one value and only resolves when the metric drops to a separate, lower value."
+    },
+    {
+      "type": "markdown",
+      "content": "To configure a recovery threshold, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "highlight",
+          "reftarget": "[data-testid='recovery-threshold-toggle']",
+          "doIt": false,
+          "content": "Below the expression pipeline, find the **Custom recovery threshold** toggle and switch it on.\n\nA new **Recovery condition** field appears below the alert condition."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Configure the recovery threshold value. The recovery threshold must be less restrictive than the alert threshold.\n\nFor example:\n\n| Scenario | Alert fires when | Alert resolves when |\n|----------|-------------------|---------------------|\n| Latency monitoring | Latency > 500ms | Latency < 400ms |\n| Error rate | Errors > 10/min | Errors < 5/min |\n| CPU usage | CPU > 80% | CPU < 70% |\n\nThe gap between fire and recovery values creates a dead zone where the alert maintains its current state. A metric at 450ms in the latency example stays in its current state—it doesn't trigger new fire or resolve transitions."
+        },
+        {
+          "type": "interactive",
+          "action": "button",
+          "reftarget": "Run queries",
+          "content": "Click **Run queries** to preview the alert condition with the recovery threshold applied. Check that the preview reflects the expected behavior.",
+          "requirements": ["exists-reftarget"]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "Your recovery threshold is configured. In the next milestone, you'll set the alert condition on a specific expression."
+    }
+  ]
+}

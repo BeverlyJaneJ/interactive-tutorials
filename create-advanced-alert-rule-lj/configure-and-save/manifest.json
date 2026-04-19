@@ -1,0 +1,17 @@
+{
+  "id": "create-advanced-alert-rule-configure-and-save",
+  "type": "guide",
+  "description": "Set evaluation behavior, configure notifications, and save the alert rule.",
+  "category": "take-action",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["create-advanced-alert-rule-set-alert-condition"],
+  "recommends": ["create-advanced-alert-rule-end-journey"],
+  "suggests": [],
+  "provides": []
+}

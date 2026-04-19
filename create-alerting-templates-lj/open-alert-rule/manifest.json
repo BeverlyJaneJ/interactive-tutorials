@@ -1,0 +1,17 @@
+{
+  "id": "create-alerting-templates-open-alert-rule",
+  "type": "guide",
+  "description": "Navigate to an existing alert rule and open it for editing.",
+  "category": "take-action",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": [],
+  "recommends": ["create-alerting-templates-write-annotation-template"],
+  "suggests": [],
+  "provides": []
+}

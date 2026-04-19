@@ -1,0 +1,41 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "create-alerting-templates-preview-and-verify",
+  "title": "Preview and verify label routing",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Before saving, verify that your templated labels produce the expected values and route through the correct notification policies. The routing preview shows which notification policy would handle alerts with your configured labels."
+    },
+    {
+      "type": "markdown",
+      "content": "To preview and verify label routing, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "In section 4, **Configure labels and notifications**, select **Use notification policy** (if not already selected). This routes alerts through the notification policy tree based on labels."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Click **Preview routing**. Grafana displays which notification policy matches the alert's label set.\n\nCheck the routing preview:\n\n| Check | What to verify |\n|-------|---------------|\n| **Matched policy** | Does the alert route to the expected notification policy? |\n| **Label values** | Do the templated label values (e.g., `severity=critical`) appear in the preview? |\n| **Contact point** | Is the matched policy configured with the right contact point for this severity level? |\n\nIf the routing doesn't match your expectations, adjust your notification policies or label template values."
+        },
+        {
+          "type": "interactive",
+          "action": "button",
+          "reftarget": "Save rule",
+          "content": "When the routing preview confirms correct behavior, click **Save rule** to save the alert rule with your annotation and label templates.\n\nGrafana evaluates the templates on each evaluation cycle. As query values change, your annotations update with fresh data and your severity label routes notifications accordingly.",
+          "requirements": ["exists-reftarget"]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "Your annotation and label templates are saved and active. The alert rule now includes dynamic query data in its annotations and routes notifications based on severity."
+    }
+  ]
+}

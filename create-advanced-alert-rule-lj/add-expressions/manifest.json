@@ -1,0 +1,17 @@
+{
+  "id": "create-advanced-alert-rule-add-expressions",
+  "type": "guide",
+  "description": "Add Reduce and Math expressions to build an expression pipeline that transforms query data.",
+  "category": "take-action",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["create-advanced-alert-rule-configure-queries"],
+  "recommends": ["create-advanced-alert-rule-configure-recovery"],
+  "suggests": [],
+  "provides": []
+}

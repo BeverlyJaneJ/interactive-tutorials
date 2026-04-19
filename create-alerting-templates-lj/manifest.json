@@ -1,0 +1,34 @@
+{
+  "id": "create-alerting-templates-lj",
+  "type": "path",
+  "description": "Step-by-step guide: Write annotation and label templates using Go template syntax to add dynamic query data and conditional labels to alert rules.",
+  "category": "take-action",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "startingLocation": "/alerting/list",
+  "targeting": {
+    "match": {
+      "and": [
+        { "urlPrefixIn": ["/alerting"] },
+        { "targetPlatform": "cloud" }
+      ]
+    }
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "milestones": [
+    "create-alerting-templates-open-alert-rule",
+    "create-alerting-templates-write-annotation-template",
+    "create-alerting-templates-preview-annotation",
+    "create-alerting-templates-write-label-template",
+    "create-alerting-templates-preview-and-verify",
+    "create-alerting-templates-end-journey"
+  ],
+  "depends": [],
+  "recommends": [],
+  "suggests": ["create-advanced-alert-rule-lj", "infrastructure-alerting-lj"],
+  "provides": []
+}

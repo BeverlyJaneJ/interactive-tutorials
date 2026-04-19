@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "create-advanced-alert-rule-lj",
+  "title": "Create an advanced alert rule in Grafana",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Welcome to the advanced alert rule learning path. This path walks you through creating a Grafana-managed alert rule using Advanced mode—with multiple queries, an expression pipeline, a recovery threshold, and a custom alert condition."
+    },
+    {
+      "type": "markdown",
+      "content": "## Here's what to expect\n\nWhen you complete this path, you'll be able to:\n\n- Switch from Default to Advanced mode in the alert rule form\n- Add multiple queries that feed into an expression pipeline\n- Use Reduce and Math expressions to transform and compare query results\n- Configure a recovery threshold to prevent alert flapping\n- Set the alert condition on a specific expression\n- Save the rule and verify it evaluates correctly"
+    },
+    {
+      "type": "markdown",
+      "content": "## Before you begin\n\nBefore you create an advanced alert rule, ensure you have:\n\n- A Grafana Cloud account with Editor or Admin role. To create one, refer to [Grafana Cloud](https://grafana.com/get/).\n- At least one data source sending metrics to Grafana Cloud (Prometheus, Mimir, or TestData)\n- Completed [Introduction to Grafana Alerting](https://grafana.com/docs/learning-hub/basic-alerting/) or equivalent experience creating alert rules in Default mode"
+    },
+    {
+      "type": "markdown",
+      "content": "## Troubleshooting\n\nIf you get stuck, we've got your back! Where appropriate, troubleshooting information is just a click away."
+    },
+    {
+      "type": "markdown",
+      "content": "## More to explore\n\nWe understand you might want to explore other capabilities not strictly on this path. We'll provide you opportunities where it makes sense."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "create-alerting-templates-write-annotation-template",
+  "type": "guide",
+  "description": "Write a summary annotation template using $values and $labels to include dynamic query data.",
+  "category": "take-action",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["create-alerting-templates-open-alert-rule"],
+  "recommends": ["create-alerting-templates-preview-annotation"],
+  "suggests": [],
+  "provides": []
+}
