@@ -5,7 +5,7 @@
   "blocks": [
     {
       "type": "markdown",
-      "content": "Advanced mode unlocks multiple queries, an expression pipeline, recovery thresholds, and expression-level alert conditions. In this milestone, you navigate to the alert rule form, name your rule, and switch to Advanced mode."
+      "content": "Advanced mode lets you add multiple queries, chain expressions that transform and compare query results, set a recovery threshold to prevent repeated alerting, and choose exactly which expression triggers the alert. In this milestone, you navigate to the alert rule form, name your rule, and switch to Advanced mode."
     },
     {
       "type": "markdown",

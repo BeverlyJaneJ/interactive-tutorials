@@ -17,17 +17,17 @@
         {
           "type": "interactive",
           "action": "noop",
-          "content": "In section 3, **Set evaluation behavior**, select or create an evaluation group and set the evaluation interval.\n\nAll rules in the same group are evaluated concurrently at the group's interval.\n\nSet the **Pending period**—how long the condition must be met before the alert fires. For example, `5m` means the condition must hold for five consecutive minutes."
+          "content": "In section 3, **Set evaluation behavior**, select or create an evaluation group (a named collection of rules that Grafana evaluates together) and set the evaluation interval (how often Grafana checks the rule).\n\nSet the **Pending period**, which controls how long the condition must be true before the alert fires. For example, `5m` means the condition must hold for five consecutive evaluation cycles within a five-minute window."
         },
         {
           "type": "interactive",
           "action": "noop",
-          "content": "In section 4, **Configure labels and notifications**, optionally add labels to organize the rule and influence notification routing.\n\nChoose how notifications are routed:\n\n| Option | How it works |\n|--------|-------------|\n| **Default** | Send directly to a contact point you select |\n| **Advanced** | Route through the notification policy tree based on labels |\n\nFor advanced notification routing, select **Use notification policy** and verify the routing preview matches your expectations."
+          "content": "In section 4, **Configure labels and notifications**, optionally add labels to organize the rule and influence notification routing.\n\nChoose how notifications are routed:\n\n| Option | How it works |\n|--------|-------------|\n| **Default** | Send directly to a contact point you select |\n| **Advanced** | Route through your notification policies, which match alerts to contact points based on labels |\n\nFor advanced notification routing, select **Use notification policy** and verify the routing preview matches your expectations."
         },
         {
           "type": "interactive",
           "action": "noop",
-          "content": "In section 5, **Configure notification message**, optionally add annotations:\n\n- **Summary**: A short description of why the alert fired\n- **Description**: Detailed context for responders\n- **Runbook URL**: Link to your incident response procedure\n\nYou can use plain text or template expressions with `$labels` and `$values` (covered in the annotation and label templates learning path)."
+          "content": "In section 5, **Configure notification message**, optionally add annotations:\n\n- **Summary**: A short description of why the alert fired\n- **Description**: Detailed context for responders\n- **Runbook URL**: Link to your team's incident response procedure (a document that describes what to do when this alert fires)\n\nYou can use plain text or template expressions with `$labels` and `$values` (covered in the annotation and label templates learning path)."
         },
         {
           "type": "interactive",

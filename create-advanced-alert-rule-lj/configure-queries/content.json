@@ -5,7 +5,7 @@
   "blocks": [
     {
       "type": "markdown",
-      "content": "Advanced mode lets you add multiple queries, each with its own data source and time range. The raw data from these queries feeds into the expression pipeline you'll build next."
+      "content": "Advanced mode lets you add multiple queries, each with its own data source and time range. The raw data from these queries feeds into the expressions you'll build in the next milestone."
     },
     {
       "type": "markdown",
@@ -23,7 +23,7 @@
         {
           "type": "interactive",
           "action": "noop",
-          "content": "Build your first query. For example, if you're using Prometheus, enter a metric like `node_cpu_seconds_total` with appropriate label filters.\n\nExpand **Options** and verify **Type** is set to **Instant**. Alert rules need a single value per series to evaluate against a condition."
+          "content": "Build your first query. For example, if you're using Prometheus, enter a metric like `node_cpu_seconds_total` with appropriate label filters.\n\nExpand **Options** and verify **Type** is set to **Instant**. An instant query returns the most recent value for each label combination (for example, one value per host), which is what alert rules need to evaluate against a condition."
         },
         {
           "type": "interactive",

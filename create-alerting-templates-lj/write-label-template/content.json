@@ -5,7 +5,7 @@
   "blocks": [
     {
       "type": "markdown",
-      "content": "Label templates create dynamic labels based on query values. Unlike annotations (which add context to alert messages), labels affect alert identity and notification routing. A label template that maps query values to severity levels can drive notification policies—sending critical alerts to PagerDuty and low-severity alerts to email."
+      "content": "Label templates create dynamic labels based on query values. Unlike annotations (which add context to alert messages), labels determine which notification policies match the alert, controlling where notifications are sent. A label template that maps query values to severity levels can send critical alerts to PagerDuty and low-severity alerts to email."
     },
     {
       "type": "markdown",
@@ -32,7 +32,7 @@
         {
           "type": "interactive",
           "action": "noop",
-          "content": "**Important:** A templated label value that changes between evaluations creates a new alert instance. The previous instance becomes stale and is evicted.\n\nFor example, if CPU drops from 91% to 79%, the `severity` label changes from `critical` to `medium`. Grafana treats these as two different alert instances—the `critical` instance resolves and a new `medium` instance starts the pending period.\n\nAvoid using highly volatile values (like exact query numbers) as label values. Use category buckets like the severity example instead."
+          "content": "**Important:** Grafana identifies each alert instance by its label set. If a templated label value changes between evaluations, Grafana treats it as a different alert instance. The previous instance resolves, and a new one begins the pending period before it can fire.\n\nFor example, if CPU drops from 91% to 79%, the `severity` label changes from `critical` to `medium`. Grafana resolves the `critical` instance and creates a new `medium` instance, which restarts the pending period. This means you may receive both a resolved notification and a new firing notification.\n\nAvoid using rapidly changing values (like exact query numbers) as label values. Use category buckets like the severity example instead."
         }
       ]
     },

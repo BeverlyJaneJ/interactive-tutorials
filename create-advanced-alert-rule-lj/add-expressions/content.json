@@ -5,7 +5,7 @@
   "blocks": [
     {
       "type": "markdown",
-      "content": "Expressions transform raw query data into values the alert condition can evaluate. Reduce aggregates a time series to a single number. Math performs calculations across queries, enabling cross-query comparisons like `$A > $B`."
+      "content": "Expressions transform raw query data into values the alert condition can evaluate. A Reduce expression takes a time series and produces a single number (for example, the last value or the average). A Math expression performs calculations across queries, so you can compare results from different queries, such as `$A > $B`."
     },
     {
       "type": "markdown",
@@ -24,7 +24,7 @@
         {
           "type": "interactive",
           "action": "noop",
-          "content": "In the new expression, select **Reduce** from the expression type dropdown.\n\nConfigure the Reduce expression:\n\n| Setting | Value | Why |\n|---------|-------|-----|\n| **Input** | `A` | References your first query |\n| **Function** | `Last` | Uses the most recent value from the series |\n| **Mode** | `Strict` | Returns `NaN` if the input has no data |\n\nThe Reduce expression produces a single value per series from query A."
+          "content": "In the new expression, select **Reduce** from the expression type dropdown.\n\nConfigure the Reduce expression:\n\n| Setting | Value | Why |\n|---------|-------|-----|\n| **Input** | `A` | References your first query |\n| **Function** | `Last` | Uses the most recent value from the series |\n| **Mode** | `Strict` | Returns no value if the input has no data, instead of substituting a default |\n\nThe Reduce expression produces a single value for each label combination from query A."
         },
         {
           "type": "interactive",
@@ -36,7 +36,7 @@
         {
           "type": "interactive",
           "action": "noop",
-          "content": "Select **Math** from the expression type dropdown.\n\nIn the **Expression** field, enter a formula that references your queries or other expressions. For example:\n\n| Expression | What it does |\n|------------|--------------|\n| `$A - $B` | Difference between query A and query B |\n| `$C / 1000` | Converts the Reduce output from milliseconds to seconds |\n| `$A > $B` | Returns 1 when A exceeds B, 0 otherwise |\n\nMath expressions join series by their labels—if query A has labels `{service=\"web\"}` and query B has the same labels, the Math expression compares the matching series."
+          "content": "Select **Math** from the expression type dropdown.\n\nIn the **Expression** field, enter a formula that references your queries or other expressions. For example:\n\n| Expression | What it does |\n|------------|--------------|\n| `$A - $B` | Difference between query A and query B |\n| `$C / 1000` | Converts the Reduce output from milliseconds to seconds |\n| `$A > $B` | Returns 1 when A exceeds B, 0 otherwise |\n\nMath expressions match results from different queries by their labels. For example, if query A returns a value with `{service=\"web\"}` and query B also has a result with `{service=\"web\"}`, the Math expression compares those two values."
         },
         {
           "type": "interactive",

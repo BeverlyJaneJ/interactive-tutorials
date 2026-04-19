@@ -5,7 +5,7 @@
   "blocks": [
     {
       "type": "markdown",
-      "content": "Welcome to the annotation and label templates learning path. This path walks you through writing Go text/template expressions to add dynamic query data to your alert annotations and create conditional labels that influence notification routing."
+      "content": "Welcome to the annotation and label templates learning path. This path walks you through writing template expressions that pull live query data into your alert annotations and create conditional labels that control which contact points receive notifications."
     },
     {
       "type": "markdown",

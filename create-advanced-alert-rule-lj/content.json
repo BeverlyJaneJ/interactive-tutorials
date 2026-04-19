@@ -5,7 +5,7 @@
   "blocks": [
     {
       "type": "markdown",
-      "content": "Welcome to the advanced alert rule learning path. This path walks you through creating a Grafana-managed alert rule using Advanced mode—with multiple queries, an expression pipeline, a recovery threshold, and a custom alert condition."
+      "content": "Welcome to the advanced alert rule learning path. This path walks you through creating a Grafana-managed alert rule using Advanced mode—with multiple queries, expressions that transform and compare query results, a recovery threshold to prevent repeated alerting, and a custom alert condition."
     },
     {
       "type": "markdown",

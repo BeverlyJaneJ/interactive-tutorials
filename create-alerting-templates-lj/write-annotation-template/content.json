@@ -5,7 +5,7 @@
   "blocks": [
     {
       "type": "markdown",
-      "content": "Annotation templates add dynamic query data to individual alert instances. The `$labels` variable contains all labels from the query, and `$values` contains the floating-point values of all instant queries and expressions, indexed by their Ref ID."
+      "content": "Annotation templates add live query data to individual alert instances. The `$labels` variable contains all labels from the query, and `$values` contains the numeric results of all instant queries and expressions, indexed by their reference letter (A, B, C, and so on)."
     },
     {
       "type": "markdown",
@@ -22,7 +22,7 @@
         {
           "type": "interactive",
           "action": "noop",
-          "content": "In the **Summary** field, write a template that includes query labels and values. Templates use Go `text/template` syntax wrapped in `{{ }}`.\n\nFor example, if your query returns an `instance` label:\n\n```\nCPU usage for {{ $labels.instance }} has exceeded threshold (current value: {{ $values.A.Value }})\n```\n\n| Variable | What it contains |\n|----------|------------------|\n| `$labels.instance` | The `instance` label from the query |\n| `$values.A.Value` | The floating-point value of query A |\n| `$values.A.Labels` | The labels associated with query A |\n| `$value` | A string representation of all query results |"
+          "content": "In the **Summary** field, write a template that includes query labels and values. Templates use Go `text/template` syntax wrapped in `{{ }}`.\n\nFor example, if your query returns an `instance` label:\n\n```\nCPU usage for {{ $labels.instance }} has exceeded threshold (current value: {{ $values.A.Value }})\n```\n\n| Variable | What it contains |\n|----------|------------------|\n| `$labels.instance` | The `instance` label from the query |\n| `$values.A.Value` | The numeric value of query A |\n| `$values.A.Labels` | The labels associated with query A |\n| `$value` | A string representation of all query results |"
         },
         {
           "type": "interactive",

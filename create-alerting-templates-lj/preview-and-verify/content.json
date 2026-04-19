@@ -5,7 +5,7 @@
   "blocks": [
     {
       "type": "markdown",
-      "content": "Before saving, verify that your templated labels produce the expected values and route through the correct notification policies. The routing preview shows which notification policy would handle alerts with your configured labels."
+      "content": "Before saving, verify that your templated labels produce the expected values and reach the correct contact points. The routing preview shows which notification policy matches alerts with your configured labels and where notifications are sent."
     },
     {
       "type": "markdown",
@@ -17,7 +17,7 @@
         {
           "type": "interactive",
           "action": "noop",
-          "content": "In section 4, **Configure labels and notifications**, select **Use notification policy** (if not already selected). This routes alerts through the notification policy tree based on labels."
+          "content": "In section 4, **Configure labels and notifications**, select **Use notification policy** (if not already selected). This routes alerts through your notification policies, which match alerts to contact points based on their labels."
         },
         {
           "type": "interactive",
