@@ -1,0 +1,17 @@
+{
+  "id": "install-and-instrument-ai-observability-business-value",
+  "type": "guide",
+  "description": "Understand why monitoring your AI stack matters.",
+  "category": "onboarding",
+  "author": {
+    "name": "Grafana Labs",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": [],
+  "recommends": ["install-and-instrument-ai-observability-install-integration"],
+  "suggests": [],
+  "provides": []
+}

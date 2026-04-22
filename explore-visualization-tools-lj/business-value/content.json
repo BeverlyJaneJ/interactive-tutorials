@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "explore-visualization-tools-business-value",
+  "title": "Why explore your visualization tools",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Grafana Cloud gives you four different tools for working with data visually: Dashboards, Panels and visualizations, Explore, and Drilldown apps. Each one is designed for a different situation.\n\nBefore you start building dashboards or writing queries, it helps to know where each tool lives and what it looks like. That way, when you need a specific tool, you'll know exactly where to find it."
+    },
+    {
+      "type": "markdown",
+      "content": "## What you'll do in this path\n\nThis path is a quick tour. You'll navigate to each tool's area in Grafana Cloud and see its interface. You won't build or configure anything.\n\nBy the end, you'll know:\n\n- Where Dashboards are and what a dashboard looks like\n- Where Explore is and what the query interface looks like\n- Where the Drilldown apps are and how they present data\n\nIn the next milestone, you navigate to the Dashboards area."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "explore-ai-observability-dashboards-business-value",
+  "title": "Five dashboards, five perspectives",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Your AI stack has multiple layers: LLM API calls, GenAI quality evaluations, vector database queries, MCP server connections, and GPU infrastructure. One dashboard can't monitor all of them effectively.\n\nAI Observability splits monitoring across five dashboards, each focused on a specific layer. Understanding what each dashboard tracks helps you focus on the parts of your stack that matter most."
+    },
+    {
+      "type": "markdown",
+      "content": "The five dashboards are:\n\n- **GenAI Observability** — LLM request performance, token usage, and costs\n- **GenAI Evaluations** — Output quality assessments (hallucination, relevance, toxicity)\n- **VectorDB Observability** — Vector database query performance and error rates\n- **MCP Observability** — Model Context Protocol server health and session metrics\n- **GPU Monitoring** — GPU utilization, memory, temperature, and power consumption"
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you navigate to each dashboard and explore its key panels."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "configure-panel-options-end-journey",
+  "type": "guide",
+  "description": "Celebrate completing the Configure Panel Options learning path.",
+  "category": "query-and-visualize",
+  "author": {
+    "name": "Grafana Labs",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["configure-panel-options-configure-legend"],
+  "recommends": [],
+  "suggests": [],
+  "provides": []
+}

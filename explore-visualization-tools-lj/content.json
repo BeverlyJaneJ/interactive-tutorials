@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "explore-visualization-tools-lj",
+  "title": "Explore your visualization tools",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Welcome to the Explore your visualization tools learning path. This path walks you through each of Grafana Cloud's visualization tools so you can see where they live and what their interfaces look like.\n\nThis is a tour, not a building exercise. You won't create dashboards, write queries, or configure anything. The goal is familiarity with the tools before you start using them."
+    },
+    {
+      "type": "markdown",
+      "content": "## Here's what to expect\n\nWhen you complete this path, you'll be able to:\n\n- Navigate to the Dashboards area and browse a dashboard\n- Open Explore and see the query interface\n- Navigate to a Drilldown app and browse data"
+    },
+    {
+      "type": "markdown",
+      "content": "## Before you begin\n\nBefore you start this tour, ensure you have:\n\n- A Grafana Cloud account. To create one, refer to [Grafana Cloud](https://grafana.com/signup/cloud/connect-account).\n- Data flowing into Grafana Cloud from at least one data source (metrics, logs, or traces)."
+    },
+    {
+      "type": "markdown",
+      "content": "## Troubleshooting\n\nIf you get stuck, we've got your back! Where appropriate, troubleshooting information is just a click away."
+    },
+    {
+      "type": "markdown",
+      "content": "## More to explore\n\nWe understand you might want to explore other capabilities not strictly on this path. We'll provide you opportunities where it makes sense."
+    }
+  ]
+}

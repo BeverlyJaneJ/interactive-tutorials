@@ -1,0 +1,17 @@
+{
+  "id": "explore-visualization-tools-business-value",
+  "type": "guide",
+  "description": "Understand why it helps to know where each visualization tool lives before you start building.",
+  "category": "query-and-visualize",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": [],
+  "recommends": ["explore-visualization-tools-navigate-dashboards"],
+  "suggests": [],
+  "provides": []
+}

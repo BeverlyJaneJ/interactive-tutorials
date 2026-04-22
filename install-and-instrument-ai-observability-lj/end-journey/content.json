@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "install-and-instrument-ai-observability-end-journey",
+  "title": "Destination reached!",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Congratulations on completing this journey! Job well done!\n\nWe hope you've enjoyed traveling with us as you:\n\n- Installed the AI Observability integration and its five dashboards\n- Configured OTEL environment variables for Grafana Cloud\n- Instrumented a Python application with the OpenLIT SDK\n- Verified that telemetry data is arriving in your dashboards"
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### More to explore (optional)\n\nThe world is your oyster! Read more about how you can:\n\n- [Configure advanced tracing options](https://grafana.com/docs/grafana-cloud/monitor-applications/ai-observability/genai/observability/configuration/)\n- [Set up GenAI Evaluations](https://grafana.com/docs/grafana-cloud/monitor-applications/ai-observability/genai/evaluations/setup/)\n- [Deploy GPU monitoring with Docker](https://grafana.com/docs/grafana-cloud/monitor-applications/ai-observability/gpu-observability/setup/)"
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### Related paths\n\nConsider taking the following paths after you complete this journey:\n\n- [Explore AI Observability dashboards](https://grafana.com/docs/learning-paths/explore-ai-observability-dashboards/)"
+    }
+  ]
+}

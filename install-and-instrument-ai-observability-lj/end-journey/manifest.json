@@ -1,0 +1,17 @@
+{
+  "id": "install-and-instrument-ai-observability-end-journey",
+  "type": "guide",
+  "description": "Celebrate completing the install and instrument learning path.",
+  "category": "onboarding",
+  "author": {
+    "name": "Grafana Labs",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["install-and-instrument-ai-observability-verify-data"],
+  "recommends": [],
+  "suggests": ["explore-ai-observability-dashboards-lj"],
+  "provides": []
+}

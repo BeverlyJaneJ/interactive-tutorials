@@ -1,0 +1,17 @@
+{
+  "id": "explore-visualization-tools-navigate-explore",
+  "type": "guide",
+  "description": "Navigate to Explore and see the query interface for ad-hoc data investigation.",
+  "category": "query-and-visualize",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["explore-visualization-tools-navigate-dashboards"],
+  "recommends": ["explore-visualization-tools-navigate-drilldown"],
+  "suggests": [],
+  "provides": []
+}

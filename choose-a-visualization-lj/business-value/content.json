@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "choose-a-visualization-business-value",
+  "title": "Why visualization choice matters",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "The same data can tell very different stories depending on how it's displayed. A time series line chart shows trends over time, while a stat panel highlights a single current value. Choosing the right visualization makes your data easier to understand and act on.\n\nGrafana organizes its visualizations into categories based on data type: graphs and charts for time-based data, stats and numbers for single values, and specialized formats for tables, logs, and other data types."
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you browse the visualization options in the panel editor."
+    }
+  ]
+}

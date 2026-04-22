@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "build-a-panel-write-query",
+  "title": "Write a query and view results",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "With the Grafana data source selected, you can write a query to generate sample data and see it displayed in your panel.\n\nTo write a query and view the results, complete the following steps:\n\n1. In the query editor, find the **Scenario** dropdown.\n2. Select **Random Walk** from the list. This generates a simulated time series that wanders up and down over time.\n3. Click **Run queries** (or press Shift+Enter) to execute the query.\n\nYou should see a time series line chart appear in the visualization preview above the query editor. The chart shows the random walk data plotted over time."
+    },
+    {
+      "type": "markdown",
+      "content": "4. Give your panel a title by typing a name in the **Title** field in the display options sidebar on the right.\n5. Click **Save dashboard** in the top-right corner, then click **Save** in the dialog.\n\nYour first panel is now saved to the dashboard with live data."
+    }
+  ]
+}

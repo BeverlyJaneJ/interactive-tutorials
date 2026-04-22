@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "configure-panel-options-add-threshold",
+  "title": "Add a threshold",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Thresholds change your panel's colors when data crosses a boundary value. They help you spot problems at a glance: green for normal, yellow for warning, red for critical.\n\nTo add a threshold, complete the following steps:\n\n1. In the display options sidebar, scroll to the **Thresholds** section.\n2. The base threshold (green) is already set. Click **+ Add threshold** to add a new one.\n3. Set the threshold value to `70` and click the color swatch to change it to yellow.\n4. Click **+ Add threshold** again. Set the value to `90` and change the color to red.\n5. Check the visualization preview. Values below 70 appear green, values between 70 and 90 appear yellow, and values above 90 appear red."
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you configure the legend and inspect your panel data."
+    }
+  ]
+}

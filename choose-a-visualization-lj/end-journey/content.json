@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "choose-a-visualization-end-journey",
+  "title": "Destination reached!",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Congratulations on completing this journey! Job well done!\n\nWe hope you've enjoyed traveling with us as you:\n\n- Browsed Grafana's suggested and available visualizations\n- Compared how different visualizations display the same data\n- Selected and applied a visualization to your panel"
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### More to explore (optional)\n\nThe world is your oyster! Read more about how you can:\n\n- [Explore all visualization types](https://grafana.com/docs/grafana/latest/visualizations/panels-visualizations/visualizations/)\n- [Configure time series panels](https://grafana.com/docs/grafana/latest/visualizations/panels-visualizations/visualizations/time-series/)\n- [Configure stat panels](https://grafana.com/docs/grafana/latest/visualizations/panels-visualizations/visualizations/stat/)"
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### Related paths\n\nConsider taking the following paths after you complete this journey:\n\n- [Configure panel options](https://grafana.com/docs/learning-paths/configure-panel-options/)"
+    }
+  ]
+}

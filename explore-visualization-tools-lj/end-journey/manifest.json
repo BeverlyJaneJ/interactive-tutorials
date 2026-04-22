@@ -1,0 +1,17 @@
+{
+  "id": "explore-visualization-tools-end-journey",
+  "type": "guide",
+  "description": "Celebrate completing the visualization tools tour and discover next steps.",
+  "category": "query-and-visualize",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["explore-visualization-tools-navigate-drilldown"],
+  "recommends": [],
+  "suggests": ["drilldown-metrics-lj", "drilldown-logs-lj", "drilldown-traces-lj"],
+  "provides": []
+}

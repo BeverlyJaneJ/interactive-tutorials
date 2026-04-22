@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "explore-ai-observability-dashboards-identify-your-dashboards",
+  "title": "Match dashboards to your AI stack",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Not every dashboard applies to every application. The right dashboards depend on which AI components your application uses.\n\nUse the following decision guide to identify which dashboards are relevant for your stack:"
+    },
+    {
+      "type": "markdown",
+      "content": "| If your application uses... | Monitor with this dashboard |\n| --- | --- |\n| LLM APIs (OpenAI, Anthropic, Cohere, Mistral) | GenAI Observability |\n| Quality checks on LLM outputs | GenAI Evaluations |\n| Vector databases (Pinecone, Chroma, Milvus, Qdrant) | VectorDB Observability |\n| MCP servers for context retrieval | MCP Observability |\n| GPU infrastructure | GPU Monitoring |\n\nMost applications start with **GenAI Observability** because they use at least one LLM. Add other dashboards as your stack grows."
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you wrap up the learning path."
+    }
+  ]
+}

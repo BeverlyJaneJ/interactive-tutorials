@@ -1,0 +1,32 @@
+{
+  "id": "choose-a-visualization-lj",
+  "type": "path",
+  "description": "Step-by-step guide: browse visualization options and apply one to a Grafana panel.",
+  "category": "query-and-visualize",
+  "author": {
+    "name": "Grafana Labs",
+    "team": "Grafana Documentation"
+  },
+  "startingLocation": "/d/",
+  "targeting": {
+    "match": {
+      "and": [
+        { "urlPrefixIn": ["/d/"] },
+        { "targetPlatform": "cloud" }
+      ]
+    }
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "milestones": [
+    "choose-a-visualization-business-value",
+    "choose-a-visualization-browse-visualizations",
+    "choose-a-visualization-apply-visualization",
+    "choose-a-visualization-end-journey"
+  ],
+  "depends": ["build-a-panel-lj"],
+  "recommends": ["configure-panel-options-lj"],
+  "suggests": [],
+  "provides": []
+}

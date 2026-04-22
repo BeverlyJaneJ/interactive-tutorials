@@ -1,0 +1,17 @@
+{
+  "id": "build-a-panel-select-data-source",
+  "type": "guide",
+  "description": "Select the built-in Grafana data source for the panel query.",
+  "category": "query-and-visualize",
+  "author": {
+    "name": "Grafana Labs",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["build-a-panel-add-panel"],
+  "recommends": ["build-a-panel-write-query"],
+  "suggests": [],
+  "provides": []
+}

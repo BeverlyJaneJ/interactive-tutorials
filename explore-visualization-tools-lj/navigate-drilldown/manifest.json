@@ -1,0 +1,17 @@
+{
+  "id": "explore-visualization-tools-navigate-drilldown",
+  "type": "guide",
+  "description": "Navigate to a Drilldown app and see how it presents telemetry data without queries.",
+  "category": "query-and-visualize",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["explore-visualization-tools-navigate-explore"],
+  "recommends": ["explore-visualization-tools-end-journey"],
+  "suggests": ["drilldown-metrics-lj", "drilldown-logs-lj", "drilldown-traces-lj"],
+  "provides": []
+}

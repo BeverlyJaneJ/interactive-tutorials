@@ -1,0 +1,17 @@
+{
+  "id": "explore-ai-observability-dashboards-business-value",
+  "type": "guide",
+  "description": "Understand why AI Observability uses five specialized dashboards instead of one.",
+  "category": "onboarding",
+  "author": {
+    "name": "Grafana Labs",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": [],
+  "recommends": ["explore-ai-observability-dashboards-navigate-dashboards"],
+  "suggests": [],
+  "provides": []
+}

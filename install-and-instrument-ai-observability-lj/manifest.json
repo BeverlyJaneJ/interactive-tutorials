@@ -1,0 +1,33 @@
+{
+  "id": "install-and-instrument-ai-observability-lj",
+  "type": "path",
+  "description": "Step-by-step guide: install AI Observability, configure OpenTelemetry, instrument a Python app, and verify data in Grafana Cloud.",
+  "category": "onboarding",
+  "author": {
+    "name": "Grafana Labs",
+    "team": "Grafana Documentation"
+  },
+  "startingLocation": "/connections",
+  "targeting": {
+    "match": {
+      "and": [
+        { "urlPrefixIn": ["/connections", "/a/grafana-aiobservability-app"] },
+        { "targetPlatform": "cloud" }
+      ]
+    }
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "milestones": [
+    "install-and-instrument-ai-observability-business-value",
+    "install-and-instrument-ai-observability-install-integration",
+    "install-and-instrument-ai-observability-instrument-application",
+    "install-and-instrument-ai-observability-verify-data",
+    "install-and-instrument-ai-observability-end-journey"
+  ],
+  "depends": [],
+  "recommends": ["explore-ai-observability-dashboards-lj"],
+  "suggests": [],
+  "provides": []
+}

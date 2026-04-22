@@ -1,0 +1,17 @@
+{
+  "id": "choose-a-visualization-end-journey",
+  "type": "guide",
+  "description": "Celebrate completing the Choose a Visualization learning path.",
+  "category": "query-and-visualize",
+  "author": {
+    "name": "Grafana Labs",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["choose-a-visualization-apply-visualization"],
+  "recommends": [],
+  "suggests": ["configure-panel-options-lj"],
+  "provides": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "configure-panel-options-business-value",
+  "type": "guide",
+  "description": "Understand why configuring panel options matters for readability.",
+  "category": "query-and-visualize",
+  "author": {
+    "name": "Grafana Labs",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": [],
+  "recommends": ["configure-panel-options-set-standard-options"],
+  "suggests": [],
+  "provides": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "configure-panel-options-set-standard-options",
+  "type": "guide",
+  "description": "Set a unit and color scheme in the panel's standard options.",
+  "category": "query-and-visualize",
+  "author": {
+    "name": "Grafana Labs",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["configure-panel-options-business-value"],
+  "recommends": ["configure-panel-options-add-threshold"],
+  "suggests": [],
+  "provides": []
+}

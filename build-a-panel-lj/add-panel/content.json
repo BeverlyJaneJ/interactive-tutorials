@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "build-a-panel-add-panel",
+  "title": "Add a panel to a dashboard",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Before you can write a query, you need a panel on your dashboard. In this milestone, you add a new panel and open the panel editor.\n\nTo add a panel to an existing dashboard, complete the following steps:\n\n1. Open a dashboard in Grafana.\n2. Click **Edit** in the top-right corner of the dashboard to enter edit mode.\n3. Click the **Add** button (the blue plus icon) in the toolbar.\n4. Select **Visualization** from the dropdown.\n\nThe panel editor opens with a new, empty panel."
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you select the Grafana data source for your panel."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "build-a-panel-add-panel",
+  "type": "guide",
+  "description": "Add a new panel to a Grafana dashboard and open the panel editor.",
+  "category": "query-and-visualize",
+  "author": {
+    "name": "Grafana Labs",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["build-a-panel-business-value"],
+  "recommends": ["build-a-panel-select-data-source"],
+  "suggests": [],
+  "provides": []
+}

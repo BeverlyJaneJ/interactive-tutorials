@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "install-and-instrument-ai-observability-instrument-application",
+  "title": "Instrument your Python application",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Now that the integration is installed, you need to instrument your Python application so it sends telemetry data to Grafana Cloud.\n\nTo instrument your application, complete the following steps:"
+    },
+    {
+      "type": "markdown",
+      "content": "1. Install the OpenLIT SDK:\n\n   ```bash\n   pip install openlit\n   ```\n\n2. Get your Grafana Cloud OTEL credentials:\n   - Sign in to [Grafana Cloud Portal](https://grafana.com/profile/org)\n   - Click your stack\n   - Under **Manage your stack**, click **Configure** in the OpenTelemetry section\n   - Generate an API token if you don't have one\n   - Copy the `OTEL_EXPORTER_OTLP_ENDPOINT` and `OTEL_EXPORTER_OTLP_HEADERS` values\n\n3. Set the environment variables:\n\n   ```bash\n   export OTEL_EXPORTER_OTLP_ENDPOINT=\"<YOUR_GRAFANA_OTEL_GATEWAY_URL>\"\n   export OTEL_EXPORTER_OTLP_HEADERS=\"<YOUR_GRAFANA_OTEL_GATEWAY_AUTH>\"\n   ```\n\n4. Add the following two lines to your application code:\n\n   ```python\n   import openlit\n\n   openlit.init()\n   ```"
+    },
+    {
+      "type": "markdown",
+      "content": "The OpenLIT SDK automatically uses the OTEL environment variables to send telemetry data to your Grafana Cloud instance.\n\nIn the next milestone, you verify that data is arriving in your dashboards."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "configure-panel-options-business-value",
+  "title": "Why configuration matters",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "A panel with raw, unformatted numbers is hard to read. A value of 1048576 doesn't mean much at a glance, but \"1 MiB\" is immediately clear. And without color-coded thresholds, you can't tell at a glance whether a value is normal or critical.\n\nConfiguring display options transforms raw data into information that anyone on your team can understand. Units, thresholds, legends, and tooltips turn a panel from a data dump into a useful monitoring tool."
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you set a unit and color scheme using standard options."
+    }
+  ]
+}

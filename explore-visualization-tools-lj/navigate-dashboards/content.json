@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "explore-visualization-tools-navigate-dashboards",
+  "title": "Navigate to Dashboards",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Dashboards are saved pages of panels that give your team an at-a-glance view of related information. In this milestone, you navigate to the Dashboards area and browse a dashboard to see how panels are arranged.\n\nTo navigate to Dashboards, complete the following steps:\n\n1. In the Grafana Cloud main menu, click **Dashboards**.\n   The Dashboards page opens, showing a list of available dashboards and folders.\n2. Browse the list and click any dashboard to open it.\n   You see a page with one or more panels, each displaying data as a chart, graph, or number.\n3. Notice how panels are arranged on the page. Each panel shows data from a query, displayed as a visualization.\n\nYou've now seen what a dashboard looks like: a saved page of panels, each showing data in a different visual format.\n\nIn the next milestone, you navigate to Explore."
+    }
+  ]
+}

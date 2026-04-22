@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "configure-panel-options-end-journey",
+  "title": "Destination reached!",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Congratulations on completing this journey! Job well done!\n\nWe hope you've enjoyed traveling with us as you:\n\n- Set a unit and color scheme using standard options\n- Added warning and critical thresholds for conditional coloring\n- Configured the legend as a table with calculated values\n- Inspected raw panel data and query performance"
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### More to explore (optional)\n\nThe world is your oyster! Read more about how you can:\n\n- [Configure data links](https://grafana.com/docs/grafana/latest/visualizations/panels-visualizations/configure-data-links/)\n- [Configure value mappings](https://grafana.com/docs/grafana/latest/visualizations/panels-visualizations/configure-value-mappings/)\n- [Configure field overrides](https://grafana.com/docs/grafana/latest/visualizations/panels-visualizations/configure-overrides/)\n- [Transform data](https://grafana.com/docs/grafana/latest/visualizations/panels-visualizations/query-transform-data/transform-data/)"
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### Related paths\n\nConsider taking the following paths after you complete this journey:\n\n- [Transform data in a Grafana Cloud dashboard](https://grafana.com/docs/learning-paths/data-transformation/)\n- [Visualize metrics in a Grafana Cloud dashboard](https://grafana.com/docs/learning-paths/visualization-metrics/)"
+    }
+  ]
+}

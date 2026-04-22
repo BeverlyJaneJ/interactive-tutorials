@@ -1,0 +1,17 @@
+{
+  "id": "build-a-panel-business-value",
+  "type": "guide",
+  "description": "Understand why panels are essential for Grafana dashboards.",
+  "category": "query-and-visualize",
+  "author": {
+    "name": "Grafana Labs",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": [],
+  "recommends": ["build-a-panel-add-panel"],
+  "suggests": [],
+  "provides": []
+}

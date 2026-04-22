@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "choose-a-visualization-apply-visualization",
+  "title": "Apply a visualization",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Now that you've browsed the options, select a visualization and apply it to your panel.\n\nTo apply a visualization, complete the following steps:\n\n1. In the display options sidebar, click a visualization type from either the **Suggested** or **All** section. For example, click **Stat** to see your data as a single big number, or **Gauge** to see it as a radial meter.\n2. Watch the visualization preview at the top of the panel editor update immediately to show your data in the new format.\n3. Try clicking a few different visualizations to compare how they display the same data.\n4. When you've chosen one, click **Save dashboard** in the top-right corner, then click **Save**."
+    },
+    {
+      "type": "markdown",
+      "content": "Your panel now displays your data using the visualization you selected. You can change the visualization at any time by reopening the panel editor."
+    }
+  ]
+}

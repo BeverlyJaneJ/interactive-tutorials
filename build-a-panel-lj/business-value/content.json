@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "build-a-panel-business-value",
+  "title": "Why panels matter",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Dashboards in Grafana are made of panels. Each panel displays one view of your data, and you arrange panels together to build a complete picture of your systems, applications, or business metrics.\n\nWithout panels, a dashboard is empty. Learning how to add a panel, connect it to a data source, and write a query is the first step to building useful dashboards that help you monitor and understand your data."
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you add a panel to a dashboard."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "install-and-instrument-ai-observability-verify-data",
+  "type": "guide",
+  "description": "Confirm that telemetry data from your AI application appears in Grafana Cloud dashboards.",
+  "category": "onboarding",
+  "author": {
+    "name": "Grafana Labs",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["install-and-instrument-ai-observability-instrument-application"],
+  "recommends": ["install-and-instrument-ai-observability-end-journey"],
+  "suggests": [],
+  "provides": []
+}

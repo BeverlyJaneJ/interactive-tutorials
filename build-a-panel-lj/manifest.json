@@ -1,0 +1,33 @@
+{
+  "id": "build-a-panel-lj",
+  "type": "path",
+  "description": "Step-by-step guide: add a panel to a dashboard, select a data source, write a query, and view the results.",
+  "category": "query-and-visualize",
+  "author": {
+    "name": "Grafana Labs",
+    "team": "Grafana Documentation"
+  },
+  "startingLocation": "/dashboards",
+  "targeting": {
+    "match": {
+      "and": [
+        { "urlPrefixIn": ["/d/", "/dashboards"] },
+        { "targetPlatform": "cloud" }
+      ]
+    }
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "milestones": [
+    "build-a-panel-business-value",
+    "build-a-panel-add-panel",
+    "build-a-panel-select-data-source",
+    "build-a-panel-write-query",
+    "build-a-panel-end-journey"
+  ],
+  "depends": [],
+  "recommends": ["choose-a-visualization-lj"],
+  "suggests": [],
+  "provides": []
+}

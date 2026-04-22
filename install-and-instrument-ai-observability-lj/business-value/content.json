@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "install-and-instrument-ai-observability-business-value",
+  "title": "Why monitor your AI stack",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "AI applications involve many moving parts: LLM API calls, vector database queries, agent orchestration, and GPU infrastructure. Without visibility into each layer, issues like slow responses, unexpected cost spikes, or low-quality outputs can go undetected.\n\nGrafana Cloud AI Observability gives you end-to-end monitoring across your entire AI stack using the OpenLIT SDK and OpenTelemetry. With two lines of code, you get five specialized dashboards that track performance, costs, token usage, and output quality."
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you install the AI Observability integration and its dashboards."
+    }
+  ]
+}

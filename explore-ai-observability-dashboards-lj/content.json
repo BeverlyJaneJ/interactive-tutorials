@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "explore-ai-observability-dashboards-lj",
+  "title": "Explore AI Observability dashboards",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Welcome to the AI Observability dashboards learning path that shows you how to navigate each of the five specialized dashboards, identify key panels, and choose which dashboards match your AI stack.\n\nAfter installing the AI Observability integration, Grafana Cloud provides five dashboards. Each monitors a different part of your AI stack. This path helps you understand what each dashboard shows and decide which ones are relevant for your applications."
+    },
+    {
+      "type": "markdown",
+      "content": "## Here's what to expect\n\nWhen you complete this path, you'll be able to:\n\n- Navigate to each of the five AI Observability dashboards\n- Identify the key panels and metrics each dashboard tracks\n- Choose which dashboards match the components in your AI stack"
+    },
+    {
+      "type": "markdown",
+      "content": "## Before you begin\n\nBefore you explore the dashboards, ensure you have:\n\n- A Grafana Cloud account. To create one, refer to [Grafana Cloud](https://grafana.com/signup/cloud/connect-account).\n- The AI Observability integration installed. If you haven't installed it, complete the [Install and instrument AI Observability](/docs/learning-paths/install-and-instrument-ai-observability/) learning path first."
+    },
+    {
+      "type": "markdown",
+      "content": "## Troubleshooting\n\nIf you get stuck, we've got your back! Where appropriate, troubleshooting information is just a click away."
+    },
+    {
+      "type": "markdown",
+      "content": "## More to explore\n\nWe understand you might want to explore other capabilities not strictly on this path. We'll provide you opportunities where it makes sense."
+    }
+  ]
+}

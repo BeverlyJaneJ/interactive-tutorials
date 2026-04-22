@@ -1,0 +1,17 @@
+{
+  "id": "explore-ai-observability-dashboards-identify-your-dashboards",
+  "type": "guide",
+  "description": "Choose which dashboards match the components in your AI stack.",
+  "category": "onboarding",
+  "author": {
+    "name": "Grafana Labs",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["explore-ai-observability-dashboards-navigate-dashboards"],
+  "recommends": ["explore-ai-observability-dashboards-end-journey"],
+  "suggests": [],
+  "provides": []
+}

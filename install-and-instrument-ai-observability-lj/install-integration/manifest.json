@@ -1,0 +1,17 @@
+{
+  "id": "install-and-instrument-ai-observability-install-integration",
+  "type": "guide",
+  "description": "Install the AI Observability integration and its five dashboards.",
+  "category": "onboarding",
+  "author": {
+    "name": "Grafana Labs",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["install-and-instrument-ai-observability-business-value"],
+  "recommends": ["install-and-instrument-ai-observability-instrument-application"],
+  "suggests": [],
+  "provides": []
+}

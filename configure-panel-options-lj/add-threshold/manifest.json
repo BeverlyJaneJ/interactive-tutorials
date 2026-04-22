@@ -1,0 +1,17 @@
+{
+  "id": "configure-panel-options-add-threshold",
+  "type": "guide",
+  "description": "Add warning and critical thresholds for conditional coloring.",
+  "category": "query-and-visualize",
+  "author": {
+    "name": "Grafana Labs",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["configure-panel-options-set-standard-options"],
+  "recommends": ["configure-panel-options-configure-legend"],
+  "suggests": [],
+  "provides": []
+}

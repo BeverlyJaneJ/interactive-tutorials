@@ -1,0 +1,33 @@
+{
+  "id": "configure-panel-options-lj",
+  "type": "path",
+  "description": "Step-by-step guide: set standard options, add thresholds, configure legends, and inspect panel data.",
+  "category": "query-and-visualize",
+  "author": {
+    "name": "Grafana Labs",
+    "team": "Grafana Documentation"
+  },
+  "startingLocation": "/d/",
+  "targeting": {
+    "match": {
+      "and": [
+        { "urlPrefixIn": ["/d/"] },
+        { "targetPlatform": "cloud" }
+      ]
+    }
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "milestones": [
+    "configure-panel-options-business-value",
+    "configure-panel-options-set-standard-options",
+    "configure-panel-options-add-threshold",
+    "configure-panel-options-configure-legend",
+    "configure-panel-options-end-journey"
+  ],
+  "depends": ["choose-a-visualization-lj"],
+  "recommends": [],
+  "suggests": [],
+  "provides": []
+}

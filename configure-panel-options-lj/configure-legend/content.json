@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "configure-panel-options-configure-legend",
+  "title": "Configure the legend and inspect data",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "The legend helps readers identify data series in your panel. The panel inspector lets you examine raw data when something doesn't look right.\n\nTo configure the legend, complete the following steps:\n\n1. In the display options sidebar, scroll to the **Legend** section.\n2. Set **Mode** to **Table** to display the legend as a table with value columns.\n3. Under **Values**, select **Min**, **Max**, and **Mean** to show calculated values next to each series name.\n4. Set **Placement** to **Bottom** to position the legend below the visualization."
+    },
+    {
+      "type": "markdown",
+      "content": "To inspect the panel data, complete the following steps:\n\n1. Click the panel title to open the panel menu.\n2. Select **Inspect** > **Data**.\n3. The panel inspector opens showing the raw data returned by your query. You can download this data as CSV.\n4. Click the **Stats** tab to see query performance: how long the query took and how many rows it returned.\n5. Close the inspector and click **Save dashboard** to save your configuration."
+    }
+  ]
+}

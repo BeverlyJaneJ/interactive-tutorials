@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "explore-visualization-tools-navigate-explore",
+  "title": "Navigate to Explore",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Explore is Grafana's workspace for running queries and analyzing data without creating a dashboard. In this milestone, you navigate to Explore and see the query interface.\n\nTo navigate to Explore, complete the following steps:\n\n1. In the Grafana Cloud main menu, click **Explore**.\n   The Explore page opens, showing a query editor at the top and a results area below.\n2. Notice the data source selector at the top of the page. This is where you choose which data source to query.\n3. Below the data source selector is the query editor, where you would write a query to request specific data.\n4. The results area below the query editor is where query results appear as charts, logs, or traces.\n\nYou've now seen what Explore looks like: a query editor at the top with results displayed below, designed for fast, temporary analysis.\n\nIn the next milestone, you navigate to the Drilldown apps."
+    }
+  ]
+}

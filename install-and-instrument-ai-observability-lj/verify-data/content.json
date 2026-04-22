@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "install-and-instrument-ai-observability-verify-data",
+  "title": "Verify data in Grafana Cloud",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "After instrumenting your application, verify that telemetry data is arriving in Grafana Cloud.\n\nTo verify your setup, complete the following steps:"
+    },
+    {
+      "type": "markdown",
+      "content": "1. Run your instrumented AI application. Make sure it performs at least one AI operation (for example, an LLM API call).\n\n2. In Grafana Cloud, navigate to **Dashboards**.\n\n3. Open the **GenAI Observability** dashboard.\n\n4. Confirm that data appears in the dashboard panels. You should see request volume, response times, and token usage metrics."
+    },
+    {
+      "type": "markdown",
+      "content": "If no data appears:\n\n- Verify that your OTEL environment variables are set correctly.\n- Check that `openlit.init()` is called before any AI operations.\n- Ensure your application is making AI operations that generate telemetry.\n- Verify network connectivity to Grafana Cloud endpoints."
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you wrap up the learning path."
+    }
+  ]
+}

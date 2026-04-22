@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "configure-panel-options-set-standard-options",
+  "title": "Set a unit and color scheme",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Standard options control how Grafana formats values in your panel. The most important are the unit and color scheme settings.\n\nTo set standard options, complete the following steps:\n\n1. Open the panel editor by clicking **Edit** on your panel.\n2. In the display options sidebar on the right, scroll to the **Standard options** section.\n3. Click the **Unit** dropdown and search for a unit. For example, select **Misc > percent (0-100)** to format values as percentages.\n4. Scroll down to **Color scheme** and select **From thresholds (by value)**. This prepares the panel for threshold-based coloring in the next milestone."
+    },
+    {
+      "type": "markdown",
+      "content": "The visualization preview updates immediately to show formatted values. Notice how raw numbers are now displayed with the unit you selected.\n\nIn the next milestone, you add a threshold for conditional coloring."
+    }
+  ]
+}

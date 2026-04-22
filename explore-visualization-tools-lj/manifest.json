@@ -1,0 +1,33 @@
+{
+  "id": "explore-visualization-tools-lj",
+  "type": "path",
+  "description": "Step-by-step guide: Tour each Grafana Cloud visualization tool to see where it lives and what it looks like.",
+  "category": "query-and-visualize",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "startingLocation": "/a/cloud-home-app",
+  "targeting": {
+    "match": {
+      "and": [
+        { "urlPrefixIn": ["/a/cloud-home-app", "/dashboards", "/explore", "/a/grafana-drilldown-app"] },
+        { "targetPlatform": "cloud" }
+      ]
+    }
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "milestones": [
+    "explore-visualization-tools-business-value",
+    "explore-visualization-tools-navigate-dashboards",
+    "explore-visualization-tools-navigate-explore",
+    "explore-visualization-tools-navigate-drilldown",
+    "explore-visualization-tools-end-journey"
+  ],
+  "depends": [],
+  "recommends": [],
+  "suggests": ["drilldown-metrics-lj", "drilldown-logs-lj", "drilldown-traces-lj"],
+  "provides": []
+}

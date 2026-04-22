@@ -1,0 +1,17 @@
+{
+  "id": "choose-a-visualization-browse-visualizations",
+  "type": "guide",
+  "description": "Browse suggested and available visualizations in the panel editor.",
+  "category": "query-and-visualize",
+  "author": {
+    "name": "Grafana Labs",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["choose-a-visualization-business-value"],
+  "recommends": ["choose-a-visualization-apply-visualization"],
+  "suggests": [],
+  "provides": []
+}

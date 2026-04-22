@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "configure-panel-options-lj",
+  "title": "Configure panel options",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Welcome to the Configure Panel Options learning path that shows you how to set display options, add thresholds, configure the legend, and inspect panel data.\n\nAfter building a panel and choosing a visualization, the final step is configuring how the data is displayed. Units, color schemes, thresholds, and legends make your panels readable and useful. This path walks you through the key configuration options."
+    },
+    {
+      "type": "markdown",
+      "content": "## Here's what to expect\n\nWhen you complete this path, you'll be able to:\n\n- Set a unit and color scheme using standard options\n- Add a threshold for conditional coloring\n- Configure legend and tooltip settings\n- Inspect raw panel data using the panel inspector"
+    },
+    {
+      "type": "markdown",
+      "content": "## Before you begin\n\nBefore you configure panel options, ensure you have:\n\n- A Grafana Cloud account. To create one, refer to [Grafana Cloud](https://grafana.com/signup/cloud/connect-account).\n- A panel with a query and visualization already configured (complete the [Build a panel](https://grafana.com/docs/learning-paths/build-a-panel/) and [Choose a visualization](https://grafana.com/docs/learning-paths/choose-a-visualization/) paths first if needed)"
+    },
+    {
+      "type": "markdown",
+      "content": "## Troubleshooting\n\nIf you get stuck, we've got your back! Where appropriate, troubleshooting information is just a click away."
+    },
+    {
+      "type": "markdown",
+      "content": "## More to explore\n\nWe understand you might want to explore other capabilities not strictly on this path. We'll provide you opportunities where it makes sense."
+    }
+  ]
+}

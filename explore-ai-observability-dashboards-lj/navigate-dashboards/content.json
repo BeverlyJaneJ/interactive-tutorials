@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "explore-ai-observability-dashboards-navigate-dashboards",
+  "title": "Navigate to your AI dashboards",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Now that you know what each dashboard monitors, navigate to them in Grafana Cloud and explore their key panels.\n\nTo explore the dashboards, complete the following steps:"
+    },
+    {
+      "type": "markdown",
+      "content": "1. In Grafana Cloud, click **Dashboards** in the left-side menu.\n\n2. Search for `AI` to filter to the AI Observability dashboards.\n\n3. Open the **GenAI Observability** dashboard. Key panels include:\n   - **Request Volume** — Number of LLM API calls over time\n   - **Average Response Time** — Mean latency of LLM responses\n   - **Token Usage** — Input and output tokens consumed\n   - **Cost Tracking** — Estimated spend by model and provider\n\n4. Return to the dashboards list and open **GenAI Evaluations** to see quality assessment panels:\n   - **Hallucination Score** — How often responses contain fabricated information\n   - **Relevance Score** — How well responses match the input query\n\n5. Explore the remaining dashboards (**VectorDB Observability**, **MCP Observability**, **GPU Monitoring**) to see what they track."
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you decide which dashboards match your AI stack."
+    }
+  ]
+}

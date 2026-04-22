@@ -1,0 +1,17 @@
+{
+  "id": "explore-visualization-tools-navigate-dashboards",
+  "type": "guide",
+  "description": "Navigate to the Dashboards area and browse a dashboard to see how panels are arranged.",
+  "category": "query-and-visualize",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["explore-visualization-tools-business-value"],
+  "recommends": ["explore-visualization-tools-navigate-explore"],
+  "suggests": [],
+  "provides": []
+}

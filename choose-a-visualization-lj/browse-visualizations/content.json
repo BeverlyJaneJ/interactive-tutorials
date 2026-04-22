@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "choose-a-visualization-browse-visualizations",
+  "title": "Browse visualization options",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "The panel editor shows visualization options in the display options sidebar on the right side. Grafana suggests visualizations based on your query results and also provides the full list.\n\nTo browse the visualization options, complete the following steps:\n\n1. Open the panel editor by clicking **Edit** on a panel that has query data.\n2. In the display options sidebar on the right, look at the **Suggested** section. Grafana recommends visualizations that suit your current query results.\n3. Scroll down to the **All** section to see every available visualization grouped by category.\n4. Hover over a visualization to see a brief description of what it's designed for."
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you select and apply a visualization to your panel."
+    }
+  ]
+}

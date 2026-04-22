@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "explore-visualization-tools-navigate-drilldown",
+  "title": "Navigate to a Drilldown app",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "The Drilldown apps let you browse telemetry data without writing any queries. In this milestone, you navigate to the Drilldown area and see how the apps present data.\n\nTo navigate to a Drilldown app, complete the following steps:\n\n1. In the Grafana Cloud main menu, click **Drilldown**.\n   The Drilldown area opens, showing the available Drilldown apps.\n2. Click **Metrics Drilldown** (or any available Drilldown app).\n   The app opens, showing a visual interface for browsing data. Notice that there is no query editor; the app presents data using visual filters and navigation instead.\n3. Browse the interface. You can see metrics organized visually without needing to write any query language.\n\nYou've now seen what a Drilldown app looks like: a signal-specific interface with visual filters, designed for queryless exploration.\n\nIn the next milestone, you complete the tour."
+    }
+  ]
+}

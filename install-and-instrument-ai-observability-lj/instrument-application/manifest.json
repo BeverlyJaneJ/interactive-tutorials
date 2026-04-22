@@ -1,0 +1,17 @@
+{
+  "id": "install-and-instrument-ai-observability-instrument-application",
+  "type": "guide",
+  "description": "Configure OTEL credentials and instrument a Python application with the OpenLIT SDK.",
+  "category": "onboarding",
+  "author": {
+    "name": "Grafana Labs",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["install-and-instrument-ai-observability-install-integration"],
+  "recommends": ["install-and-instrument-ai-observability-verify-data"],
+  "suggests": [],
+  "provides": []
+}

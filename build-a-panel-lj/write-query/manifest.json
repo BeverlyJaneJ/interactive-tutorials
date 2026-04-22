@@ -1,0 +1,17 @@
+{
+  "id": "build-a-panel-write-query",
+  "type": "guide",
+  "description": "Write a Random Walk query and view the results in the panel.",
+  "category": "query-and-visualize",
+  "author": {
+    "name": "Grafana Labs",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["build-a-panel-select-data-source"],
+  "recommends": ["build-a-panel-end-journey"],
+  "suggests": [],
+  "provides": []
+}

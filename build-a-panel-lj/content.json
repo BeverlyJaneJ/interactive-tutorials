@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "build-a-panel-lj",
+  "title": "Build a panel",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Welcome to the Build a Panel learning path that shows you how to add a panel to a Grafana dashboard, select a data source, write a query, and view the results.\n\nPanels are the building blocks of Grafana dashboards. Each panel combines a query with a visualization to display your data. This path walks you through creating your first panel from scratch using the built-in Grafana data source."
+    },
+    {
+      "type": "markdown",
+      "content": "## Here's what to expect\n\nWhen you complete this path, you'll be able to:\n\n- Add a new panel to any Grafana dashboard\n- Select a data source and write a query\n- View query results in your panel"
+    },
+    {
+      "type": "markdown",
+      "content": "## Before you begin\n\nBefore you build a panel, ensure you have:\n\n- A Grafana Cloud account. To create one, refer to [Grafana Cloud](https://grafana.com/signup/cloud/connect-account).\n- At least one dashboard (it can be empty)\n- Basic familiarity with the Grafana interface"
+    },
+    {
+      "type": "markdown",
+      "content": "## Troubleshooting\n\nIf you get stuck, we've got your back! Where appropriate, troubleshooting information is just a click away."
+    },
+    {
+      "type": "markdown",
+      "content": "## More to explore\n\nWe understand you might want to explore other capabilities not strictly on this path. We'll provide you opportunities where it makes sense."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "choose-a-visualization-business-value",
+  "type": "guide",
+  "description": "Understand why choosing the right visualization matters.",
+  "category": "query-and-visualize",
+  "author": {
+    "name": "Grafana Labs",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": [],
+  "recommends": ["choose-a-visualization-browse-visualizations"],
+  "suggests": [],
+  "provides": []
+}

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "build-a-panel-select-data-source",
+  "title": "Select the Grafana data source",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "With the panel editor open, you need to tell Grafana where to get data. You do this by selecting a data source in the query editor.\n\nTo select the built-in Grafana data source, complete the following steps:\n\n1. In the panel editor, look at the data section at the bottom of the screen.\n2. Click the **data source selector** dropdown (it may show a default data source or \"-- Grafana --\").\n3. Select **-- Grafana --** from the list.\n\nThe Grafana data source is built in and generates random time series data. It requires no external setup, which makes it ideal for learning."
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you write a query and view the results."
+    }
+  ]
+}

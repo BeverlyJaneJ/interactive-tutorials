@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "install-and-instrument-ai-observability-lj",
+  "title": "Install and instrument AI Observability",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Welcome to the AI Observability learning path that shows you how to install the integration, configure OpenTelemetry, instrument a Python application, and verify that data arrives in Grafana Cloud.\n\nGrafana Cloud AI Observability uses the OpenLIT SDK to automatically collect distributed traces and metrics from your AI applications. This path walks you through the complete setup process."
+    },
+    {
+      "type": "markdown",
+      "content": "## Here's what to expect\n\nWhen you complete this path, you'll be able to:\n\n- Install the AI Observability integration and its five specialized dashboards\n- Configure OTEL environment variables for Grafana Cloud\n- Instrument a Python application with the OpenLIT SDK\n- Verify that telemetry data is arriving in your dashboards"
+    },
+    {
+      "type": "markdown",
+      "content": "## Before you begin\n\nBefore you set up AI Observability, ensure you have:\n\n- A Grafana Cloud account. To create one, refer to [Grafana Cloud](https://grafana.com/signup/cloud/connect-account).\n- A Python application that interacts with at least one AI component (LLM, vector database, MCP server, or GPU)\n- pip (Python package manager)\n- Ability to set environment variables in your development environment"
+    },
+    {
+      "type": "markdown",
+      "content": "## Troubleshooting\n\nIf you get stuck, we've got your back! Where appropriate, troubleshooting information is just a click away."
+    },
+    {
+      "type": "markdown",
+      "content": "## More to explore\n\nWe understand you might want to explore other capabilities not strictly on this path. We'll provide you opportunities where it makes sense."
+    }
+  ]
+}

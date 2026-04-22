@@ -1,0 +1,32 @@
+{
+  "id": "explore-ai-observability-dashboards-lj",
+  "type": "path",
+  "description": "Step-by-step guide: navigate the five AI Observability dashboards, identify key panels, and choose the dashboards that match your AI stack.",
+  "category": "onboarding",
+  "author": {
+    "name": "Grafana Labs",
+    "team": "Grafana Documentation"
+  },
+  "startingLocation": "/dashboards",
+  "targeting": {
+    "match": {
+      "and": [
+        { "urlPrefixIn": ["/dashboards", "/a/grafana-aiobservability-app"] },
+        { "targetPlatform": "cloud" }
+      ]
+    }
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "milestones": [
+    "explore-ai-observability-dashboards-business-value",
+    "explore-ai-observability-dashboards-navigate-dashboards",
+    "explore-ai-observability-dashboards-identify-your-dashboards",
+    "explore-ai-observability-dashboards-end-journey"
+  ],
+  "depends": ["install-and-instrument-ai-observability-lj"],
+  "recommends": [],
+  "suggests": [],
+  "provides": []
+}

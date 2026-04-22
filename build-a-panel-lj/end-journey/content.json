@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "build-a-panel-end-journey",
+  "title": "Destination reached!",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Congratulations on completing this journey! Job well done!\n\nWe hope you've enjoyed traveling with us as you:\n\n- Added a panel to a Grafana dashboard\n- Selected the built-in Grafana data source\n- Wrote a Random Walk query and viewed the results\n- Saved your panel to the dashboard"
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### More to explore (optional)\n\nThe world is your oyster! Read more about how you can:\n\n- [Learn about panels and visualizations](https://grafana.com/docs/grafana/latest/visualizations/panels-visualizations/)\n- [Explore query and transform data](https://grafana.com/docs/grafana/latest/visualizations/panels-visualizations/query-transform-data/)\n- [Connect additional data sources](https://grafana.com/docs/grafana/latest/datasources/)"
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### Related paths\n\nConsider taking the following paths after you complete this journey:\n\n- [Choose a visualization](https://grafana.com/docs/learning-paths/choose-a-visualization/)\n- [Configure panel options](https://grafana.com/docs/learning-paths/configure-panel-options/)"
+    }
+  ]
+}

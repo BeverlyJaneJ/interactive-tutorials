@@ -1,0 +1,17 @@
+{
+  "id": "explore-ai-observability-dashboards-end-journey",
+  "type": "guide",
+  "description": "Celebrate completing the explore dashboards learning path.",
+  "category": "onboarding",
+  "author": {
+    "name": "Grafana Labs",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["explore-ai-observability-dashboards-identify-your-dashboards"],
+  "recommends": [],
+  "suggests": ["install-and-instrument-ai-observability-lj"],
+  "provides": []
+}

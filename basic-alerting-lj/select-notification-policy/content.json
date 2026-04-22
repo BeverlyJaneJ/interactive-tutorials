@@ -27,7 +27,7 @@
         {
           "type": "interactive",
           "action": "noop",
-          "content": "Skip the override options for now:\n\n- **Override grouping**: Keep defaults\n- **Override timings**: Keep defaults\n\nYou'll learn to customize routing in a later module."
+          "content": "Skip the override options for now:\n\n- **Override grouping**: Keep defaults\n- **Override timings**: Keep defaults\n\nYou'll learn to customize routing in Part 2 of this course."
         }
       ]
     },

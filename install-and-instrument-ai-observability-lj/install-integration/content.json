@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "install-and-instrument-ai-observability-install-integration",
+  "title": "Install the AI Observability integration",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "The AI Observability integration installs five specialized dashboards in your Grafana Cloud instance. Each dashboard monitors a different part of your AI stack.\n\nTo install the integration, complete the following steps:"
+    },
+    {
+      "type": "markdown",
+      "content": "1. In your Grafana Cloud stack, click **Connections** in the left-side menu.\n\n2. Search for `AI Observability`.\n\n3. Click the **AI Observability** card.\n\n4. Click **Install dashboards** to install all five specialized dashboards:\n   - GenAI Observability\n   - GenAI Evaluations\n   - VectorDB Observability\n   - MCP Observability\n   - GPU Monitoring"
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you instrument a Python application with the OpenLIT SDK."
+    }
+  ]
+}

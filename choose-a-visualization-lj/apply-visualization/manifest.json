@@ -1,0 +1,17 @@
+{
+  "id": "choose-a-visualization-apply-visualization",
+  "type": "guide",
+  "description": "Select and apply a visualization to a panel.",
+  "category": "query-and-visualize",
+  "author": {
+    "name": "Grafana Labs",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["choose-a-visualization-browse-visualizations"],
+  "recommends": ["choose-a-visualization-end-journey"],
+  "suggests": [],
+  "provides": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "build-a-panel-end-journey",
+  "type": "guide",
+  "description": "Celebrate completing the Build a Panel learning path.",
+  "category": "query-and-visualize",
+  "author": {
+    "name": "Grafana Labs",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["build-a-panel-write-query"],
+  "recommends": [],
+  "suggests": ["choose-a-visualization-lj", "configure-panel-options-lj"],
+  "provides": []
+}

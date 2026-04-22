@@ -1,0 +1,17 @@
+{
+  "id": "explore-ai-observability-dashboards-navigate-dashboards",
+  "type": "guide",
+  "description": "Navigate to each of the five AI Observability dashboards and explore their key panels.",
+  "category": "onboarding",
+  "author": {
+    "name": "Grafana Labs",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["explore-ai-observability-dashboards-business-value"],
+  "recommends": ["explore-ai-observability-dashboards-identify-your-dashboards"],
+  "suggests": [],
+  "provides": []
+}
