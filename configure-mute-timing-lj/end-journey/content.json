@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "configure-mute-timing-end-journey",
+  "title": "Destination reached!",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Congratulations on completing this path! Job well done!"
+    },
+    {
+      "type": "markdown",
+      "content": "You have successfully:\n\n- Navigated to the mute timings configuration\n- Created a mute timing with specific time intervals\n- Attached the mute timing to a notification policy"
+    },
+    {
+      "type": "markdown",
+      "content": "Your mute timing now suppresses notifications during the windows you defined. Unlike silences (which are one-time), this mute timing repeats automatically according to the schedule."
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### Related paths\n\nConsider taking the following path:\n\n- [Create a silence](https://grafana.com/docs/learning-paths/create-silence/) for one-time notification suppression during planned maintenance"
+    }
+  ]
+}

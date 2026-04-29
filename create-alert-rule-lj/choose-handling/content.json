@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "create-alert-rule-choose-handling",
+  "title": "Choose no-data and error handling",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Sometimes a query returns no data (the metric disappeared) or fails with an error (the data source is unreachable). You can tell Grafana how to treat these situations instead of leaving the alert in an unknown state."
+    },
+    {
+      "type": "markdown",
+      "content": "To configure handling options, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "autoCollapse": false,
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "In the **Set evaluation behavior** section, find the **Configure no data and error handling** area."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Choose what happens when the query returns **no data**:\n\n| Option | What it does | Best for |\n|--------|-------------|----------|\n| No Data | Puts the alert in a special No Data state | When missing data itself is important to know about |\n| Alerting | Treats missing data as a problem and fires the alert | When missing data likely means something is down |\n| OK | Assumes everything is fine | When data gaps are expected (for example, batch jobs) |\n| Keep Last State | Keeps whatever state the alert was in before | When you want to avoid unnecessary state changes |"
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Choose what happens when the query returns an **error**:\n\n| Option | What it does | Best for |\n|--------|-------------|----------|\n| Error | Puts the alert in a special Error state | Most situations |\n| Alerting | Treats the error as a problem and fires the alert | When query errors signal real outages |\n| OK | Clears the alert | Rarely recommended |\n| Keep Last State | Keeps whatever state the alert was in before | When data source blips are common |"
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you will select a contact point so you receive notifications when the alert fires."
+    }
+  ]
+}

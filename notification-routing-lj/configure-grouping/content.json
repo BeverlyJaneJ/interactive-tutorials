@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "notification-routing-configure-grouping",
+  "title": "Configure grouping",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Grouping controls how Grafana bundles alert instances into notifications. Without grouping, each alert instance produces a separate notification. With grouping, Grafana combines instances that share the same label values into a single notification."
+    },
+    {
+      "type": "markdown",
+      "content": "To configure grouping, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "autoCollapse": false,
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "In the notification policy you created, find the **Group by** setting.\n\nThe labels you list here determine how Grafana bundles alerts. Instances that share the same values for all listed labels go into one group.\n\nFor example:\n\n| Group by | Effect |\n|----------|--------|\n| alertname | One notification per alert rule |\n| alertname, instance | One notification per rule per host |\n| team | One notification per team |"
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Choose how to group:\n\n- **Default (inherit from parent)**: Uses the same grouping as the parent policy.\n- **Custom labels**: Enter specific labels. For example, type `alertname` to get one notification per alert rule.\n- **Group all**: Bundles every matching alert into a single notification."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you will set timing intervals that control when Grafana sends and resends notifications."
+    }
+  ]
+}

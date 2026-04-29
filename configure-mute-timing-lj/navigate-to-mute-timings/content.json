@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "configure-mute-timing-navigate-to-mute-timings",
+  "title": "Navigate to mute timings",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Mute timings are managed from the Notification policies page. In this milestone you navigate there and start creating a new mute timing."
+    },
+    {
+      "type": "markdown",
+      "content": "To navigate to mute timings, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "autoCollapse": false,
+      "blocks": [
+        {
+          "type": "multistep",
+          "content": "In Grafana Cloud, navigate to **Alerts & IRM > Alerting > Notification policies** from the main menu.",
+          "requirements": ["navmenu-open"],
+          "steps": [
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerts-and-incidents']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting/routes']"
+            }
+          ]
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "On the Notification policies page, find the **Mute Timings** section (below the policy tree).\n\nClick **Add mute timing** to start creating a new mute timing."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you will configure the time intervals for your mute timing."
+    }
+  ]
+}

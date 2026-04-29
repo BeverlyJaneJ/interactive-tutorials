@@ -1,0 +1,17 @@
+{
+  "id": "create-alert-rule-choose-handling",
+  "type": "guide",
+  "description": "Configure what happens when a query returns no data or an error.",
+  "category": "take-action",
+  "author": {
+    "name": "BeverlyB-Grafana",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["create-alert-rule-set-evaluation"],
+  "recommends": ["create-alert-rule-select-contact-point"],
+  "suggests": [],
+  "provides": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": "configure-mute-timing-lj",
+  "type": "path",
+  "description": "Step-by-step guide: Configure a mute timing to create recurring quiet windows for alert notifications.",
+  "category": "take-action",
+  "author": {
+    "name": "BeverlyB-Grafana",
+    "team": "Grafana Documentation"
+  },
+  "startingLocation": "/alerting/routes",
+  "targeting": {
+    "match": {
+      "and": [
+        {
+          "urlPrefix": "/alerting"
+        },
+        {
+          "targetPlatform": "cloud"
+        }
+      ]
+    }
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "milestones": [
+    "configure-mute-timing-navigate-to-mute-timings",
+    "configure-mute-timing-create-mute-timing",
+    "configure-mute-timing-attach-to-policy",
+    "configure-mute-timing-end-journey"
+  ],
+  "depends": ["notification-routing-lj"],
+  "recommends": [],
+  "suggests": ["create-silence-lj"],
+  "provides": []
+}

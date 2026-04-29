@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "create-alert-rule-build-query",
+  "title": "Build your query",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "The query tells Grafana what data to watch. You will choose a data source, build the query, and preview the results to confirm Grafana is reading the right data."
+    },
+    {
+      "type": "markdown",
+      "content": "To build your query, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "autoCollapse": false,
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "In the **Define query and alert condition** section, locate the query editor.\n\nA default data source is already selected. Change it if you need to query a different data source."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Select the data source that holds the data you want to alert on:\n\n| Data type | Data source to select |\n|-----------|-----------------------|\n| Infrastructure metrics | Your Prometheus or Mimir data source |\n| Logs | Your Loki data source |"
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Build your query using the query builder:\n\n**For metrics (Prometheus or Mimir):**\n\n- Click **Metric** and search for the metric name you want to watch.\n- Add label filters to narrow the results (for example, `instance` or `job`).\n- Apply functions if needed (for example, `rate()` for per-second calculations).\n\n**For logs (Loki):**\n\n- Enter a LogQL query such as `{job=\"myapp\"} |= \"error\"`.\n- For rate-based alerts, wrap it in a metric query: `rate({job=\"myapp\"} |= \"error\" [5m])`."
+        },
+        {
+          "type": "interactive",
+          "action": "button",
+          "reftarget": "Run queries",
+          "content": "Click **Run queries** to preview the data your query returns.\n\nCheck that the results match the data you want to monitor. Each line in the preview represents a separate stream of data points that Grafana evaluates independently.",
+          "requirements": ["exists-reftarget"]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you will set the condition that decides when the alert fires."
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### More to explore (optional)\n\n- [Query and transform data](https://grafana.com/docs/grafana/latest/panels-visualizations/query-transform-data/)\n- [Grafana-managed alert rules](https://grafana.com/docs/grafana/latest/alerting/alerting-rules/create-grafana-managed-rule/)"
+    }
+  ]
+}

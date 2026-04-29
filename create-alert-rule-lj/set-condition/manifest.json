@@ -1,0 +1,17 @@
+{
+  "id": "create-alert-rule-set-condition",
+  "type": "guide",
+  "description": "Configure the Reduce and Threshold expressions that decide when the alert fires.",
+  "category": "take-action",
+  "author": {
+    "name": "BeverlyB-Grafana",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["create-alert-rule-build-query"],
+  "recommends": ["create-alert-rule-select-folder-labels"],
+  "suggests": [],
+  "provides": []
+}

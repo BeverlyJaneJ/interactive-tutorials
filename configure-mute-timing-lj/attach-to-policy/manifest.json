@@ -1,0 +1,17 @@
+{
+  "id": "configure-mute-timing-attach-to-policy",
+  "type": "guide",
+  "description": "Attach the mute timing to a notification policy so it takes effect.",
+  "category": "take-action",
+  "author": {
+    "name": "BeverlyB-Grafana",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["configure-mute-timing-create-mute-timing"],
+  "recommends": ["configure-mute-timing-end-journey"],
+  "suggests": [],
+  "provides": []
+}

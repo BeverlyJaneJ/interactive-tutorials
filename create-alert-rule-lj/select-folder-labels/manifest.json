@@ -1,0 +1,17 @@
+{
+  "id": "create-alert-rule-select-folder-labels",
+  "type": "guide",
+  "description": "Pick a folder and add labels to organize and route the alert rule.",
+  "category": "take-action",
+  "author": {
+    "name": "BeverlyB-Grafana",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["create-alert-rule-set-condition"],
+  "recommends": ["create-alert-rule-set-evaluation"],
+  "suggests": [],
+  "provides": []
+}

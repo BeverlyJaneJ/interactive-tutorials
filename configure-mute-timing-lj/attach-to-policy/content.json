@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "configure-mute-timing-attach-to-policy",
+  "title": "Attach mute timing to a policy",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "A mute timing only takes effect after you attach it to a notification policy. Any policy in the tree can have one or more mute timings."
+    },
+    {
+      "type": "markdown",
+      "content": "To attach the mute timing, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "autoCollapse": false,
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "On the **Notification policies** page, find the policy you want to apply the mute timing to.\n\nClick the **Edit** (pencil) icon on that policy."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "In the policy editor, find the **Mute timings** dropdown.\n\nSelect the mute timing you just created from the list."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Click **Save policy** to apply the change.\n\nDuring the mute timing windows, Grafana continues evaluating alerts normally but suppresses notifications that route through this policy."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "Your mute timing is now active. Notifications that route through the selected policy will be suppressed during the time windows you defined. The alerts themselves continue to be evaluated and change state normally."
+    }
+  ]
+}

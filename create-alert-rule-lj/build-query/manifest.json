@@ -1,0 +1,17 @@
+{
+  "id": "create-alert-rule-build-query",
+  "type": "guide",
+  "description": "Select a data source, configure a query, and preview the results.",
+  "category": "take-action",
+  "author": {
+    "name": "BeverlyB-Grafana",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["create-alert-rule-navigate-and-name"],
+  "recommends": ["create-alert-rule-set-condition"],
+  "suggests": [],
+  "provides": []
+}

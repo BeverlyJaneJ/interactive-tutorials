@@ -1,0 +1,17 @@
+{
+  "id": "create-silence-end-journey",
+  "type": "guide",
+  "description": "Congratulations on completing the create silence learning path.",
+  "category": "take-action",
+  "author": {
+    "name": "BeverlyB-Grafana",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["create-silence-verify-silence"],
+  "recommends": [],
+  "suggests": ["configure-mute-timing-lj"],
+  "provides": []
+}

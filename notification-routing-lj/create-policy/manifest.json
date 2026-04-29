@@ -1,0 +1,17 @@
+{
+  "id": "notification-routing-create-policy",
+  "type": "guide",
+  "description": "Create a new notification policy with label matchers and a contact point.",
+  "category": "take-action",
+  "author": {
+    "name": "BeverlyB-Grafana",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["notification-routing-understand-routing"],
+  "recommends": ["notification-routing-configure-grouping"],
+  "suggests": [],
+  "provides": []
+}

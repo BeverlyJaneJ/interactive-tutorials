@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "create-alert-rule-set-condition",
+  "title": "Set the condition",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "The condition decides when the alert fires. Grafana uses two expressions to turn your query results into a yes-or-no decision: **Reduce** collapses each stream of data points down to a single number, and **Threshold** compares that number against a boundary you choose."
+    },
+    {
+      "type": "markdown",
+      "content": "To set the condition, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "autoCollapse": false,
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "In the **Define query and alert condition** section, scroll down to the **Expressions** area.\n\nGrafana automatically adds a **Reduce** expression (B) and a **Threshold** expression (C)."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Configure the **Reduce** expression:\n\n- **Function**: Choose how to collapse the data. Select **Last** to use the most recent value, or **Mean** to use the average.\n- **Input**: Should reference your query (typically **A**)."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Configure the **Threshold** expression:\n\n- **Input**: Should reference the Reduce expression (typically **B**).\n- **Condition**: Select the comparison.\n\n  | What you want to catch | Condition to select |\n  |------------------------|---------------------|\n  | High CPU usage | IS ABOVE |\n  | Low disk space | IS BELOW |\n  | Elevated error rate | IS ABOVE |\n\n- **Value**: Enter the boundary number (for example, `80` for 80% CPU)."
+        },
+        {
+          "type": "interactive",
+          "action": "button",
+          "reftarget": "Preview alert rule condition",
+          "content": "Click **Preview** to test your condition against live data.\n\nThe preview shows which streams would currently be firing. Use this to confirm your boundary is set correctly.",
+          "requirements": ["exists-reftarget"]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you will organize the rule in a folder and add labels."
+    }
+  ]
+}

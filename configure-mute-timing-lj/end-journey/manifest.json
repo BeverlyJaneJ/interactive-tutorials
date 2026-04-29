@@ -1,0 +1,17 @@
+{
+  "id": "configure-mute-timing-end-journey",
+  "type": "guide",
+  "description": "Congratulations on completing the configure mute timing learning path.",
+  "category": "take-action",
+  "author": {
+    "name": "BeverlyB-Grafana",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["configure-mute-timing-attach-to-policy"],
+  "recommends": [],
+  "suggests": ["create-silence-lj"],
+  "provides": []
+}

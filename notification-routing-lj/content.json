@@ -1,0 +1,10 @@
+{
+  "id": "notification-routing-lj",
+  "title": "Configure notification routing",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Welcome to the Grafana learning path that walks you through configuring notification routing. You will learn how notification policies use label matchers to send different alerts to different destinations, set up grouping so related alerts arrive together, and configure timing to control how often Grafana resends notifications.\n\n## Here's what to expect\n\nWhen you finish this path, you will be able to:\n\n- Understand how the notification policy tree routes alerts based on labels\n- Create a new notification policy with label matchers\n- Configure grouping so related alert instances arrive in a single notification\n- Set wait, group interval, and repeat interval timing\n\n## Before you begin\n\nMake sure you have:\n\n- A Grafana Cloud account with Editor or Admin permissions.\n- At least one alert rule already created (complete the **Create an alert rule** path first).\n- At least one contact point configured (for example, email, Slack, or PagerDuty)."
+    }
+  ]
+}

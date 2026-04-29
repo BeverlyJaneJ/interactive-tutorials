@@ -1,0 +1,17 @@
+{
+  "id": "create-alert-rule-navigate-and-name",
+  "type": "guide",
+  "description": "Open the Alerting section, start a new alert rule, and enter its name.",
+  "category": "take-action",
+  "author": {
+    "name": "BeverlyB-Grafana",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": [],
+  "recommends": ["create-alert-rule-build-query"],
+  "suggests": [],
+  "provides": []
+}

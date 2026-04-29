@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "notification-routing-set-timing",
+  "title": "Set timing",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Timing controls how quickly Grafana sends the first notification for a group, how soon it sends updates when new alerts join the group, and how often it resends reminders for alerts that are still firing."
+    },
+    {
+      "type": "markdown",
+      "content": "To set timing, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "autoCollapse": false,
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "In the notification policy, find the timing settings and configure each interval:\n\n| Setting | What it controls | Example |\n|---------|------------------|---------|\n| **Group wait** | How long Grafana waits before sending the first notification for a new group. This gives time for related alerts to arrive and be bundled together. | 30s |\n| **Group interval** | After the first notification, how long Grafana waits before sending another notification if new alerts join the group. | 5m |\n| **Repeat interval** | How often Grafana resends a notification if the alert is still firing and nothing has changed. | 4h |"
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Choose values based on urgency:\n\n| Situation | Group wait | Group interval | Repeat interval |\n|-----------|------------|----------------|-----------------|\n| Critical alerts | 30s | 1m | 1h |\n| Standard monitoring | 30s | 5m | 4h |\n| Low-priority alerts | 1m | 10m | 12h |"
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Click **Save policy** to apply the timing settings."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "You have now configured a complete notification policy with label matchers, grouping, and timing."
+    }
+  ]
+}

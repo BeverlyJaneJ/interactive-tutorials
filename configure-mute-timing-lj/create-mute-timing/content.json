@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "configure-mute-timing-create-mute-timing",
+  "title": "Create a mute timing",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "A mute timing defines when notifications should be suppressed. You set time intervals using days, hours, and optionally months or years."
+    },
+    {
+      "type": "markdown",
+      "content": "To create a mute timing, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "autoCollapse": false,
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Enter a **Name** for the mute timing.\n\nUse a descriptive name that explains when it applies. For example:\n- `Weekend quiet hours`\n- `Overnight maintenance window`\n- `Holiday schedule`"
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Configure the **time interval**:\n\n| Field | What it sets | Example |\n|-------|-------------|--------|\n| **Time range** | Hours of the day (UTC) | 22:00 to 06:00 |\n| **Days of the week** | Which days the mute applies | Saturday, Sunday |\n| **Days of the month** | Specific calendar days | 1, 15 |\n| **Months** | Which months | January, December |\n| **Years** | Specific years (optional) | 2026 |"
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Click **Add another time interval** if you need multiple windows in the same mute timing.\n\nFor example, you might want both overnight hours (22:00-06:00 every day) and full weekends (all day Saturday and Sunday)."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Click **Submit** to save the mute timing.\n\nThe mute timing is saved but not yet active. You need to attach it to a notification policy in the next step."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you will attach this mute timing to a notification policy."
+    }
+  ]
+}

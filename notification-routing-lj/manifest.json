@@ -1,0 +1,37 @@
+{
+  "id": "notification-routing-lj",
+  "type": "path",
+  "description": "Step-by-step guide: Configure notification policies, label matchers, grouping, and timing.",
+  "category": "take-action",
+  "author": {
+    "name": "BeverlyB-Grafana",
+    "team": "Grafana Documentation"
+  },
+  "startingLocation": "/alerting/routes",
+  "targeting": {
+    "match": {
+      "and": [
+        {
+          "urlPrefix": "/alerting"
+        },
+        {
+          "targetPlatform": "cloud"
+        }
+      ]
+    }
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "milestones": [
+    "notification-routing-understand-routing",
+    "notification-routing-create-policy",
+    "notification-routing-configure-grouping",
+    "notification-routing-set-timing",
+    "notification-routing-end-journey"
+  ],
+  "depends": ["create-alert-rule-lj"],
+  "recommends": ["create-silence-lj", "configure-mute-timing-lj"],
+  "suggests": [],
+  "provides": []
+}

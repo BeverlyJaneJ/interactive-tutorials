@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "create-alert-rule-select-folder-labels",
+  "title": "Select folder and add labels",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Folders group related alert rules so you can find them easily. Labels are key-value pairs attached to every alert instance the rule produces. Notification policies use labels to decide where to send notifications."
+    },
+    {
+      "type": "markdown",
+      "content": "To select a folder and add labels, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "autoCollapse": false,
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "In the **Set evaluation behavior** section, click **Select folder** to choose or create a folder for your alert rule.\n\nFolders help you organize rules by team, service, or environment.\n\nFor example, select or create a folder named `Infrastructure alerts` or `Application monitoring`."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "In the **Add labels** section, click **Add label** to attach labels that identify your alert.\n\nEnter a label key and value. For example:\n\n| Key | Value | Purpose |\n|-----|-------|---------|\n| severity | warning | Priority level |\n| team | platform | Who receives the notification |\n| service | api-gateway | Which service the alert covers |"
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you will set how often Grafana checks the condition."
+    }
+  ]
+}

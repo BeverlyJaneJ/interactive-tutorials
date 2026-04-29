@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "notification-routing-understand-routing",
+  "title": "How notification routing works",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Notification policies form a tree that decides where each alert notification goes. When an alert fires, Grafana walks the tree from top to bottom, matching the alert's labels against each policy's label matchers. The first matching child policy handles the notification. If no child matches, the default (root) policy catches it."
+    },
+    {
+      "type": "markdown",
+      "content": "To see the current policy tree, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "autoCollapse": false,
+      "blocks": [
+        {
+          "type": "multistep",
+          "content": "In Grafana Cloud, navigate to **Alerts & IRM > Alerting > Notification policies** from the main menu.",
+          "requirements": ["navmenu-open"],
+          "steps": [
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerts-and-incidents']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting/routes']"
+            }
+          ]
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Look at the **Default policy** at the top. This is the root of the tree. It catches any alert that does not match a more specific child policy.\n\nBelow it, you may see child policies (called nested policies). Each child policy has:\n\n- **Label matchers**: Rules like `severity=critical` that determine which alerts this policy handles.\n- **Contact point**: Where matching alerts are sent.\n- **Grouping**: How matching alerts are bundled together."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you will create a new notification policy with label matchers."
+    }
+  ]
+}

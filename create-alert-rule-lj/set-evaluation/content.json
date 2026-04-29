@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "create-alert-rule-set-evaluation",
+  "title": "Set evaluation behavior",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Evaluation behavior controls two things: how often Grafana runs the query (the evaluation interval) and how long the condition must stay true before the alert actually fires (the pending period)."
+    },
+    {
+      "type": "markdown",
+      "content": "To set evaluation behavior, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "autoCollapse": false,
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "In the **Set evaluation behavior** section, select or create an **Evaluation group**.\n\nAll rules in the same group share the same evaluation interval. For example, a group called `CPU alerts` with a 1-minute interval checks every rule in it once per minute."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Set the **Evaluation interval** if you are creating a new group.\n\nThis controls how often Grafana runs the query:\n\n| Situation | Recommended interval |\n|-----------|-----------------------|\n| Critical infrastructure | 1m |\n| General monitoring | 5m |"
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Set the **Pending period** (sometimes called the \"for\" duration).\n\nThis is how long the condition must stay true before the alert fires. It filters out brief spikes that resolve on their own.\n\n| Alert type | Recommended pending period | Why |\n|------------|---------------------------|-----|\n| CPU spike | 5m | Filters short spikes during deployments |\n| Error burst | 2m | Catches sustained error patterns |\n| Disk space | 10m | Disk changes slowly, so a longer window is safe |"
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you will choose what happens when data is missing or returns an error."
+    }
+  ]
+}

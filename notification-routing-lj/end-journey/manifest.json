@@ -1,0 +1,17 @@
+{
+  "id": "notification-routing-end-journey",
+  "type": "guide",
+  "description": "Congratulations on completing the notification routing learning path.",
+  "category": "take-action",
+  "author": {
+    "name": "BeverlyB-Grafana",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["notification-routing-set-timing"],
+  "recommends": [],
+  "suggests": ["create-silence-lj", "configure-mute-timing-lj"],
+  "provides": []
+}

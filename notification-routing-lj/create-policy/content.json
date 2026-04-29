@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "notification-routing-create-policy",
+  "title": "Create a notification policy",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "A notification policy routes alerts that match specific labels to a contact point you choose. In this milestone you create a new child policy under the default policy."
+    },
+    {
+      "type": "markdown",
+      "content": "To create a notification policy, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "autoCollapse": false,
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "On the **Notification policies** page, click **+ New child policy** under the Default policy.\n\nA configuration panel opens where you define label matchers and select a contact point."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Add **label matchers** that determine which alerts this policy handles.\n\nClick **Add matcher** and enter a label, operator, and value.\n\nFor example:\n\n| Label | Operator | Value | Effect |\n|-------|----------|-------|--------|\n| severity | = | critical | Matches alerts labeled severity=critical |\n| team | = | platform | Matches alerts labeled team=platform |"
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Select a **contact point** for this policy.\n\nAll alerts that match the label matchers you defined will be sent to this destination.\n\nFor example, send critical alerts to a PagerDuty integration and warning alerts to a Slack channel."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Click **Save policy** to create the new child policy.\n\nThe policy now appears in the tree under the Default policy. Alerts with matching labels will route to the contact point you selected."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you will configure how alerts are grouped in this policy."
+    }
+  ]
+}

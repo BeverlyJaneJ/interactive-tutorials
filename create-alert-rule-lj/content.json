@@ -1,0 +1,10 @@
+{
+  "id": "create-alert-rule-lj",
+  "title": "Create a Grafana-managed alert rule",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Welcome to the Grafana learning path that walks you through creating an alert rule. You will open the Alerting section, name a rule, write a query, set conditions, choose evaluation timing, and save the rule so Grafana starts monitoring your data.\n\n## Here's what to expect\n\nWhen you finish this path, you will be able to:\n\n- Navigate to the Alert rules page and start a new rule\n- Enter a rule name and build a query that tells Grafana what data to watch\n- Configure a condition that decides when the alert fires\n- Organize the rule in a folder and add labels for routing\n- Set how often Grafana checks the condition and how long it must be true before firing\n- Choose what happens when data is missing or returns an error\n- Pick a contact point so you receive notifications\n- Save the rule and confirm it appears in the rules list\n\n## Before you begin\n\nMake sure you have:\n\n- A Grafana Cloud account with Editor or Admin permissions.\n- At least one data source (such as Prometheus, Mimir, or Loki) sending data to Grafana Cloud.\n- A contact point already configured, or the default email contact point available."
+    }
+  ]
+}

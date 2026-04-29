@@ -1,0 +1,17 @@
+{
+  "id": "notification-routing-set-timing",
+  "type": "guide",
+  "description": "Set wait, group interval, and repeat interval timing.",
+  "category": "take-action",
+  "author": {
+    "name": "BeverlyB-Grafana",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["notification-routing-configure-grouping"],
+  "recommends": ["notification-routing-end-journey"],
+  "suggests": [],
+  "provides": []
+}

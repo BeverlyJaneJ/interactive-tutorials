@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "notification-routing-end-journey",
+  "title": "Destination reached!",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Congratulations on completing this path! Job well done!"
+    },
+    {
+      "type": "markdown",
+      "content": "You have successfully:\n\n- Understood how the notification policy tree routes alerts based on labels\n- Created a notification policy with label matchers and a contact point\n- Configured grouping so related alert instances arrive in a single notification\n- Set group wait, group interval, and repeat interval timing"
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### Related paths\n\nConsider taking the following paths after you complete this one:\n\n- [Create a silence](https://grafana.com/docs/learning-paths/create-silence/) to temporarily stop notifications\n- [Configure a mute timing](https://grafana.com/docs/learning-paths/configure-mute-timing/) to set recurring quiet windows"
+    }
+  ]
+}

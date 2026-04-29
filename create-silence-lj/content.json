@@ -1,0 +1,10 @@
+{
+  "id": "create-silence-lj",
+  "title": "Create a silence",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Welcome to the Grafana learning path that walks you through creating a silence. A silence temporarily stops notifications for alerts that match specific labels, without changing the alert rule or its evaluation. This is useful during planned maintenance or known outages.\n\n## Here's what to expect\n\nWhen you finish this path, you will be able to:\n\n- Navigate to the Silences page\n- Create a silence with label matchers and a duration\n- Verify the silence is active and matching the correct alerts\n\n## Before you begin\n\nMake sure you have:\n\n- A Grafana Cloud account with Editor or Admin permissions.\n- At least one alert rule already created.\n- An understanding of which labels identify the alerts you want to silence."
+    }
+  ]
+}

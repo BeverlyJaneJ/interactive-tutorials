@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "create-silence-create-silence",
+  "title": "Create a silence",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "A silence uses label matchers to identify which alert notifications to suppress. You set a start time, an end time (or duration), and an optional comment explaining why."
+    },
+    {
+      "type": "markdown",
+      "content": "To create a silence, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "autoCollapse": false,
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Set the **silence duration** or provide start and end times.\n\nFor a quick silence during maintenance, choose a duration like 2h or 4h. For a planned window, set specific start and end times."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Add **label matchers** to identify which alerts to silence.\n\nClick **Add matcher** and enter a label, operator, and value.\n\nFor example:\n\n| Label | Operator | Value | Effect |\n|-------|----------|-------|--------|\n| alertname | = | HighCPU | Silences a specific alert rule |\n| instance | =~ | prod-.* | Silences all production hosts (regex match) |\n| severity | = | warning | Silences all warning-level alerts |"
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Add a **comment** explaining why you are creating this silence.\n\nFor example: `Planned maintenance window for database servers` or `Suppressing alerts during deployment`."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Click **Submit** to create the silence.\n\nThe silence takes effect immediately (or at the start time you specified). Grafana continues evaluating the alert rules, but notifications for matching alerts are suppressed."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you will verify the silence is active and matching the correct alerts."
+    }
+  ]
+}

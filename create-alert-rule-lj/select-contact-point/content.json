@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "create-alert-rule-select-contact-point",
+  "title": "Select contact point",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "A contact point is the destination where Grafana sends notifications when an alert fires. For your first rule, you will use the default notification policy and select an existing contact point."
+    },
+    {
+      "type": "markdown",
+      "content": "To select a contact point, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "autoCollapse": false,
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "In the **Configure notifications** section, leave **Use default policy** selected.\n\nThe default policy sends all alerts to the contact point you choose here. This is the simplest setup for getting started."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Select a contact point from the dropdown.\n\nIf a default contact point already exists (such as a default email), you can keep it. If you need a different destination, select another contact point from the list.\n\n| Contact point type | When to use |\n|--------------------|-------------|\n| Email | Quick setup, good for testing |\n| Slack | Team channels for collaborative response |\n| PagerDuty | On-call rotation and escalation |"
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Skip the advanced options for now:\n\n- **Override grouping**: Keep defaults\n- **Override timings**: Keep defaults\n\nYou will learn about custom routing in the **Notification routing** learning path."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you will save the rule and verify it appears in the rules list."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "create-silence-create-silence",
+  "type": "guide",
+  "description": "Create a silence with label matchers and a duration.",
+  "category": "take-action",
+  "author": {
+    "name": "BeverlyB-Grafana",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["create-silence-navigate-to-silences"],
+  "recommends": ["create-silence-verify-silence"],
+  "suggests": [],
+  "provides": []
+}

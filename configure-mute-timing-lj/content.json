@@ -1,0 +1,10 @@
+{
+  "id": "configure-mute-timing-lj",
+  "title": "Configure a mute timing",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Welcome to the Grafana learning path that walks you through configuring a mute timing. A mute timing creates a recurring schedule that suppresses notifications during specific time windows, such as weekends or overnight hours. Unlike silences (which are one-time), mute timings repeat automatically.\n\n## Here's what to expect\n\nWhen you finish this path, you will be able to:\n\n- Navigate to the mute timings configuration\n- Create a mute timing with specific time intervals\n- Attach the mute timing to a notification policy\n\n## Before you begin\n\nMake sure you have:\n\n- A Grafana Cloud account with Editor or Admin permissions.\n- At least one notification policy already configured (complete the **Notification routing** path first)."
+    }
+  ]
+}

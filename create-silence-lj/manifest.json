@@ -1,0 +1,36 @@
+{
+  "id": "create-silence-lj",
+  "type": "path",
+  "description": "Step-by-step guide: Create a silence to temporarily stop alert notifications.",
+  "category": "take-action",
+  "author": {
+    "name": "BeverlyB-Grafana",
+    "team": "Grafana Documentation"
+  },
+  "startingLocation": "/alerting/silences",
+  "targeting": {
+    "match": {
+      "and": [
+        {
+          "urlPrefix": "/alerting"
+        },
+        {
+          "targetPlatform": "cloud"
+        }
+      ]
+    }
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "milestones": [
+    "create-silence-navigate-to-silences",
+    "create-silence-create-silence",
+    "create-silence-verify-silence",
+    "create-silence-end-journey"
+  ],
+  "depends": ["notification-routing-lj"],
+  "recommends": [],
+  "suggests": ["configure-mute-timing-lj"],
+  "provides": []
+}

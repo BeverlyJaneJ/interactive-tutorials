@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "create-alert-rule-navigate-and-name",
+  "title": "Navigate and name your rule",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Every alert rule starts with two things: opening the right page and giving the rule a clear name. In this milestone you navigate to the Alert rules page and begin creating a new rule."
+    },
+    {
+      "type": "markdown",
+      "content": "To navigate and name your rule, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "autoCollapse": false,
+      "blocks": [
+        {
+          "type": "multistep",
+          "content": "In Grafana Cloud, navigate to **Alerts & IRM > Alerting > Alert rules** from the main menu.",
+          "requirements": ["navmenu-open"],
+          "steps": [
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerts-and-incidents']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting']"
+            },
+            {
+              "action": "highlight",
+              "reftarget": "a[data-testid='data-testid Nav menu item'][href='/alerting/list']"
+            }
+          ]
+        },
+        {
+          "type": "interactive",
+          "action": "highlight",
+          "reftarget": "a[href=\"/alerting/new/alerting\"]",
+          "content": "Click **+ New alert rule** in the upper right.\n\nThe alert rule editor opens with sections for defining your query, conditions, evaluation behavior, and notifications.",
+          "requirements": ["exists-reftarget", "on-page:/alerting/list"]
+        },
+        {
+          "type": "interactive",
+          "action": "highlight",
+          "reftarget": "input[placeholder='Give your alert rule a name']",
+          "content": "Enter a descriptive **Alert rule name** at the top of the page.\n\nUse a name that clearly identifies what the alert watches.\n\nFor example:\n- `High CPU usage - production servers`\n- `Error rate spike - API gateway`\n- `Disk space critical - database cluster`",
+          "doIt": false,
+          "requirements": ["exists-reftarget"]
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you will build the query that tells Grafana what data to watch."
+    }
+  ]
+}

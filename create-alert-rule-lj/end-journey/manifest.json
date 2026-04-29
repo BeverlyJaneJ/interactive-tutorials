@@ -1,0 +1,17 @@
+{
+  "id": "create-alert-rule-end-journey",
+  "type": "guide",
+  "description": "Congratulations on completing the create alert rule learning path.",
+  "category": "take-action",
+  "author": {
+    "name": "BeverlyB-Grafana",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["create-alert-rule-save-and-verify"],
+  "recommends": [],
+  "suggests": ["notification-routing-lj"],
+  "provides": []
+}

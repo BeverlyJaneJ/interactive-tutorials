@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "create-silence-verify-silence",
+  "title": "Verify your silence",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "After creating a silence, verify it is active and matching the alerts you intended."
+    },
+    {
+      "type": "markdown",
+      "content": "To verify your silence, complete the following steps:"
+    },
+    {
+      "type": "section",
+      "autoCollapse": false,
+      "blocks": [
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "On the **Silences** page, find your new silence in the list. Confirm it shows:\n\n- **Status**: Active\n- **Matchers**: The label matchers you entered\n- **Expires**: The end time or remaining duration"
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Check the **Affected alerts** count to confirm the silence is matching the right alerts.\n\nIf the count is 0 and you expected matches, check your label matchers. A common mistake is using the wrong label name or value. Check the alert instances page to see the exact labels on your alerts."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "To end the silence early, click the **Unsilence** button next to it.\n\nThe silence expires immediately and notifications resume for matching alerts."
+        }
+      ]
+    },
+    {
+      "type": "markdown",
+      "content": "Your silence is now active. Grafana continues evaluating the alert rules normally, but notifications for matching alerts are suppressed until the silence expires."
+    }
+  ]
+}
