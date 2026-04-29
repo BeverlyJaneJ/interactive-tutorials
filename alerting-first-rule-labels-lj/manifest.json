@@ -1,0 +1,31 @@
+{
+  "id": "alerting-first-rule-labels-lj",
+  "type": "path",
+  "description": "Step-by-step guide: configure labels, evaluation group, and pending period.",
+  "category": "take-action",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "startingLocation": "/alerting/new/alerting",
+  "targeting": {
+    "match": {
+      "and": [
+        { "urlPrefixIn": ["/alerting"] },
+        { "targetPlatform": "cloud" }
+      ]
+    }
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "milestones": [
+    "alerting-first-rule-labels-business-value",
+    "alerting-first-rule-labels-configure-labels-evaluation",
+    "alerting-first-rule-labels-end-journey"
+  ],
+  "depends": ["alerting-first-rule-condition-lj"],
+  "recommends": ["alerting-first-rule-save-lj"],
+  "suggests": [],
+  "provides": []
+}

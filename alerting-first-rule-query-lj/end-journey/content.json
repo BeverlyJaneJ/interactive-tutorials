@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "alerting-first-rule-query-end-journey",
+  "title": "Destination reached!",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Congratulations on completing this journey! Job well done!\n\nWe hope you've enjoyed traveling with us as you:\n\n- Navigated to the alert rule creation page\n- Named your alert rule\n- Selected a data source and built a query\n- Previewed your query results"
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### More to explore (optional)\n\nThe world is your oyster! Read more about how you can:\n\n- [Learn about alert rule queries and conditions](https://grafana.com/docs/grafana/latest/alerting/fundamentals/alert-rules/queries-conditions/)\n- [Explore supported data sources for alerting](https://grafana.com/docs/grafana/latest/alerting/fundamentals/alert-rules/queries-conditions/#supported-data-sources)"
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### Related paths\n\nConsider taking the following paths after you complete this journey:\n\n- [Create your first alert rule: condition](https://grafana.com/docs/learning-paths/alerting-first-rule-condition/)"
+    }
+  ]
+}

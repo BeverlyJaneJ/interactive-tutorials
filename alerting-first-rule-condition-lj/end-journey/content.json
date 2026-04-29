@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "alerting-first-rule-condition-end-journey",
+  "title": "Destination reached!",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Congratulations on completing this journey! Job well done!\n\nWe hope you've enjoyed traveling with us as you:\n\n- Set a collapse function\n- Defined a boundary value\n- Previewed condition results"
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### Related paths\n\nConsider taking the following paths after you complete this journey:\n\n- [Create your first alert rule: labels and evaluation](https://grafana.com/docs/learning-paths/alerting-first-rule-labels/)"
+    }
+  ]
+}

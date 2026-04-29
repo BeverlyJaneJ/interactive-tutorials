@@ -1,0 +1,17 @@
+{
+  "id": "alerting-first-rule-query-build-query",
+  "type": "guide",
+  "description": "Select a data source, build a query, and preview results.",
+  "category": "take-action",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["alerting-first-rule-query-navigate-to-form"],
+  "recommends": ["alerting-first-rule-query-end-journey"],
+  "suggests": [],
+  "provides": []
+}

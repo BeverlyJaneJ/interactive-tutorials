@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "alerting-first-rule-query-build-query",
+  "title": "Build your query",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Now you'll select a data source and build a query that returns the data you want to monitor.\n\nTo build your query, complete the following steps:"
+    },
+    {
+      "type": "markdown",
+      "content": "1. In the **Define query and alert condition** section, select **TestData** from the data source dropdown.\n2. In the **Scenario** dropdown, select **Random Walk**.\n3. Click **Preview** to see the data your query returns.\n\nYou should see a time series graph showing the random walk data. This confirms your query is working and returning data that Grafana can evaluate."
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you'll review what you accomplished."
+    }
+  ]
+}

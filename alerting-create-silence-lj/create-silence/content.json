@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "alerting-create-silence-create-silence",
+  "title": "Create a silence",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Now you'll create a silence to suppress notifications for matching alerts during a maintenance window.\n\nTo create a silence, complete the following steps:"
+    },
+    {
+      "type": "markdown",
+      "content": "1. In the Grafana side menu, click **Alerting**.\n2. Click **Silences**.\n3. Click **+ Create silence**.\n4. Set the **Start** and **End** time for your maintenance window.\n5. Under **Matching labels**, click **+ Add matcher**.\n6. Enter a label name (for example, `alertname`) and a value (for example, `HighCPU`).\n7. Review the **Affected alert instances** section to verify the correct alerts will be silenced.\n8. Add a **Comment** explaining why you're creating this silence (for example, `Planned maintenance window`).\n9. Click **Submit**."
+    },
+    {
+      "type": "markdown",
+      "content": "The silence appears in the Silences list with an Active status. Matching alerts still show as Firing in the UI but no notifications are sent during the window."
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you'll review what you accomplished."
+    }
+  ]
+}

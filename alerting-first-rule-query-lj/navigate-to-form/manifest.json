@@ -1,0 +1,17 @@
+{
+  "id": "alerting-first-rule-query-navigate-to-form",
+  "type": "guide",
+  "description": "Navigate to the alert rule creation page and enter a rule name.",
+  "category": "take-action",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["alerting-first-rule-query-business-value"],
+  "recommends": ["alerting-first-rule-query-build-query"],
+  "suggests": [],
+  "provides": []
+}

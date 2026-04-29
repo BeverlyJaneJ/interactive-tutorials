@@ -1,0 +1,17 @@
+{
+  "id": "alerting-first-rule-condition-set-condition",
+  "type": "guide",
+  "description": "Set the alert condition using reducer and threshold.",
+  "category": "take-action",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["alerting-first-rule-condition-business-value"],
+  "recommends": ["alerting-first-rule-condition-end-journey"],
+  "suggests": [],
+  "provides": []
+}

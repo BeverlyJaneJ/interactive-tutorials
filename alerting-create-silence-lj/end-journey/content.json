@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "alerting-create-silence-end-journey",
+  "title": "Destination reached!",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Congratulations on completing this journey! Job well done!\n\nWe hope you've enjoyed traveling with us as you:\n\n- Navigated to the Silences page\n- Set a time window\n- Configured label matchers\n- Verified affected instances\n- Submitted a working silence"
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### More to explore (optional)\n\nThe world is your oyster! Read more about how you can:\n\n- [Learn about mute timings for recurring schedules](https://grafana.com/docs/grafana/latest/alerting/configure-notifications/mute-timings/)"
+    }
+  ]
+}

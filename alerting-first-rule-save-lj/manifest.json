@@ -1,0 +1,31 @@
+{
+  "id": "alerting-first-rule-save-lj",
+  "type": "path",
+  "description": "Step-by-step guide: configure handling, add notification message, save, and verify your alert rule.",
+  "category": "take-action",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "startingLocation": "/alerting/new/alerting",
+  "targeting": {
+    "match": {
+      "and": [
+        { "urlPrefixIn": ["/alerting"] },
+        { "targetPlatform": "cloud" }
+      ]
+    }
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "milestones": [
+    "alerting-first-rule-save-business-value",
+    "alerting-first-rule-save-configure-handling-save",
+    "alerting-first-rule-save-end-journey"
+  ],
+  "depends": ["alerting-first-rule-labels-lj"],
+  "recommends": ["alerting-create-silence-lj"],
+  "suggests": [],
+  "provides": []
+}

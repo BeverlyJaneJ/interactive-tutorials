@@ -1,0 +1,17 @@
+{
+  "id": "alerting-first-rule-labels-configure-labels-evaluation",
+  "type": "guide",
+  "description": "Configure evaluation group, pending period, and labels.",
+  "category": "take-action",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["alerting-first-rule-labels-business-value"],
+  "recommends": ["alerting-first-rule-labels-end-journey"],
+  "suggests": [],
+  "provides": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": "alerting-first-rule-query-lj",
+  "type": "path",
+  "description": "Step-by-step guide: navigate to the alert rule page, name your rule, and build a query.",
+  "category": "take-action",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "startingLocation": "/alerting/new/alerting",
+  "targeting": {
+    "match": {
+      "and": [
+        { "urlPrefixIn": ["/alerting"] },
+        { "targetPlatform": "cloud" }
+      ]
+    }
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "milestones": [
+    "alerting-first-rule-query-business-value",
+    "alerting-first-rule-query-navigate-to-form",
+    "alerting-first-rule-query-build-query",
+    "alerting-first-rule-query-end-journey"
+  ],
+  "depends": [],
+  "recommends": ["alerting-first-rule-condition-lj"],
+  "suggests": [],
+  "provides": []
+}

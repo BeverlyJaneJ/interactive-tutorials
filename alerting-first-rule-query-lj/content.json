@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "alerting-first-rule-query-lj",
+  "title": "Create your first alert rule: query",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Welcome to the alert rule query learning path. You'll navigate to the alert rule page, name your rule, select a data source, and build a query that returns the data you want to monitor.\n\nThis is the first step of creating a complete Grafana-managed alert rule. Each learning path in this series covers one section of the alert rule GUI."
+    },
+    {
+      "type": "markdown",
+      "content": "## Here's what to expect\n\nWhen you complete this path, you'll be able to:\n\n- Navigate to the alert rule creation page in Grafana\n- Give your rule a descriptive name\n- Select a data source and build a query\n- Preview query results to verify your data selection"
+    },
+    {
+      "type": "markdown",
+      "content": "## Before you begin\n\nBefore you start, ensure you have:\n\n- A Grafana Cloud account. To create one, refer to [Grafana Cloud](https://grafana.com/signup/cloud/connect-account).\n- The TestData data source is available in every Grafana instance (no setup required)."
+    },
+    {
+      "type": "markdown",
+      "content": "## Troubleshooting\n\nIf you get stuck, we've got your back! Where appropriate, troubleshooting information is just a click away."
+    }
+  ]
+}

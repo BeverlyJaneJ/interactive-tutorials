@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "alerting-first-rule-save-configure-handling-save",
+  "title": "Configure handling, notifications, and save",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Now you'll configure how your alert rule handles missing data and errors, set up notifications, add annotations, and save the complete rule.\n\nTo configure handling and save your rule, complete the following steps:"
+    },
+    {
+      "type": "markdown",
+      "content": "1. In the **Configure no data and error handling** section, select your preferred **No data** option (for example, **Keep Last State**).\n2. Select your preferred **Error** option (for example, **Keep Last State**).\n3. In the **Configure notifications** section, select a contact point from the dropdown.\n4. In the **Add annotations** section, add a **Summary** annotation (for example, `High CPU usage on production server`).\n5. Optionally add a **Description** annotation with more detail.\n6. Click **Save rule and exit**."
+    },
+    {
+      "type": "markdown",
+      "content": "Your rule should appear in the Alert rules list. Its state shows Normal, Pending, or Alerting depending on your data."
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you'll review what you accomplished."
+    }
+  ]
+}

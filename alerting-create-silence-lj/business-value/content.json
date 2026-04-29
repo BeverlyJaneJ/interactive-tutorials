@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "alerting-create-silence-business-value",
+  "title": "Why create a silence?",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "During planned maintenance or known outages, you don't want notifications waking people up for expected problems. A silence suppresses notifications for matching alerts during a specific time window without stopping alert evaluation."
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you'll navigate to the Silences page and create a silence."
+    }
+  ]
+}

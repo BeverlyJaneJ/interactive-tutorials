@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "alerting-first-rule-condition-set-condition",
+  "title": "Set the alert condition",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Now you'll set the condition that tells Grafana when to fire the alert.\n\nTo set the alert condition, complete the following steps:"
+    },
+    {
+      "type": "markdown",
+      "content": "1. In the **Define query and alert condition** section, find the **When** dropdown.\n2. Select a collapse function (for example, **Last**).\n3. Select a boundary operator (for example, **Is above**).\n4. Enter a boundary value (for example, `75`).\n5. Click **Preview** to verify the condition evaluates correctly.\n\nYou should see the preview showing which data points would fire."
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you'll review what you accomplished."
+    }
+  ]
+}

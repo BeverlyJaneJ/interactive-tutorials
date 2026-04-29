@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "alerting-first-rule-save-business-value",
+  "title": "Why configure handling and notifications?",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Handling settings prevent surprise alerts when data disappears. Contact points and annotations ensure the right people get actionable notifications. Saving completes your rule and makes it live."
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you'll configure handling, notifications, and save your alert rule."
+    }
+  ]
+}

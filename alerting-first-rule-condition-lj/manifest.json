@@ -1,0 +1,31 @@
+{
+  "id": "alerting-first-rule-condition-lj",
+  "type": "path",
+  "description": "Step-by-step guide: set the alert condition using reducer and threshold.",
+  "category": "take-action",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "startingLocation": "/alerting/new/alerting",
+  "targeting": {
+    "match": {
+      "and": [
+        { "urlPrefixIn": ["/alerting"] },
+        { "targetPlatform": "cloud" }
+      ]
+    }
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "milestones": [
+    "alerting-first-rule-condition-business-value",
+    "alerting-first-rule-condition-set-condition",
+    "alerting-first-rule-condition-end-journey"
+  ],
+  "depends": ["alerting-first-rule-query-lj"],
+  "recommends": ["alerting-first-rule-labels-lj"],
+  "suggests": [],
+  "provides": []
+}

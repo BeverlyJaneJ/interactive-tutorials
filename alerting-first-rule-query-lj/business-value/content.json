@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "alerting-first-rule-query-business-value",
+  "title": "Why build an alert rule query?",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "The query is the foundation of every alert rule. It tells Grafana which data to watch. Without a well-defined query, Grafana can't check conditions or send notifications.\n\nA good query returns exactly the data you care about: the right metric, from the right systems, over the right time window. Getting this right means your alerts fire for real problems and stay quiet when things are fine."
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you'll navigate to the alert rule page and start building.\n\nIn the next milestone, you learn how to navigate to the alert rule creation page."
+    }
+  ]
+}

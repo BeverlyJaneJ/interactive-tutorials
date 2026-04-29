@@ -1,0 +1,17 @@
+{
+  "id": "alerting-first-rule-save-configure-handling-save",
+  "type": "guide",
+  "description": "Configure no-data and error handling, select a contact point, add annotations, and save.",
+  "category": "take-action",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["alerting-first-rule-save-business-value"],
+  "recommends": ["alerting-first-rule-save-end-journey"],
+  "suggests": [],
+  "provides": []
+}

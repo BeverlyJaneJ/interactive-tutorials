@@ -1,0 +1,17 @@
+{
+  "id": "alerting-create-silence-end-journey",
+  "type": "guide",
+  "description": "Celebrate completing the create a silence milestone.",
+  "category": "take-action",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["alerting-create-silence-create-silence"],
+  "recommends": [],
+  "suggests": [],
+  "provides": []
+}

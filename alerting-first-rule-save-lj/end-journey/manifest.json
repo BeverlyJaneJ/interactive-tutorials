@@ -1,0 +1,17 @@
+{
+  "id": "alerting-first-rule-save-end-journey",
+  "type": "guide",
+  "description": "Celebrate completing the handling and save milestone.",
+  "category": "take-action",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["alerting-first-rule-save-configure-handling-save"],
+  "recommends": [],
+  "suggests": ["alerting-create-silence-lj"],
+  "provides": []
+}

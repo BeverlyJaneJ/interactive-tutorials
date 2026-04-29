@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "alerting-first-rule-save-lj",
+  "title": "Create your first alert rule: message, save, and verify",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Welcome to the message, save, and verify learning path. You'll configure no-data and error handling, select a contact point, add a notification message, save the rule, and verify it's live.\n\nThis is the final step of creating a complete Grafana-managed alert rule. Each learning path in this series covers one section of the alert rule form."
+    },
+    {
+      "type": "markdown",
+      "content": "## Here's what to expect\n\nWhen you complete this path, you'll be able to:\n\n- Choose no-data and error handling options\n- Select a contact point for notifications\n- Add annotations to your alert rule\n- Save a complete alert rule"
+    },
+    {
+      "type": "markdown",
+      "content": "## Before you begin\n\nBefore you start, ensure you have:\n\n- Completed the labels learning path"
+    },
+    {
+      "type": "markdown",
+      "content": "## Troubleshooting\n\nIf you get stuck, we've got your back! Where appropriate, troubleshooting information is just a click away."
+    }
+  ]
+}

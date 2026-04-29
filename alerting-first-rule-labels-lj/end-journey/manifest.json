@@ -1,0 +1,17 @@
+{
+  "id": "alerting-first-rule-labels-end-journey",
+  "type": "guide",
+  "description": "Celebrate completing the labels and evaluation milestone.",
+  "category": "take-action",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["alerting-first-rule-labels-configure-labels-evaluation"],
+  "recommends": [],
+  "suggests": ["alerting-first-rule-save-lj"],
+  "provides": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "alerting-create-silence-create-silence",
+  "type": "guide",
+  "description": "Navigate to Silences, configure matchers and time window, and submit.",
+  "category": "take-action",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["alerting-create-silence-business-value"],
+  "recommends": ["alerting-create-silence-end-journey"],
+  "suggests": [],
+  "provides": []
+}

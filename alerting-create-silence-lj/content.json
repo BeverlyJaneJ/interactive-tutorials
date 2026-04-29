@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "alerting-create-silence-lj",
+  "title": "Create a silence",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Welcome to the create a silence learning path. You'll create a silence to suppress notifications for specific alerts during a maintenance window.\n\nSilences let you temporarily stop notifications without disabling alert evaluation."
+    },
+    {
+      "type": "markdown",
+      "content": "## Here's what to expect\n\nWhen you complete this path, you'll be able to:\n\n- Navigate to the Silences page\n- Set a time window for the silence\n- Add label matchers to target specific alerts\n- Verify affected alert instances\n- Submit a working silence"
+    },
+    {
+      "type": "markdown",
+      "content": "## Before you begin\n\nBefore you start, ensure you have:\n\n- A Grafana Cloud account with at least one alert rule configured"
+    },
+    {
+      "type": "markdown",
+      "content": "## Troubleshooting\n\nIf you get stuck, we've got your back! Where appropriate, troubleshooting information is just a click away."
+    }
+  ]
+}

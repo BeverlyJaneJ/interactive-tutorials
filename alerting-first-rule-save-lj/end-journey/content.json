@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "alerting-first-rule-save-end-journey",
+  "title": "Destination reached!",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Congratulations on completing this journey! Job well done!\n\nWe hope you've enjoyed traveling with us as you:\n\n- Configured no-data and error handling\n- Selected a contact point\n- Added annotations\n- Saved a complete alert rule"
+    },
+    {
+      "type": "markdown",
+      "content": "---\n\n### Related paths\n\nConsider taking the following paths after you complete this journey:\n\n- [Create a silence](https://grafana.com/docs/learning-paths/alerting-create-silence/)"
+    }
+  ]
+}

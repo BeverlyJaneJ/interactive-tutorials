@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "alerting-first-rule-labels-configure-labels-evaluation",
+  "title": "Configure labels and evaluation settings",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Now you'll configure the evaluation group, pending period, and labels for your alert rule.\n\nTo configure labels and evaluation settings, complete the following steps:"
+    },
+    {
+      "type": "markdown",
+      "content": "1. Scroll to the **Set evaluation behavior** section.\n2. Select or create an **evaluation group** (sets how often Grafana checks your rule).\n3. Set the **Pending period** to `1m` (the condition must hold for 1 minute before firing).\n4. Scroll to the **Add labels** section.\n5. Click **+ Add label** and enter a key like `team` and a value like `backend`.\n\nLabels and evaluation group should appear in the form summary."
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you'll review what you accomplished."
+    }
+  ]
+}

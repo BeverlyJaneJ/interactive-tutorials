@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "alerting-first-rule-labels-business-value",
+  "title": "Why configure labels and evaluation?",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Labels organize your rules and power routing. Evaluation timing controls how often Grafana checks your rule. The pending period prevents noise from temporary spikes. Getting these right means manageable alerts at scale."
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you'll configure labels and evaluation settings for your alert rule."
+    }
+  ]
+}

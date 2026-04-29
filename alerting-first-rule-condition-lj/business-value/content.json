@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "alerting-first-rule-condition-business-value",
+  "title": "Why set a condition?",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "The condition is the boundary between normal and firing. Without it, Grafana can't decide when to alert you. A well-tuned condition means you hear about real problems and stay quiet otherwise."
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you'll set the alert condition using the When input."
+    }
+  ]
+}

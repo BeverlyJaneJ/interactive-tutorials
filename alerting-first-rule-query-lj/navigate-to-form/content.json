@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "alerting-first-rule-query-navigate-to-form",
+  "title": "Navigate to the alert rule page",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Navigate to the alert rule creation page and give your rule a name.\n\nTo navigate to the alert rule page, complete the following steps:"
+    },
+    {
+      "type": "markdown",
+      "content": "1. In the Grafana side menu, click **Alerting**.\n2. Click **Alert rules**.\n3. Click **+ New alert rule**.\n4. In the **Rule name** field, enter a descriptive name for your alert rule, for example `High CPU usage`.\n\nYou should see the alert rule creation page with the Default mode selected."
+    },
+    {
+      "type": "markdown",
+      "content": "In the next milestone, you learn how to build a query that selects your data."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "alerting-first-rule-condition-lj",
+  "title": "Create your first alert rule: condition",
+  "blocks": [
+    {
+      "type": "markdown",
+      "content": "Welcome to the alert rule condition learning path. You'll set the alert condition using the When input, choosing a collapse function and threshold that tells Grafana when to fire.\n\nThis path continues from the query learning path. Each learning path in this series covers one section of the alert rule form."
+    },
+    {
+      "type": "markdown",
+      "content": "## Here's what to expect\n\nWhen you complete this path, you'll be able to:\n\n- Choose a collapse function (reducer)\n- Set a boundary value (threshold)\n- Preview the condition to verify it evaluates correctly"
+    },
+    {
+      "type": "markdown",
+      "content": "## Before you begin\n\nBefore you start, ensure you have:\n\n- Completed the query learning path (the rule form is already open with a query configured)."
+    },
+    {
+      "type": "markdown",
+      "content": "## Troubleshooting\n\nIf you get stuck, we've got your back! Where appropriate, troubleshooting information is just a click away."
+    }
+  ]
+}

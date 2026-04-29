@@ -1,0 +1,17 @@
+{
+  "id": "alerting-first-rule-condition-end-journey",
+  "type": "guide",
+  "description": "Celebrate completing the condition milestone.",
+  "category": "take-action",
+  "author": {
+    "name": "Beverly Buchanan",
+    "team": "Grafana Documentation"
+  },
+  "testEnvironment": {
+    "tier": "cloud"
+  },
+  "depends": ["alerting-first-rule-condition-set-condition"],
+  "recommends": [],
+  "suggests": ["alerting-first-rule-labels-lj"],
+  "provides": []
+}
