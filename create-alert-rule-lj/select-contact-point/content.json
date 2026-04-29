@@ -28,6 +28,11 @@
         {
           "type": "interactive",
           "action": "noop",
+          "content": "Test the contact point before proceeding. Click **Test** (or **Send test notification**) next to the contact point name.\n\nGrafana sends a sample notification to the selected destination. Check your email inbox, Slack channel, or other destination to confirm the test notification arrived. If it does not arrive, verify the contact point configuration before saving the rule."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
           "content": "Skip the advanced options for now:\n\n- **Override grouping**: Keep defaults\n- **Override timings**: Keep defaults\n\nYou will learn about custom routing in the **Notification routing** learning path."
         }
       ]

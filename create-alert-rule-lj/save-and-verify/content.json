@@ -22,6 +22,11 @@
         },
         {
           "type": "interactive",
+          "action": "noop",
+          "content": "Before saving, click **Preview** to dry-run the query and confirm it returns data.\n\nIf the preview shows no data or an error, review your query and condition before proceeding. Saving a rule that returns no data means Grafana has nothing to evaluate."
+        },
+        {
+          "type": "interactive",
           "action": "button",
           "reftarget": "Save rule and exit",
           "content": "Click **Save rule and exit** in the upper right.\n\nGrafana saves the rule and immediately begins evaluating it at the interval you configured.",
@@ -46,6 +51,16 @@
             }
           ],
           "requirements": ["navmenu-open"]
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Wait for the alert to change state. The rule starts in **Normal** state. After the evaluation interval passes and the condition is met, the state changes to **Pending**. Once the pending period elapses, the state changes to **Alerting**.\n\nThe total wait time is your evaluation interval plus the pending period. For example, if the evaluation interval is 1 minute and the pending period is 5 minutes, the alert fires after approximately 6 minutes."
+        },
+        {
+          "type": "interactive",
+          "action": "noop",
+          "content": "Check your notification channel for the delivered notification.\n\nOpen your email inbox, Slack channel, or whichever destination your contact point uses. Confirm the notification arrived and contains the alert name, status, and labels you configured.\n\nIf the notification does not arrive after the expected wait time, check:\n\n- The alert state in the rules list (is it **Alerting**?)\n- The contact point configuration (did the test notification work earlier?)\n- The notification policy routing (is the default policy active?)"
         }
       ]
     },
